@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+.coverage
+htmlcov/
+
+# Local run logs. Raw JSON/CSV/Markdown results are intentionally not ignored.
+results/raw/*.stdout.log
+results/raw/*.stderr.log
+results/raw/*batch*.log
+result_c3r_*/raw/*.stdout.log
+result_c3r_*/raw/*.stderr.log
+result_c3r_*/raw/*batch*.log

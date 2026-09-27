@@ -1,0 +1,5 @@
+policy,cells,share,interpretation
+C1,197,0.8208333333333333,Default conservative hybrid region.
+C2,43,0.17916666666666667,Structured correction region; all cells are phase-flip code rows.
+C3,0,0.0,No independent strict-admissibility zone.
+C3R,0,0.0,No clean-regime veto trigger at the default gate.

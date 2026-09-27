@@ -1,0 +1,6 @@
+noise_family,c2_preferred_cells
+Bit flip,2
+Dephasing,16
+Depolarizing,6
+Mixed Pauli,9
+Phase flip,10

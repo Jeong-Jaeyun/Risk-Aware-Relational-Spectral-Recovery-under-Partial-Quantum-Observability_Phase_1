@@ -1,0 +1,205 @@
+\providecommand{\newblock}{}
+\begin{thebibliography}{10}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{{\tt #1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\providecommand{\eprint}[2][]{\url{#2}}
+% Bibliography created with iopart-num v2.1
+% /biblio/bibtex/contrib/iopart-num
+
+\bibitem{Lautenbacher2024PetzRecoveryQudit}
+Lautenbacher L, Jagadish V, Petruccione F and Bernardes N~K 2024 {\em Physics
+  Letters A\/} {\bf 512} 129583
+
+\bibitem{Gertler2021AutonomousQECBosonic}
+Gertler J~M, Baker B, Li J, Shirol S, Koch J and Wang C 2021 {\em Nature\/}
+  {\bf 590} 243--248
+
+\bibitem{VanDenBerg2023SparsePauliLindbladPEC}
+van~den Berg E, Minev Z~K, Kandala A and Temme K 2023 {\em Nature Physics\/}
+  {\bf 19} 1116--1121 (\textit{Preprint} \eprint{2201.09866})
+
+\bibitem{Strikis2021LearningBasedQEM}
+Strikis A, Qin D, Chen Y, Benjamin S~C and Li Y 2021 {\em PRX Quantum\/} {\bf
+  2} 040330 (\textit{Preprint} \eprint{2005.07601})
+
+\bibitem{Liao2024MachineLearningQEM}
+Liao H, Wang D~S, Sitdikov I, Salcedo C, Seif A and Minev Z~K 2024 {\em Nature
+  Machine Intelligence\/} {\bf 6} 1478--1486 (\textit{Preprint}
+  \eprint{2309.17368})
+
+\bibitem{Smolin2005BackgroundIndependence}
+Smolin L 2005 The case for background independence (\textit{Preprint}
+  \eprint{hep-th/0507235})
+
+\bibitem{Rovelli2007QuantumGravity}
+Rovelli C 2007 Quantum gravity {\em Philosophy of Physics\/} Handbook of the
+  Philosophy of Science ed Butterfield J and Earman J (Elsevier) pp 1287--1329
+
+\bibitem{Giovannetti2015QuantumTime}
+Giovannetti V, Lloyd S and Maccone L 2015 {\em Physical Review D\/} {\bf 92}
+  045033 (\textit{Preprint} \eprint{1504.04215})
+
+\bibitem{Marletto2017EvolutionWithoutEvolution}
+Marletto C and Vedral V 2017 {\em Physical Review D\/} {\bf 95} 043510
+  (\textit{Preprint} \eprint{1610.04773})
+
+\bibitem{Hoehn2021TrinityRelationalQuantumDynamics}
+H{\"o}hn P~A, Smith A~R~H and Lock M~P~E 2021 {\em Physical Review D\/} {\bf
+  104} 066001 (\textit{Preprint} \eprint{1912.00033})
+
+\bibitem{Rijavec2023RobustnessPageWootters}
+Rijavec S 2023 {\em Physical Review D\/} {\bf 108} 063507
+
+\bibitem{Braunstein2006GraphLaplacianDensityMatrix}
+Braunstein S~L, Ghosh S and Severini S 2006 {\em Annals of Combinatorics\/}
+  {\bf 10} 291--317 (\textit{Preprint} \eprint{quant-ph/0406165})
+
+\bibitem{Adhikari2017WeightedDigraphsQuantumStates}
+Adhikari B, Banerjee S, Adhikari S and Kumar A 2017 {\em Quantum Information
+  Processing\/} {\bf 16} 1--22 (\textit{Preprint} \eprint{1205.2747})
+
+\bibitem{Biamonte2019ComplexNetworksQuantum}
+Biamonte J, Faccin M and De~Domenico M 2019 {\em Communications Physics\/} {\bf
+  2} 53
+
+\bibitem{Hashim2025BenchmarkingCharacterization}
+Hashim A, Nguyen L~B, Goss N, Marinelli B, Naik R~K, Chistolini T, Hines J,
+  Marceaux J~P, Kim Y, Gokhale P, Tomesh T, Chen S, Jiang L, Ferracin S,
+  Rudinger K, Proctor T, Young K~C, Siddiqi I and Blume-Kohout R 2025 {\em PRX
+  Quantum\/} {\bf 6} 030202
+
+\bibitem{Bennink2026UncertaintyQuantificationQC}
+Bennink R, Burkovska O, Pieper K, Ramirez J and Wong E 2026 Uncertainty
+  quantification for quantum computing (\textit{Preprint} \eprint{2603.25039})
+
+\bibitem{Cieslinski2024RandomisedMeasurements}
+Cie{\'s}li{\'n}ski P, Imai S, Dziewior J, G{\"u}hne O, Knips L, Laskowski W,
+  Meinecke J, Paterek T and V{\'e}rtesi T 2024 {\em Physics Reports\/} {\bf
+  1095} 1--48
+
+\bibitem{Mendes2021NonlinearPageWootters}
+Mendes L~R~S, Brito F and Soares-Pinto D~O 2021 Non-linear equation of motion
+  for page-wootters mechanism with interaction and quasi-ideal clocks
+  (\textit{Preprint} \eprint{2107.11452})
+
+\bibitem{Baumann2022NoncausalPageWoottersCircuits}
+Baumann V, Krumm M, Gu{\'e}rin P~A and Brukner {\v C} 2022 {\em Physical Review
+  Research\/} {\bf 4} 013180
+
+\bibitem{Paiva2022FlowTimeEnergyMeasurements}
+Paiva I~L, Lobo A~C and Cohen E 2022 {\em Quantum\/} {\bf 6} 683
+  (\textit{Preprint} \eprint{2106.00523})
+
+\bibitem{Diaz2025ParallelPageWoottersSimulation}
+Diaz N~L, Braccia P, Larocca M, Matera J~M, Rossignoli R and Cerezo M 2025 {\em
+  Physical Review Research\/} {\bf 7} 033294 (\textit{Preprint}
+  \eprint{2308.12944})
+
+\bibitem{Bradshaw2023GraphZetaEntanglement}
+Bradshaw Z~P and LaBorde M~L 2023 {\em Physics Letters A\/} {\bf 481} 128993
+
+\bibitem{Reed2013EntanglementQEC}
+Reed M~D 2013 {\em Entanglement and Quantum Error Correction with
+  Superconducting Qubits\/} Ph.D. thesis Yale University
+
+\bibitem{Nascimento2011NoiselessSubsystem}
+do~Nascimento J~C and Mateus P 2011 {\em Optics Communications\/} {\bf 284}
+  1451--1456
+
+\bibitem{Xu2024CircuitNoiseResilientVirtualDistillation}
+Xu X~Y, Ding C, Zhang S, Bao W~S and Huang H~L 2024 {\em Communications
+  Physics\/} {\bf 7} 325
+
+\bibitem{Zhang2021AutoencoderErrorMitigation}
+Zhang X~M, Kong W, Farooq M~U, Yung M~H, Guo G and Wang X 2021 {\em Physical
+  Review A\/} {\bf 103} L040403 (\textit{Preprint} \eprint{2005.04341})
+
+\bibitem{Liao2025NoiseAgnosticQEM}
+Liao M, Zhu Y, Chiribella G and Yang Y 2025 {\em npj Quantum Information\/}
+  {\bf 11} 8
+
+\bibitem{Ji2026DataEfficientNoiseModeling}
+Ji Y, Roth M, Kreplin D~A, Polian I and Wilhelm F~K 2026 {\em Physical Review
+  Applied\/} {\bf 25} 034051 (\textit{Preprint} \eprint{2509.12933})
+
+\bibitem{Bensoussan2025LiveNoiseFingerprinting}
+Bensoussan A, Chachkarova E, Even-Mendoza K, Fortz S, Klimis V and Mousavi M~R
+  2025 Toward live noise fingerprinting in quantum software engineering
+  (\textit{Preprint} \eprint{2512.18667})
+
+\bibitem{Ding2025UniversallyRobustControl}
+Ding L, Fan J and Qiu X 2025 {\em npj Quantum Information\/} {\bf 12} 22
+
+\bibitem{Cai2020RandomTelegraphDephasing}
+Cai X 2020 {\em Scientific Reports\/} {\bf 10} 88
+
+\bibitem{Zhang2024NonMarkovianTeleportation}
+Zhang H, Han X, Zhang G, Li L, Cheng L, Wang J, Zhang Y, Xia Y and Xia C 2024
+  {\em Scientific Reports\/} {\bf 14} 23885
+
+\bibitem{Zhuang2026FluxoniumNonMarkovian}
+Zhuang Z~T, Rosenstock D, Liu B~J, Somoroff A, Manucharyan V~E and Wang C 2026
+  {\em Nature Communications\/} {\bf 17} 3209
+
+\bibitem{Gambini2004RelationalTime}
+Gambini R, Porto R and Pullin J 2004 {\em New Journal of Physics\/} {\bf 6} 45
+  (\textit{Preprint} \eprint{gr-qc/0402118})
+
+\bibitem{Mazzitelli1992Midisuperspace}
+Mazzitelli F~D 1992 {\em Physical Review D\/} {\bf 46} 4758--4760
+  (\textit{Preprint} \eprint{hep-th/9203072})
+
+\bibitem{Massar1999UnitaryNonunitaryEvolution}
+Massar S and Parentani R 1999 {\em Physical Review D\/} {\bf 59} 123519
+  (\textit{Preprint} \eprint{gr-qc/9812045})
+
+\bibitem{Maki2026WheelerDeWittSolutions}
+Maki N, Lin C~M and Kohri K 2026 Simple analytical solutions of the
+  wheeler-dewitt equation in the classical hamilton-jacobi limit
+  (\textit{Preprint} \eprint{2604.25240})
+
+\bibitem{Foti2021ClassicalEquationsPageWootters}
+Foti C, Coppo A, Barni G, Cuccoli A and Verrucchi P 2021 {\em Nature
+  Communications\/} {\bf 12} 1787
+
+\bibitem{JiangSpectralGraphTheory}
+Jiang J An introduction to spectral graph theory manuscript
+
+\bibitem{Asaka2026QuantumSpatialQEC}
+Asaka R 2026 Quantum error correction exploiting quantum spatial distribution
+  and gauge symmetry (\textit{Preprint} \eprint{2604.25747})
+
+\bibitem{Filippov2024ScalabilityErrorMitigation}
+Filippov S~N, Maniscalco S and Garc{\'i}a-P{\'e}rez G 2024 Scalability of
+  quantum error mitigation techniques: from utility to advantage
+  (\textit{Preprint} \eprint{2403.13542})
+
+\bibitem{Li2025ZMixedAmplitudeDamping}
+Li T, Zhang H, Zheng L and Li F 2025 {\em Chinese Physics B\/} {\bf 34} 124703
+
+\bibitem{Brito2020MultipartiteInterference}
+de~Brito R~A and de~Lima~Bernardo B 2020 {\em Physics Letters A\/} {\bf 384}
+  126611
+
+\bibitem{Huang2026QuantumSpectralPDEs}
+Huang C~K, Antonioli G and Barbaresco F 2026 A quantum spectral framework for
+  solving pdes eSAIM: Proceedings and Surveys, forthcoming (\textit{Preprint}
+  \eprint{2604.25825})
+
+\bibitem{Alexeev2025AIQuantumComputing}
+Alexeev Y, Farag M~H, Patti T~L, Wolf M~E, Ares N, Aspuru-Guzik A, Benjamin
+  S~C, Cai Z, Cao S, Chamberland C, Chandani Z, Fedele F, Hamamura I, Harrigan
+  N, Kim J~S, Kyoseva E, Lietz J~G, Lubowe T, McCaskey A, Melko R~G, Nakaji K,
+  Peruzzo A, Rao P, Schmitt B, Stanwyck S, Tubman N~M, Wang H and Costa T 2025
+  {\em Nature Communications\/} {\bf 16} 10829
+
+\bibitem{Mohseni2021AdiabaticErrorSuppression}
+Mohseni N, Narozniak M, Pyrkov A~N, Ivannikov V, Dowling J~P and Byrnes T 2021
+  {\em npj Quantum Information\/} {\bf 7} 71
+
+\bibitem{Lewis2026PulseQualityOptimisation}
+Lewis D and Wiersema R 2026 Pulse quality optimisation in quantum optimal
+  control (\textit{Preprint} \eprint{2604.25768})
+
+\end{thebibliography}
