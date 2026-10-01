@@ -1,0 +1,64 @@
+{
+  "passed": true,
+  "checks": {
+    "residuals_below_1e_minus_10": true,
+    "povm_complete": true,
+    "nondegenerate_clock": true,
+    "degenerate_clock_negative_control": true,
+    "ranks_correct": true
+  },
+  "maxima": {
+    "constraint_residual": 1.5781217187960327e-16,
+    "conditional_evolution_gap": 1.0080758803792963e-15,
+    "clock_probability_error": 1.3877787807814457e-16,
+    "legacy_formula_gap": 8.79251776862914e-15,
+    "legacy_antipodal_gap": 2.949029909160572e-16,
+    "raw_occupation_prediction_gap": 5.551115123125783e-16,
+    "noiseless_tilted_infidelity": 2.220446049250313e-16
+  },
+  "models": {
+    "bitflip_aligned": {
+      "design_rank": 1,
+      "singular_values": [
+        2.8284271247461903,
+        0.0,
+        0.0
+      ]
+    },
+    "bitflip_tilted": {
+      "design_rank": 3,
+      "singular_values": [
+        2.0,
+        1.4142135623730951,
+        1.414213562373095
+      ]
+    },
+    "phaseflip_aligned": {
+      "design_rank": 1,
+      "singular_values": [
+        2.8284271247461903,
+        0.0,
+        0.0
+      ]
+    },
+    "phaseflip_tilted": {
+      "design_rank": 3,
+      "singular_values": [
+        2.0,
+        1.4142135623730951,
+        1.414213562373095
+      ]
+    }
+  },
+  "clock_adjacent_geometry": [
+    0.14644660940672605,
+    0.14644660940672627,
+    0.14644660940672605,
+    0.14644660940672605,
+    0.14644660940672583,
+    0.14644660940672605,
+    0.14644660940672583
+  ],
+  "povm_completeness_gap": 1.2577658834933426e-16,
+  "degenerate_clock_max_geometry": 0.0
+}

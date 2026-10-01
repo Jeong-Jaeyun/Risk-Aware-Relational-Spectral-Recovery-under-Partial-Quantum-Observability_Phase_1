@@ -1,4 +1,0 @@
-noise_kind,stage2_candidate_location,cases,rate
-bitflip,interior,45,1.0
-dephasing,interior,45,1.0
-phaseflip,interior,45,1.0

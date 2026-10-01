@@ -20,7 +20,7 @@
 
 \articletype{Paper}
 
-\title{Risk-Aware Relational Spectral Recovery under Partial Quantum Observability}
+\title{Risk-Aware Template-Switching Control under Partial Quantum Observability}
 
 %\author{Jaeyun Jeong$^1$\orcid{0009-0005-3281-5858} and Hwa Young Jeong$^2$\orcid{0000-0002-5017-934X}}
 
@@ -30,28 +30,29 @@
 
 %\email{3500jjy@gmail.com; hyjeong@khu.ac.kr}
 
-\keywords{relational spectral recovery; partial observability; quantum error correction; recovery control; quantum information; risk-aware control}
+\keywords{template switching; partial observability; finite-clock model; state restoration; quantum information; risk-aware control}
 
 \begin{abstract}
-    Quantum recovery under partial observability must operate with incomplete, noisy, 
-    or ambiguous diagnostic evidence. In this setting, recovery policies may improve 
-    average logical fidelity while still introducing rare but severe lower-tail failures 
-    through unsafe candidate switches. We introduce a finite and auditable framework 
-    for risk-aware relational spectral recovery that targets this failure mode.
-    The method constructs internally clock-conditioned system slices and maps each 
-    slice to a weighted relational graph. The ordered family of graph Laplacian spectra 
-    defines a relational spectral representation used for admissibility-aware recovery. 
-    A syndrome-first candidate and a relational candidate are then evaluated by a policy 
-    layer. The robust controller \(C_3^R\) treats the balanced policy \(C_2\) as a proposal 
-    and applies a one-sided veto under excessive admissibility violation or syndrome uncertainty.
-    The framework is evaluated on encoded three-qubit repetition-code simulations under 
-    clean, partial, noisy, partial-plus-noisy, and ambiguity-driven syndrome regimes. 
-    The main benefit appears in the lower tail rather than in a large shift of the mean. 
-    In degraded regimes, \(C_3^R\) reduces false-safe failures and improves lower-tail recovery 
-    behavior while remaining inactive in clean and noisy-only negative controls. These results 
-    support a restricted operating-zone interpretation: the proposed framework acts as a 
-    conservative recovery-control layer rather than as a decoder replacement or a 
-    foundations-level theory of quantum time.
+Quantum decision rules under partial observability can make harmful switches to a
+discrete reference template even when the template fits the available data.  We
+study whether an observable veto can identify such switches without using the
+hidden target state.  An audit of our originally submitted three-qubit
+simulations found a degenerate clock-conditioned representation and a veto
+effect driven solely by an additive uncertainty threshold.  Those submitted-grid
+results are consequently retained only as an audit, not as evidence for a
+relational-spectral advantage.  R1 supplies a finite, energy-matched
+clock--logical-system qualification.  R3 then compares a continuous estimate,
+a direct nearest-template estimate, score-only, uncertainty-only, and a
+corrected held-out residual gate: both candidates are fitted on four clock labels
+and scored unchanged on the complementary four labels.  Across four frozen
+stream families with disjoint bank/calibration/test partitions, the residual gate reduces the harmful
+template-switch rate relative to score-only in every evaluated grid cell.  Its
+combined uncertainty-plus-residual form has no uniform advantage over the
+uncertainty gate, and its mean-fidelity difference relative to the continuous
+estimate is not consistently positive.  The supported contribution is therefore
+a bounded template-switching safety analysis under a known finite-clock model,
+not a generic QEC decoder, an unknown-state recovery channel, or a performance
+advantage attributable to a spectral representation.
 \end{abstract}
 
 %% ============================================================
@@ -85,100 +86,54 @@ veto unsafe proposed switches---without disrupting reliable recovery
 under adequate syndrome evidence---would provide a conservative
 safety layer above syndrome-first recovery pipelines.
 
-We propose to construct such an intervention signal from internally
-clocked conditional system slices. At each simulation step, we
-condition a global quantum state on a discrete internal clock register
-and extract a system state for each clock label. Each conditional slice
-is mapped to a weighted relational graph, and the ordered family of
-graph Laplacian spectra across clock labels defines a relational
-spectral trajectory: a compact, auditable, row-by-row structural
-summary of the encoded system indexed by internal labels rather than
-an external time variable. A proposed recovery candidate can be tested
-for structural consistency within this trajectory space---a check we
-call admissibility---before the policy layer decides whether to accept
-or veto a proposed switch. This construction is operationally motivated
-by relational clock formalisms, in particular Page--Wootters-type
-conditioning~\cite{Giovannetti2015QuantumTime,Marletto2017EvolutionWithoutEvolution,Hoehn2021TrinityRelationalQuantumDynamics},
-but we do not use it to establish a foundations-level theory of quantum
-time or relational dynamics. The clock register is a minimal finite
-object, and the resulting trajectory is used strictly as a
-recovery-side diagnostic.
+The submitted work proposed to construct such an intervention signal from
+clock-conditioned graph spectra.  The audit reported here shows that this
+submitted construction does not identify a relational-spectral gate: its
+conditional density is constant and its admissibility condition is nonbinding.
+We retain the construction only to document that failure mode.  The replacement
+experiments use an energy-matched finite clock and observed count records; the
+decision gate is stated directly as a held-out residual condition rather than as
+a claim about relational spectral evidence.
 
-To make this structural evidence operational, we represent each
-clock-conditioned slice as a weighted relational graph and summarize
-it through its graph Laplacian spectrum. Spectral graph methods provide
-a natural way to capture relational connectivity, perturbation
-structure, and collective behaviour, and prior work has connected
-graph Laplacian spectra with quantum-state representations and quantum
-network
-structure~\cite{Braunstein2006GraphLaplacianDensityMatrix,Adhikari2017WeightedDigraphsQuantumStates,Biamonte2019ComplexNetworksQuantum}.
-The key object in our framework is not a single graph spectrum but a
-clock-indexed spectral family: an ordered collection of Laplacian
-spectra that can be compared against a reference bank, audited for
-admissibility, and used to test whether a proposed recovery remains
-structurally consistent across the full set of internal clock labels. A
-local spectral anomaly that creates discontinuities across neighboring
-clock slices is a stronger diagnostic signal than any single-snapshot
-syndrome check.
+Graph and spectral representations remain useful descriptive tools for the
+submitted audit~\cite{Braunstein2006GraphLaplacianDensityMatrix,Adhikari2017WeightedDigraphsQuantumStates,Biamonte2019ComplexNetworksQuantum}.
+They are not, however, the active evidence source for the revised safety claim.
+R3 uses the same finite-clock labels to create a fitting/validation split and
+asks the simpler operational question of whether a fixed template predicts the
+withheld count records as well as the continuous candidate.
 
-The present study addresses a gap between structured
-recovery-side evidence and the decision layer that uses it.
-Characterization and benchmarking methods quantify device behavior and
-validate performance
-claims~\cite{Hashim2025BenchmarkingCharacterization}, and
-uncertainty-quantification frameworks emphasize calibrated
-interpretation of finite or incomplete
-observations~\cite{Cieslinski2024RandomisedMeasurements,Bennink2026UncertaintyQuantificationQC}.
-These tools operate primarily on syndrome records, channel models,
-circuit-level characterizations, or externally indexed data. Quantum
-recovery, mitigation, and noise-adaptation methods provide further
-tools for noisy processors, but they also typically treat syndrome
-information as the primary and sufficient evidence
-source~\cite{Xu2024CircuitNoiseResilientVirtualDistillation,Zhang2021AutoencoderErrorMitigation,Liao2025NoiseAgnosticQEM}.
-The present work connects these directions by formulating recovery as
-admissible restoration in a clock-conditioned relational spectral
-trajectory space, and evaluating whether the resulting structural
-signal can serve as an auditable intervention mechanism when syndrome
-evidence is degraded.
+The revised study instead addresses a decision-control question that is common
+to finite-data restoration: when a discrete template and a continuous estimate
+are both available, can held-out observations identify template switches that
+are likely to be harmful?  This is complementary to characterization and
+uncertainty-quantification methods for finite observations
+\cite{Hashim2025BenchmarkingCharacterization,Cieslinski2024RandomisedMeasurements,Bennink2026UncertaintyQuantificationQC},
+but it is not a claim that this controller replaces a syndrome decoder or a
+channel-level mitigation method.
 
-We evaluate this framework in a controlled encoded-QEC testbed. Each
-simulation row produces two recovery candidates: a syndrome-first
-decoded recovery (candidate \(A\)) and a relational admissible
-recovery (candidate \(B\)). A policy layer then decides whether a
-proposed switch to the relational candidate should be accepted or
-vetoed. The revised controller \(C_3^R\) is constructed as a
-one-sided veto on the balanced proposal policy \(C_2\): it can block
-an unsafe proposed switch to \(B\), but cannot create additional
-relational switches. This design makes the intervention auditable and
-the tradeoff explicit---one can ask whether the controller remains
-inactive in reliable regimes, whether it selectively blocks harmful
-proposed switches under degraded syndrome evidence, and whether the
-prevented harmful-switch loss exceeds the missed beneficial gain.
+R3 evaluates this question in a controlled encoded logical-qubit testbed.
+Candidate \(A\) is a continuous Bloch-ball projected least-squares estimate and
+candidate \(B\) is the direct nearest template under the same fitting-label
+loss.  A policy may accept or veto a proposed switch from \(A\) to \(B\).  The
+held-out gate can only veto a proposal; it cannot create a template switch.  The
+comparison therefore exposes both harmful-switch reduction and any loss of mean
+fidelity relative to the continuous candidate.
 
-The main contribution is therefore a finite, auditable, risk-aware
-recovery-control framework built on relational spectral evidence under
-partial quantum observability. We define clock-conditioned spectral
-trajectories, introduce admissibility constraints and a
-reference-anchored recovery objective, and evaluate the one-sided veto
-controller under clean, noisy-only, partial, partial-plus-noisy, and
-ambiguity-plus-measurement syndrome stress protocols. The results
-support a restricted operating-zone interpretation: \(C_3^R\) remains
-inactive in clean and noisy-only controls, but under
-partial-plus-noisy observability reduces the false-safe fidelity rate
-from \(6.85\%\) to \(1.34\%\), shifts the lower \(5\%\) gain quantile
-to zero, and improves lower-tail conditional value at risk.
-Intervention diagnostics show that prevented harmful-switch loss
-exceeds missed beneficial gain in the active regimes. The framework
-therefore provides a conservative operational baseline demonstrating
-that relational spectral admissibility can serve as a recovery-side
-safety signal under partial quantum observability, without claiming to
-replace optimized decoders or to establish a foundations-level theory
-of quantum time.
-We present this work as the first in a planned sequence: subsequent
-studies will examine whether the same admissibility and risk-control
-geometry generalizes to nontrivial stabilizer codes, and whether the
-relational spectral trajectory space may support learned structural
-representations of admissible recovery geometry.
+This revision takes a different evidentiary path.  An audit found that the
+submitted clock construction has a constant conditional system state and that
+its apparent veto effect disappears when the uncertainty threshold is removed.
+The submitted stress-grid tables are therefore retained only as a transparent
+historical audit; they do not establish relational-spectral recovery efficacy.
+
+The revised contribution is a constrained risk-control test.  R1 supplies an
+explicit, energy-matched finite-clock construction with nonconstant conditional
+states.  R3 supplies four disjoint bank/calibration/test streams, physical code
+noise, direct-template and uncertainty-only controls, a corrected held-out
+residual gate, and two-way target-pair/measurement-seed intervals.  The residual
+gate reduces harmful template switches relative to score-only selection in every
+evaluated cell of every stream.  Its combined uncertainty-plus-residual version
+does not have a uniform advantage over uncertainty-only selection, and it does
+not establish a mean-fidelity advantage over the continuous estimate.
 
 \section{Background and Positioning}
 \subsection{Clock-conditioned relational dynamics}
@@ -206,12 +161,12 @@ More broadly, quantum network models provide a language for connecting graph str
 correlations, and quantum dynamics~\cite{Biamonte2019ComplexNetworksQuantum}. These works 
 motivate the use of spectral signatures as auditable summaries of relational connectivity.
 
-The present work differs from graph-state or network modeling approaches in its use of 
-clock-conditioned spectral families. A single graph spectrum is not the central object. 
-Instead, each internal clock label produces a relational graph, and the ordered family of 
-Laplacian spectra defines a relational spectral trajectory. This trajectory is then compared 
-with reference-compatible families and audited through admissibility penalties before it 
-enters the recovery policy layer.
+The submitted work differed from graph-state or network modeling approaches in its
+use of clock-conditioned spectral families. A single graph spectrum was not the
+central object; each internal clock label produced a relational graph, and the
+ordered family of Laplacian spectra defined a relational spectral trajectory.
+The revision retains that construction only to make the failed submitted-grid
+mechanism auditable. It is not an evidence source for R3.
 
 \subsection{Quantum recovery, mitigation, and control}
 Quantum recovery and error mitigation have developed along several complementary directions. 
@@ -221,10 +176,11 @@ how encoded or stabilized systems can preserve quantum information under noise~\
 
 The proposed framework is not a replacement for these methods. It is closer 
 to a recovery-control layer placed above candidate recovery mechanisms. In the 
-encoded-QEC experiments, the syndrome-first recovery remains the decoder-facing 
-baseline, while the relational admissible recovery supplies an alternative candidate. 
-The policy layer asks when a switch to that candidate should be trusted, when it 
-should be vetoed, and how the tradeoff should be evaluated under partial observability.
+submitted encoded-QEC experiments, the syndrome-first recovery was the
+decoder-facing baseline, while the relational admissible recovery supplied an
+alternative candidate. The policy layer made a historical switch decision. R3
+replaces this comparison with equal-information continuous and direct-template
+candidates scored by a held-out count-record residual.
 
 \subsection{Partial observability, uncertainty, and benchmarking}
 
@@ -244,43 +200,41 @@ its behavior through threshold and uncertainty-bin diagnostics. This makes the c
 auditable and exposes the tradeoff between preventing harmful switches and mistakenly 
 blocking beneficial ones.
 
-\section{Methods}\label{sec:methods}
+\section{Submitted framework and metrics (archival)}\label{sec:methods}
 
-This section develops the proposed framework in five steps. We first define the
-clock-conditioned relational setting. We then construct relational
-spectral signatures from each clock slice and assemble them into a spectral
-trajectory. Next, we formulate recovery as admissible restoration toward a
-reference-compatible spectral family. Finally, we instantiate the framework in an
-encoded-QEC testbed and define the risk-aware metrics used for evaluation.
-The methodological separation is important. The relational formulation specifies
-where the data objects come from; the spectral representation specifies what is
-measured; the recovery objective specifies how a corrupted relational trajectory is
-restored; and the encoded-QEC protocol tests whether the restored trajectory should
-be trusted when direct syndrome evidence is incomplete. This prevents the
-controller from being interpreted as either a new universal decoder or a claim that
-all clock-conditioned dynamics have been solved. The narrower claim is that
-relational spectral evidence can be made auditable and can be combined with
-syndrome evidence through an explicit downside-risk policy. The five-step separation 
-also defines the interfaces along which subsequent work can substitute components 
-without altering the surrounding decision geometry.
-Figure~\ref{fig:pipeline-overview} summarizes the full pipeline, with the four numbered stages 
-keyed to the subsections that follow.
+This section documents the framework used to generate the submitted grid so that
+the audit is reproducible. It is not the primary method supporting the revised
+claim. The audit in Section~\ref{sec:results} establishes that the instantiated
+clock-conditioned trajectory is degenerate and that the submitted admissibility
+gate is nonbinding. Accordingly, the relational-spectral construction, recovery
+objective, and syndrome-stress policy below are historical implementation
+specifications rather than validated ingredients of R3. The corrected R3 method
+and the only positive efficacy evidence in this revision are given in
+Section~\ref{sec:revision-results}. Figure~\ref{fig:pipeline-overview} therefore
+summarizes the submitted pipeline, not a validated recovery procedure.
 
 \begin{figure}[t]
 \centering
 \includegraphics[width=0.95\textwidth]{main_figure.png}
-\caption{Pipeline overview of the proposed framework.
+\caption{Submitted-pipeline overview, retained for audit reproducibility.
 A constrained global state is conditioned on internal clock labels to obtain system slices \(\rho_S(\tau_r)\).
 Each slice is mapped to a weighted relational graph and reduced to a Laplacian spectral signature, yielding the relational spectral trajectory \(\Gamma_\Psi\).
 The observed trajectory is restored through a reference-anchored admissible recovery objective, producing the relational candidate \(B\).
 At the policy layer, \(C_3^R\) acts as a one-sided veto that can retain the syndrome-first candidate \(A\) or accept the \(C_2\)-proposed switch to \(B\).
+The audit finds that this instantiated pipeline does not identify a
+relational-spectral efficacy effect.
 }
 \label{fig:pipeline-overview}
 \end{figure}
 
-\subsection{Clock-conditioned relational formulation}\label{subsec:relational-formulation}
+\subsection{Clock-conditioned relational formulation (submitted configuration)}
+\label{subsec:relational-formulation}
 
-We use a clock-conditioned relational formulation inspired by
+The following formalism states the submitted intended construction. The audit
+shows that its actual implementation, specified below with $H_S=0$, does not
+satisfy the required nondegenerate conditional-trajectory premise; it is retained
+only to define the historical artifact. We use a clock-conditioned relational
+formulation inspired by
 background-independent quantum dynamics and relational-time
 constructions~\cite{Gambini2004RelationalTime,Giovannetti2015QuantumTime,Hoehn2021TrinityRelationalQuantumDynamics}.
 The total Hilbert space is decomposed as
@@ -352,7 +306,8 @@ on the minimal controlled question: whether clock-conditioned relational spectra
 can provide auditable recovery evidence before scaling to larger clock registers
 or denser relational clocks.
 
-\subsection{Relational spectral representation}\label{subsec:spectral-representation}
+\subsection{Relational spectral representation (submitted configuration)}
+\label{subsec:spectral-representation}
 
 For each clock-conditioned state $\rho_S(\tau)$, we build a weighted relational
 network whose edge weights encode pairwise relational evidence between system
@@ -369,7 +324,7 @@ W^{(\tau)}_{ji},
 W^{(\tau)}_{ij}\ge 0.
 \end{aligned}
 \end{equation}
-The reported experiments use explicit pairwise functionals rather than leaving
+The submitted-grid experiments used explicit pairwise functionals rather than leaving
 $f$ unspecified. Let $\rho_{ij}^{(\tau)}$ be the two-qubit reduction of
 $\rho_S(\tau)$ and let $\rho_i^{(\tau)}$ be the one-qubit reduction. For
 phase-flip-code experiments we use the absolute two-qubit coherence score
@@ -395,7 +350,7 @@ S(\rho_{ij}^{(\tau)}),
 \end{equation}
 with negative numerical round-off clipped to zero. Alternative pairwise
 functionals are possible and are treated as representation-robustness questions
-for future work, but all reported policy comparisons use the fixed code-dependent
+for future work, but the submitted-grid policy comparisons use the fixed code-dependent
 mapping above.
 The two choices reflect the dominant relational signature of the corresponding
 encoded basis. Phase-flip protection is sensitive to phase coherence, so the
@@ -476,7 +431,8 @@ all policies. Thus differences between $C_1$, $C_2$, $C_3$, and
 $C_3^{\mathrm R}$ arise from the decision layer, not from changing the underlying
 trajectory distance.
 
-\subsection{Admissible spectral recovery}\label{subsec:admissible-recovery}
+\subsection{Admissible spectral recovery (submitted configuration)}
+\label{subsec:admissible-recovery}
 
 Let $\Gamma_{\mathrm{obs}}$ be the observed spectral trajectory after noise or
 partial observation. Recovery is posed as a constrained restoration problem in
@@ -512,10 +468,10 @@ $\|\Lambda(\tau_{r+1})-\Lambda(\tau_r)\|_2^2/(\tau_{r+1}-\tau_r)^2$.
 $\Phi_{\mathrm{clock}}$ compares spectral response between neighboring slices to
 the distinguishability of the corresponding clock states, and
 $\Phi_{\mathrm{ref}}$ is the squared distance to the nearest reference trajectory.
-Thresholds are calibrated as $\mu+\kappa\sigma$ over the reference bank, with
-$\kappa=1.5$ for the admissibility checks used in the encoded experiments.
-We use $\kappa=1.5$ as a fixed operating tolerance for this baseline study; it is
-not optimized per regime.
+In the submitted implementation, thresholds were calibrated as
+$\mu+\kappa\sigma$ over the reference bank, with $\kappa=1.5$. The associated
+calibration sweep is retained in the SI as historical implementation detail; it
+does not establish a discriminative admissibility gate on the submitted grid.
 
 For a candidate trajectory $\Gamma_X$, the normalized admissibility violation is
 \begin{equation}
@@ -591,38 +547,43 @@ candidate can be close to the observation but inadmissible, admissible but point
 toward the wrong reference family, or reference-compatible but too discontinuous
 across clock labels.
 
-In the main experiments, we use the discrete admissible projection as the default
+In the submitted-grid experiments, we use the discrete admissible projection as the default
 recovery operator because it is stable, interpretable, and directly auditable.
 Continuous convex refinement is treated as a diagnostic extension and reported in
 the Supplementary Information. Further details on admissibility penalties,
 reference-bank construction, anchor-weight calibration, and the two-stage recovery
 algorithm are provided in Supplementary Note S4.
 
-\subsection{Encoded-QEC validation protocol}\label{subsec:qec-validation}
+\subsection{Encoded-QEC protocol (submitted grid only)}\label{subsec:qec-validation}
 
-The encoded-QEC setting is used as a controlled testbed for partial observability
-and unsafe recovery transitions. We do not claim that the proposed controller
-replaces optimized decoders for all QEC regimes. Instead, the testbed evaluates
-whether relational evidence can safely assist recovery when syndrome information is
-complete, missing, corrupted, ambiguous, or affected by measurement/reset errors.
-This framing is narrower than a decoder benchmark. The purpose of the encoded-QEC
-setting is to create a situation in which two plausible recovery candidates are
-available and the reliability of direct syndrome evidence can be systematically
-degraded. The scientific question is then not simply which candidate has the
-higher average fidelity, but when a policy should refuse a relational switch
-because the evidence supporting it has become unsafe.
+Revision status: the configuration described in this subsection is the submitted
+grid, retained to make the audit reproducible.  It has a degenerate conditional
+clock trajectory and cannot support an efficacy claim; its reported quantities
+are consequently labelled historical.  The nondegenerate finite-clock check and
+the held-out switching experiment that support the revised scope are reported in
+Section~\ref{sec:revision-results} and in the supplementary section ``Revision
+audit and new experiments.''
 
-Each simulation row produces two recovery candidates:
+The submitted encoded-QEC setting was designed as a controlled testbed for partial
+observability and unsafe recovery transitions. It does not support a decoder claim:
+the audit shows that its relational evidence is degenerate and its admissibility
+gate is inactive. The details below describe how complete, missing, corrupted,
+ambiguous, measurement-, and reset-error syndrome conditions were generated for
+the historical audit. R3 instead tests a two-candidate count-record decision
+problem with equal-information candidates.
+
+Each submitted-grid simulation row produced two candidates:
 \begin{equation}
 A := \text{syndrome-first decoded recovery},
 \qquad
 B := \text{relational admissible recovery}.
 \end{equation}
-Candidate $A$ is obtained by applying the code-specific syndrome recovery rule to
-the observed quantum trajectory. Candidate $B$ is obtained by the admissible
+Candidate $A$ was obtained by applying the code-specific syndrome recovery rule to
+the underlying noisy density. Candidate $B$ was obtained by the admissible
 spectral recovery objective in Eq.~\eqref{eq:recovery-objective-main}. The policy
-layer then decides whether the relational candidate is sufficiently reliable to
-replace the syndrome-first candidate.
+then made the historical switch decision. As detailed in the SI, degraded syndrome
+symbols affected controller support rather than the candidate-$A$ recovery
+channel.
 Both candidates are evaluated against the same clean logical trajectory when
 computing outcomes, but the policy layer does not use that clean trajectory when
 making the decision. It sees only the candidate diagnostics, observed syndrome
@@ -630,7 +591,7 @@ summary, admissibility reports, recovery objective, and uncertainty proxy. This
 separation is necessary because the intervention metrics later use the clean
 trajectory only as offline ground truth for analysis.
 
-The experiments use three-qubit repetition codes in bit-flip and phase-flip
+The submitted-grid experiments use three-qubit repetition codes in bit-flip and phase-flip
 configurations, with bit-flip, phase-flip, depolarizing, dephasing, and mixed-Pauli
 noise families. Each reported regime cell is averaged over seeds $11$--$20$,
 giving ten random seeds per cell. The output-stem suffix \texttt{seed10} is a
@@ -688,11 +649,11 @@ globally strict safety-first region exists. Because this strict policy did not f
 an independent operating zone in the regime map, we use $C_3^{\mathrm{R}}$ as the
 revised risk-aware controller that preserves the safety motivation of $C_3$ while
 applying intervention only to proposed $C_2$ switches.
-This policy sequence is intentionally cumulative. $C_1$ represents a conservative
+This submitted policy sequence is intentionally cumulative. $C_1$ represents a conservative
 rule-based baseline. $C_2$ asks whether a balanced score can use relational
 evidence without excessive switching. $C_3$ tests whether a strict Boolean
 admissibility rule creates a distinct safety-first region. $C_3^{\mathrm R}$ is
-the revised controller used by the current study: it keeps $C_2$ as the proposal
+the submitted controller: it keeps $C_2$ as the proposal
 mechanism, but only allows its proposed switch to survive if additional safety and
 uncertainty gates pass.
 
@@ -765,7 +726,7 @@ recovery. Central performance is summarized by the mean gain
 $\overline{\Delta F}_C$, the logical-success rate
 $P(F_C\ge F_{\mathrm{success}})$, and the non-worsening rate
 $P(\Delta F_C\ge0)$.
-Unless otherwise stated, all reported comparisons use
+Unless otherwise stated, submitted-grid comparisons use
 \begin{equation}
 \varepsilon_F=0.01,\qquad F_{\mathrm{success}}=0.99.
 \end{equation}
@@ -831,9 +792,10 @@ G_2
 \end{equation}
 We report the block rate $P(B_R=1\mid C_2=B)$, harmful-block precision
 $P(H_2=1\mid B_R=1)$, harmful-switch recall $P(B_R=1\mid H_2=1)$, and
-beneficial-switch retention $P(B_R=0\mid G_2=1)$. The utility balance is
+beneficial-switch block rate $P(B_R=1\mid G_2=1)$. Beneficial-switch retention
+is its complement. The utility balance is
 \begin{equation}
-G_{\mathrm{net}}
+E_{\mathrm{net}}
 =
 \sum_i B_R^{(i)}
 \max\{0,\Delta F_A^{(i)}-\Delta F_B^{(i)}\}
@@ -841,7 +803,7 @@ G_{\mathrm{net}}
 \sum_i B_R^{(i)}
 \max\{0,\Delta F_B^{(i)}-\Delta F_A^{(i)}\}.
 \end{equation}
-Positive $G_{\mathrm{net}}$ means that, on the sampled grid, prevented harmful-switch
+Positive $E_{\mathrm{net}}$ means that, on the sampled grid, prevented harmful-switch
 losses outweighed missed beneficial-switch gains. It is a sample-level intervention
 diagnostic, not a theorem of dominance. We therefore also report normalized
 versions, including net effect per blocked switch and per $C_2$-proposed switch,
@@ -856,19 +818,27 @@ switches that it mistakenly blocks.
 
 \FloatBarrier
 
-\section{Results}\label{sec:results}
+\section{Submitted-grid audit}\label{sec:results}
 
-The results support an operating-zone interpretation rather than a universal
-performance claim. The relational controller is not beneficial in every regime.
-Its advantage appears specifically when syndrome observability is partial or jointly
-corrupted, where it suppresses unsafe recovery transitions and improves lower-tail
-fidelity risk. We therefore present the results by regime and intervention
-behavior, rather than ranking policies only by mean fidelity gain.
+The submitted-grid analyses in this section are retained for transparency and
+for reproducibility of the originally reported tables and figures.  They are not
+used as efficacy evidence in this revision.  A code-and-data audit found that the
+submitted encoded construction has $H_S=0$ while the clock is prepared in
+$|+\rangle_C$ with $H_C=0.8X_C$.  Its conditional density slices are consequently
+constant (up to numerical precision), and the nominal global state does not
+satisfy the stated zero-energy constraint.  The same audit shows that, after
+removing the uncertainty conjunct ($u_{\max}=1.00$), the score/admissibility-only
+counterfactual blocks no proposed switches on the submitted grid.  Thus the
+tables below document the historical uncertainty-threshold effect; they do not
+demonstrate an independent relational-spectral admissibility effect.
+The differing historical row counts arose from different parameter-grid sizes,
+with ten seeds per combination: clean 240, partial 288, noisy-only 360,
+partial-plus-noisy 216, and ambiguity-plus-measurement 360 combinations.
 
 \subsection{Operating-zone structure of the baseline policies}\label{subsec:results-operating-zones}
 
-We first evaluated the clean-syndrome regime map to determine whether the baseline
-hybrid policies define distinct operating zones. The clean map contains 240
+The submitted clean-syndrome regime map classified baseline policies into the
+following operating zones. The clean map contains 240
 regime cells, each averaged over ten random seeds. As summarized in
 Table~\ref{tab:operating-zone-summary}, $C_1$ is the preferred policy in most
 cells, while $C_2$ occupies a smaller but structured correction zone. The strict
@@ -894,11 +864,11 @@ $C_3^{\mathrm R}$ & 0 & 0.0000 \\
 \end{tabular}
 \end{table}
 
-This baseline structure motivates the revised controller. The absence of a
-$C_3$-dominant region does not mean that safety is irrelevant; it indicates that a
-globally hard admissibility veto is too coarse for this regime map. The redesign
-therefore shifts from a strict safety-first selector to $C_3^{\mathrm R}$, an
-uncertainty-conditioned veto applied only to proposed $C_2$ switches.
+This baseline structure is descriptive only.  Since $B$ was admissible in every
+submitted row and the score/admissibility-only ablation has zero blocks, it does
+not identify a useful hard-admissibility veto.  The submitted $C_3^{\mathrm R}$
+effect is instead an uncertainty-conditioned veto applied to proposed $C_2$
+switches.
 The $C_2$-preferred cells are localized to phase-flip-code rows, with 16
 dephasing, 10 phase-flip, 9 mixed-Pauli, 6 depolarizing, and 2 bit-flip cells.
 We use the clean map only to identify whether the original policy family contains
@@ -915,9 +885,9 @@ $C_3^{\mathrm R}$ remains inactive in the clean and noisy-only controls, but
 intervenes in partial and partial-plus-noisy syndrome regimes.
 
 \begin{table}[t]
-\caption{Regime-level comparison between $C_2$ and $C_3^{\mathrm R}$. Each entry
-is reported as $C_2/C_3^{\mathrm R}$. Lower false-safe rate, larger $q_{0.05}$,
-and larger CVaR indicate improved downside-risk behavior.}
+\caption{Historical submitted-grid comparison between $C_2$ and $C_3^{\mathrm R}$.
+Each entry is reported as $C_2/C_3^{\mathrm R}$. The table documents the
+uncertainty-threshold effect; it is not evidence for an admissibility mechanism.}
 \label{tab:c2-c3r-regime-metrics}
 \centering
 \tiny
@@ -964,8 +934,8 @@ partial-observability stress rather than to all forms of recovery risk.
 \subsection{Downside-risk reduction under partial syndrome observability}
 \label{subsec:results-downside-risk}
 
-The main benefit of $C_3^{\mathrm R}$ appears in the lower tail rather than in a
-large shift of the mean. In the partial-syndrome regime, the mean gain changes
+The historical uncertainty-threshold effect appears in the lower tail rather than
+in a large shift of the mean. In the partial-syndrome regime, the mean gain changes
 modestly from 0.1169 to 0.1189, while the false-safe fidelity rate decreases from
 0.0694 under $C_2$ to 0.0389 under $C_3^{\mathrm R}$. The lower 5\% quantile moves
 from -0.0152 to -0.0006, while $\mathrm{CVaR}_{0.05}$ improves from -0.0208 to
@@ -983,20 +953,19 @@ The reduction should be interpreted together with the uncertainty-bin analysis i
 Supplementary Note S8: most blocks occur in saturated-stress rows, so the observed
 lower-tail improvement reflects a conservative veto of $C_2$ switches under high
 partial-observability stress.
-The relational component remains essential because the veto is applied only to
-$C_2$-proposed switches into the relational candidate and is conditioned on the
-admissibility of that candidate.
+Because the score/admissibility-only counterfactual has zero blocks, these
+historical improvements cannot be assigned to the relational admissibility
+condition.  They are retained to document the submitted uncertainty-threshold
+behavior only.
 
 \begin{figure}[t]
 \centering
 \includegraphics[width=0.95\textwidth]{c3r_downside_risk.pdf}
-\caption{Downside-risk behavior of $C_2$ and $C_3^{\mathrm R}$ across syndrome
-regimes. Panel~(a) shows the false-safe fidelity rate $\mathrm{FS}_F$. 
-Panel~(b) shows the lower-tail fidelity-gain $\mathrm{CVaR}_{0.05}$. 
-The robust controller is inactive in clean and noisy-only controls, but reduces
-false-safe fidelity failures and improves lower-tail CVaR in partial and
-partial-plus-noisy regimes. The ambiguity-plus-measurement regime, hatched on the right, 
-is included as a secondary stress control.}
+\caption{Historical submitted-grid downside-risk values for $C_2$ and
+$C_3^{\mathrm R}$. Panel~(a) shows the false-safe fidelity rate $\mathrm{FS}_F$;
+panel~(b) shows lower-tail fidelity gain $\mathrm{CVaR}_{0.05}$.  The patterns
+are attributable to the submitted uncertainty gate and are not used as evidence
+for a relational-spectral mechanism.}
 \label{fig:c3r-downside-risk}
 \end{figure}
 
@@ -1010,8 +979,8 @@ with lower-tail and intervention diagnostics.
 \subsection{Intervention quality: harmful blocks, missed gains, and net effect}
 \label{subsec:results-intervention-quality}
 
-The previous subsection shows that $C_3^{\mathrm R}$ improves downside-risk
-metrics under partial observability. We next ask why. Because $C_3^{\mathrm R}$
+The previous subsection records historical submitted-grid downside-risk values.
+Because $C_3^{\mathrm R}$
 can only veto proposed $C_2$ switches to $B$, the relevant quantities are
 conditional on $C_2=B$.
 
@@ -1036,8 +1005,8 @@ Fig.~\ref{fig:c3r-intervention-quality}.
 \begin{figure}[t]
 \centering
 \includegraphics[width=0.95\textwidth]{c3r_intervention_quality.pdf}
-\caption{Intervention quality of $C_3^{\mathrm R}$ in regimes where it actively
-blocks $C_2$ switches. Panel~(a) reports the conditional intervention rates: 
+\caption{Historical submitted-grid intervention diagnostics for $C_3^{\mathrm R}$
+in regimes where it actively blocks $C_2$ switches. Panel~(a) reports the conditional intervention rates:
 block rate (given $C_2=B$), harmful-block precision, harmful-switch recall, 
 and beneficial-switch block rate. Panel~(b) shows the aggregate intervention 
 balance, comparing prevented harmful-switch loss, missed beneficial-switch 
@@ -1074,15 +1043,12 @@ mildly corrupted without partial observability. The raw uncertainty mean is 0 in
 the clean map and 0.038 in the noisy-only map, far below the saturation condition
 that triggers uncertainty-based veto behavior.
 
-The strongest observed operating zone is partial-plus-noisy syndrome
-observability, followed by partial syndrome observability. The
-ambiguity-plus-measurement regime provides weaker but consistent supporting
-evidence: $C_3^{\mathrm R}$ improves logical-success rate from 0.5208 to 0.5978
-and yields positive net intervention gain, but the binary false-safe rate is
-already zero for both policies. These results should not be interpreted as a
-universal advantage of relational recovery over syndrome decoding. Rather, they
-identify a restricted but meaningful operating zone in which relational spectral
-evidence acts as a recovery-side safety signal under partial observability.
+The submitted partial-plus-noisy and partial rows have the largest
+uncertainty-threshold effects. The ambiguity-plus-measurement regime provides a
+weaker descriptive contrast: $C_3^{\mathrm R}$ changes logical-success rate from
+0.5208 to 0.5978 and has positive net intervention value, while the binary
+false-safe rate is already zero for both policies.  None of these submitted-grid
+patterns identifies a relational-spectral mechanism or a decoder advantage.
 Threshold diagnostics further show that setting $u_{\max}=1.00$ removes the veto
 and recovers $C_2$ behavior, whereas stricter $u_{\max}=0.75$ increases blocking
 and can reduce $\mathrm{FS}_F$ further at the cost of more beneficial-switch loss.
@@ -1090,251 +1056,189 @@ In some regimes this becomes overly conservative. Thus the default point is not
 claimed to be optimal; it is a conservative operating point that exposes the
 downside-risk tradeoff.
 
-\section{Discussion}\label{sec:discussion}
+\section{Interpretation of the submitted-grid audit}\label{sec:discussion}
 
-\subsection{Operating-zone interpretation of relational recovery}
+\subsection{What the submitted grid does and does not show}
 \label{subsec:discussion-operating-zone}
 
-The results support an operating-zone interpretation rather than a universal
-dominance claim for relational recovery. Relational spectral evidence is useful in
-the tested setting when syndrome information is sufficiently incomplete to make
-some $C_2$ switches unsafe, but not so uninformative that the relational
-trajectory ceases to provide a meaningful consistency signal. This explains why
-$C_3^{\mathrm R}$ is inactive in clean and noisy-only controls, yet changes the
-lower tail in partial and partial-plus-noisy regimes.
-The roles of the two components should be separated. The relational trajectory
-supplies candidate $B$, admissibility status, and trajectory diagnostics. The
-uncertainty gate determines when a $C_2$-proposed use of that candidate is too
-risky to accept.
+The submitted rows establish only a descriptive operating pattern: the
+uncertainty gate is inactive in clean and noisy-only rows and active in the
+partial-observability rows.  They do not establish that relational spectral
+evidence is useful, because the clock-conditioned densities are constant and
+candidate $B$ is admissible in every row.  The audit separates this negative
+finding from the new R3 held-out residual test below.
 
-The negative strict-$C_3$ result is part of this interpretation. A hard
-admissibility rule does not create an independent preferred zone under reliable
-syndrome evidence. Safety therefore cannot be reduced to selecting the uniquely
-admissible candidate. The revised controller uses a narrower principle: keep the
-balanced $C_2$ proposal mechanism, but veto proposed relational switches when the
-proposal sits in a high-risk part of the policy evidence space. The main claim is
-therefore not that $C_3^{\mathrm R}$ is a better decoder, but that it is a
-risk-aware controller for candidate selection under partial observability.
-Read as part of the baseline contribution, this negative ablation also serves a 
-constructive purpose: it establishes that relational spectral evidence cannot be 
-collapsed into a simpler Boolean admissibility check, which justifies the more 
-elaborate one-sided veto structure that the present work and its planned 
-follow-ups build on.
+The strict-$C_3$ result is correspondingly non-informative: its condition does
+not create an independent preferred zone, and the removed-uncertainty ablation
+does not veto a single proposed switch.  We withdraw the former interpretation
+of this observation as evidence for a more elaborate admissibility controller.
 
 \subsection{Partial observability and decision geometry}
 \label{subsec:discussion-partial-observability}
 
-The relevant geometry is the geometry of the decision variables seen by the
-policy. Each row supplies a score difference, admissibility status, normalized
-constraint violations, and an additive syndrome-stress index. In clean regimes,
-direct syndrome support keeps the $C_2$ proposal away from the veto boundary. In
-noisy-only regimes, bit-level syndrome noise changes some scores but does not
-produce the saturated uncertainty pattern that activates the robust gate. Partial
-observability is different: the score can favor the relational candidate while the
-same row has weak syndrome support and elevated uncertainty.
+The submitted decision variables include a score difference, an admissibility
+flag, normalized constraint violations, and an additive syndrome-stress index.
+They are useful for reproducing the historical switch decisions, but their
+geometry cannot be interpreted as a nondegenerate relational trajectory because
+the conditional density is constant.
 
-This is the failure mode targeted by $C_3^{\mathrm R}$. The controller does not
-penalize all relational switches, and it does not treat all noise as equivalent.
-It acts only after $C_2$ proposes $B$, and then requires score support,
-admissible $B$, non-saturated uncertainty, and the configured violation gate. At
-the default setting $\delta_A=0$, the active requirements reduce primarily to a
-score-supported $C_2$ proposal, exact admissibility of $B$, and the uncertainty
-saturation guard. This makes the downside-risk policy mathematically one-sided:
-it can remove candidate-$B$ switches from the $C_2$ decision set, but it cannot
-create new relational switches.
+At the submitted default setting, the only empirically active conjunct is the
+uncertainty saturation guard.  The policy is mathematically one-sided---it can
+remove candidate-$B$ switches from the $C_2$ decision set but cannot create new
+switches---yet this fact alone does not supply a physical or spectral mechanism.
 
-The intervention metrics show the cost of this one-sided geometry. Some
-beneficial switches are blocked, especially in the active degraded regimes. The
-reason the policy remains useful in these experiments is that the prevented
-harmful-switch loss exceeds the missed beneficial gain, and this effect appears
-most clearly in the lower-tail metrics. The conclusion should remain conservative:
-the present evidence supports a downside-risk reduction mechanism on the sampled
-grids, not a proof that the same fixed gate is optimal across codes or noise
-models, nor that saturated uncertainty is the only useful trigger.
+The historical intervention metrics quantify the cost of that uncertainty-only
+veto, including missed beneficial switches.  They are not used to claim a
+mechanism or to optimize a gate across codes and noise models.
 
-\subsection{Recovery control rather than decoder replacement}
+\subsection{Limits of the submitted recovery comparison}
 \label{subsec:discussion-recovery-control}
 
-The QEC role of the method is a recovery-control layer above candidate recovery
-mechanisms. Candidate $A$ is the syndrome-first recovery, candidate $B$ is the
-relational admissible recovery, and the policy selects between them using
-diagnostics that are available before the logical outcome is evaluated. This is a
-different task from constructing an optimized syndrome decoder.
+The submitted candidate comparison is not a damaged-syndrome decoder benchmark.
+Candidate $A$ used the complete circuit syndrome-recovery channel applied to the
+underlying noisy density; damaged, missing, and ambiguous syndrome symbols
+affected only the controller support.  Candidate $B$ is a discrete template
+candidate, and its submitted admissibility flag never rejects a row.
 
-This distinction sets the correct benchmark for the present study. Mean fidelity
-alone is insufficient because the controller is designed to alter the lower tail
-of candidate selection, not to maximize every row independently. The relevant
-questions are whether reliable regimes remain nearly unchanged, whether harmful
-$C_2$ switches are selectively vetoed under degraded syndrome evidence, and
-whether the missed beneficial switches are smaller than the prevented losses. The
-current results answer these questions for the controlled two-candidate setting.
-Comparisons with optimized decoders and multi-candidate recovery sets remain
-future work.
-A fair next benchmark should compare not only final logical fidelity, but also
-false-safe rate, lower-tail gain, and intervention regret under matched
-partial-observability protocols.
+The historical two-candidate values therefore do not answer a QEC recovery
+question.  R3 replaces the information asymmetry with a count-record setting and
+explicitly compares the template candidate to a continuous equal-information
+estimate.  It retains false-safe rate as a selection-risk metric but does not
+claim a decoder advantage.
 
-The two-candidate restriction is itself a deliberate baseline choice rather 
-than a structural limitation of the framework. The decision geometry of a 
-one-sided veto is most clearly characterized when only one alternative to the 
-syndrome-first candidate is available: the conditional metrics in 
-Section~\ref{subsec:results-intervention-quality}, including block rate, 
-harmful-block precision, and beneficial-switch retention, are well defined 
-exactly because the policy maps a binary choice. Extending to a multi-candidate 
-recovery set replaces these binary diagnostics with class-conditional analogues 
-but does not alter the underlying veto principle, which acts on the 
-$C_2$-proposed switch regardless of how many alternatives the proposal layer 
-considers. We therefore treat $A/B$ as the smallest setting in which the 
-intervention quality of $C_3^{\mathrm R}$ can be cleanly read off, and leave 
-multi-candidate extension to subsequent work.
+The binary template-switching geometry remains a deliberately limited task.  It
+makes conditional block and false-safe metrics computable, but a multi-candidate
+or channel-level comparison requires a separate design.
 
-\subsection{Clock-conditioned interpretation and spectral geometry}
+\subsection{Clock-conditioned interpretation}
 \label{subsec:discussion-background-independent}
 
-The background-independent component enters as a data-object construction. The 
-global constraint motivates clock-conditioned system slices, and those slices are 
-converted into relational graph spectra. The policy never uses an external 
-time-indexed trajectory; it uses an ordered family of internally clocked spectral 
-objects and calibrated admissibility penalties. The conceptual significance is that 
-the recovery evidence is indexed by internal relational labels rather than by an 
-externally supplied trajectory variable, which is what allows admissibility, 
-smoothness, and clock-consistency penalties to be defined in a single relational 
-language.
-
-Operationally, the Page--Wootters-type construction is used here as a finite 
-data-object construction rather than as a foundations-level theory of quantum 
-time. The metric trajectory representation denotes a constrained finite trajectory 
-space equipped with a metric, a reference bank, and admissibility tests. That 
-much is sufficient to produce a recovery-side signal: a proposed candidate can 
-be checked for compatibility with clock-conditioned relational structure, and 
-the resulting decision is auditable row by row. We retain the relational 
-framing not because it is necessary for the present numerical experiments in 
-isolation, but because it gives a structured component interface --- 
-clock register, conditional slice, graph functional, spectral trajectory, 
-reference bank, admissibility penalty --- along which subsequent work can 
-substitute richer relational representations or learned structural maps 
-without disturbing the surrounding decision geometry. In this sense
-the relational layer provides a structured interface for planned follow-up studies
-rather than a self-contained claim about quantum time.
+The submitted Page--Wootters-type construction is not a valid finite relational
+trajectory for the stated initial clock and Hamiltonians.  R1 supplies a valid
+energy-matched finite-clock data construction, while R3 uses its clock labels as
+split fitting and withheld validation records.  Neither construction is offered
+as a foundations-level result about quantum time.
 
 \subsection{Limitations and outlook}
 \label{subsec:discussion-limitations}
 
-We organize remaining limitations as three follow-up tracks, each of 
-which corresponds to a separate planned study. The first track is QEC 
-benchmarking: larger codes, broader channel families, optimized 
-syndrome decoders, and multi-candidate recovery sets are needed before 
-making stronger decoder-level 
-claims~\cite{Asaka2026QuantumSpatialQEC,Filippov2024ScalabilityErrorMitigation,Li2025ZMixedAmplitudeDamping}. 
-The present work establishes a controlled baseline for two-candidate 
-selection, not a competitive decoder benchmark, and the result also 
-depends on the two-candidate formulation $A/B$; a larger candidate set 
-may change the intervention tradeoff. Whether the same operating-zone 
-and downside-risk geometry persist when the relational signal is 
-applied to nontrivial stabilizer codes such as the $[[5,1,3]]$ perfect 
-code, the Steane code, and the Shor nine-qubit code is the subject of 
-forthcoming work.
+The remaining limitations are substantive.  Larger codes, broader channel
+families, optimized syndrome decoders, and multi-candidate recovery sets are
+needed before making decoder-level claims
+\cite{Asaka2026QuantumSpatialQEC,Filippov2024ScalabilityErrorMitigation,Li2025ZMixedAmplitudeDamping}.
+R3 is a controlled two-candidate selection test, not a competitive QEC benchmark.
 
-The second track is relational representation. The graph functional is fixed in
-the reported experiments, with mutual information used for the bit-flip code and
-absolute two-qubit coherence used for the phase-flip code. Alternative
-functionals, larger reference banks, multipartite relational witnesses, and learned
-relational summaries may change the sensitivity of the spectral trajectory and
-should be tested
-explicitly~\cite{Brito2020MultipartiteInterference,Huang2026QuantumSpectralPDEs,Alexeev2025AIQuantumComputing}.
+Alternative structural summaries, larger template banks, multipartite witnesses,
+and learned representations may change the R3 switching sensitivity and need
+independent tests~\cite{Brito2020MultipartiteInterference,Huang2026QuantumSpectralPDEs,Alexeev2025AIQuantumComputing}.
 
-The third track is uncertainty and control. The current uncertainty proxy is an
-additive stress index, not a calibrated posterior. The default
-$u_{\max}=0.99$ gate is best interpreted as a saturation guard, and the
-normalized intervention metrics show that the gate trades missed beneficial
-switches against prevented harmful switches. Future work should calibrate this
-uncertainty more directly, learn adaptive thresholds, and test whether the same
-downside-risk geometry persists beyond the sampled regimes and under pulse- or
-control-level optimization constraints~\cite{Mohseni2021AdiabaticErrorSuppression,Lewis2026PulseQualityOptimisation}.
-We also stress-tested the admissibility threshold itself by varying 
-$\kappa\in\{1.0,1.5,2.0\}$ across a balanced grid of $135$ recovery cases 
-(see Supplementary Note~S8): admissibility coverage saturates at 
-$\kappa=1.5$ and remains stable up to $\kappa=2.0$, while $\kappa=1.0$ 
-leaves most recovered trajectories outside the calibrated admissible set. 
-The default $\kappa=1.5$ should therefore be read as the smallest tolerance 
-at which admissibility coverage saturates on the sampled configurations, 
-not as a tuned optimum, and a joint $(\kappa,u_{\max})$ calibration on 
-larger codes is part of the planned follow-up program.
-The longer-term direction joining the second and third tracks is to 
-explore whether the relational spectral trajectory space, used here as 
-an auditable diagnostic object, may support learned structural 
-representations of admissible recovery geometry.
+The current uncertainty variable is not a calibrated posterior.  In the submitted
+grid it is the only observed active gate, while in R3 it is one of two fixed
+calibrated switching thresholds.  Future work should calibrate uncertainty,
+compare structural summaries, and test the task beyond the sampled finite-data
+settings~\cite{Mohseni2021AdiabaticErrorSuppression,Lewis2026PulseQualityOptimisation}.
 
-Taken together, the evidence supports a cautious claim: clock-conditioned
-relational spectra can serve as an operational safety signal for recovery under
-partial quantum observability. The present study does not establish a universal
-decoder or a complete background-independent dynamics. It provides a reproducible
-finite-qubit setting in which relational spectral admissibility, partial
-observability, and downside-risk recovery control can be studied together.
+Taken together, the submitted-grid audit does \emph{not} support the previous
+mechanistic attribution to relational spectral admissibility.  It establishes the
+need for a physically specified finite-clock construction and an independent,
+held-out gate ablation, which are provided next.
+
+\section{Revision experiments and supported scope}\label{sec:revision-results}
+
+\subsection{Physically specified finite-clock construction (R1)}
+
+The revision experiments use an encoded logical qubit and an energy-matched
+two-level clock, rather than the submitted $H_S=0$ setup.  Let
+\begin{equation}
+H_C=\omega Z_C,\qquad H_S=-\omega(n_xX_L+n_zZ_L),\qquad \omega=0.8,
+\end{equation}
+where the tilted setting is $n=(1,0,1)/\sqrt{2}$.  If $|n_+\rangle$ and
+$|n_-\rangle$ are the logical eigenstates of $n_xX_L+n_zZ_L$ and
+$|\psi\rangle=c_+|n_+\rangle+c_-|n_-\rangle$, we prepare
+\begin{equation}
+|\Psi\rangle=c_+|0\rangle_C|n_+\rangle_L+c_-|1\rangle_C|n_-\rangle_L,
+\label{eq:revision-history-state}
+\end{equation}
+which obeys $(H_C+H_S)|\Psi\rangle=0$.  Eight clock effects
+$E_k=(2/8)|\tau_k\rangle\langle\tau_k|$ at
+$\tau_k=k\pi/(8\omega)$ form the finite POVM.  R1 verifies the null constraint,
+conditional evolution, POVM completeness, nondegenerate clock geometry, and the
+rank-three tilted observation design.  It is an observability qualification, not
+a QEC efficacy result.
+
+\subsection{Corrected held-out template-switching risk test (R3)}
+
+R3 uses four frozen reference-bank, calibration, and held-out target stream
+families.  Stream~0 reuses R2's random streams only to isolate the correction to
+the gate definition; streams~1--3 use independent bank, calibration, target,
+and measurement streams.  The controller receives finite-shot count records,
+the known dynamics, and a fixed 32-state bank.  Four clock labels are fitting
+labels and the complementary four are validation labels.  Candidate $A$ is a
+continuous Bloch-ball projected weighted least-squares estimate and candidate
+$B$ is the direct nearest template under the same fitting-label loss.
+
+Let $L_{\mathrm{val}}(X)$ be the weighted squared loss of the unchanged
+fitting-label candidate $X$ on the validation-label counts.  The held-out
+residual statistic is
+\begin{equation}
+h=L_{\mathrm{val}}(B_{\mathrm{fit}})-L_{\mathrm{val}}(A_{\mathrm{fit}}).
+\end{equation}
+Neither candidate is refit on validation labels.  Score-only $C_2$,
+uncertainty-only $U$, held-out-residual-only $H$, and the combined gate $C_3^R$
+are evaluated on identical records.  Their three thresholds are fixed once from
+the separate calibration set.  The target density is used only after a decision
+to calculate fidelity.  An oracle nearest-template fidelity is reported only as
+an offline bank-resolution diagnostic, never as a policy input.
+
+In every one of the 24 grid cells in each of the four streams, $H-C_2$ has a
+negative harmful-switch-rate difference whose two-way target-pair/measurement-
+seed 95\% interval excludes zero.  At the fixed middle operating point
+(bit-flip, 1,024 prepared copies, physical-noise probability 0.05, and readout
+flip 0.05), the $H-C_2$ differences are $-14.844$, $-8.333$, $-10.677$, and
+$-5.990$ percentage points in streams~0--3.  The $C_3^R-U$ difference is
+negative in 12, 8, 12, and 6 cells, respectively; it is therefore not a uniform
+increment over uncertainty-only selection.  The sign of the $C_3^R-A$ mean-
+fidelity difference also varies across streams.  Full results and intervals are
+reported in the Supplementary Information.
+
+R3 consequently supports only a held-out residual safety filter for a discrete
+template proposal.  It is not evidence for a spectral-representation advantage,
+a uniform fidelity advantage over the continuous estimate, or a general
+unknown-state QEC channel.
 
 \section{Conclusion}\label{sec:conclusion}
 
-We introduced a finite, auditable framework for clock-conditioned
-relational spectral recovery in partially observable qubit networks, and
-evaluated it as a risk-aware controller for candidate selection in
-encoded quantum-error-correction settings. The methodological core is
-the mapping of clock-conditioned system slices to weighted relational
-graphs and the use of the resulting Laplacian spectral trajectory as
-recovery-side evidence. Within this framework, recovery is posed as
-constrained restoration toward an anchored reference family, with
-admissibility penalties that the policy layer can verify row by row.
-The risk-aware controller $C_3^{\mathrm R}$ is constructed as a
-one-sided veto on the balanced proposal policy $C_2$, so its
-intervention can be analyzed on the same two-candidate decision problem
-without changing how the candidates are constructed. 
+We revised the paper after finding that the submitted clock construction was
+degenerate and that its reported veto effect was not independently attributable
+to admissibility.  Those findings are disclosed rather than repaired by changing
+the interpretation of the submitted rows.  The revision supplies an explicit,
+energy-matched finite-clock construction and a disjoint-calibration,
+held-out-target switching experiment.
 
-The empirical evaluation supports a restricted but reproducible claim.
-$C_3^{\mathrm R}$ leaves clean and noisy-only regimes effectively
-unchanged, yet reduces false-safe fidelity rates and lower-tail risk
-under partial and partial-plus-noisy syndrome observability, where the
-prevented harmful-switch loss exceeds the missed beneficial gain on the
-sampled grids. The results are therefore consistent with an
-operating-zone interpretation: relational spectral structure acts as a
-recovery-side safety signal precisely when syndrome evidence is
-incomplete enough to make balanced score-based switches unsafe, but not
-so uninformative that the relational trajectory loses its consistency
-value. The negative result for the strict admissibility ablation $C_3$
-further indicates that safety cannot be reduced to a Boolean choice
-between admissible candidates once inadmissibility has already been
-priced into a balanced score. 
+The revision supports a limited safety statement.  A corrected held-out residual
+check can reduce the harmful-switch rate of a score-based discrete template
+proposal.  Its combined uncertainty-plus-residual form does not have a uniform
+increment over uncertainty-only selection, and it does not deliver a consistent
+average-fidelity improvement over the continuous estimate.  We therefore do not
+claim a decoder advantage, a spectral advantage over equal-information
+estimation, or generic unknown-state recovery.
 
-The contribution should be read narrowly. We do not claim a universal
-decoder, an optimized risk controller, or a complete
-background-independent quantum dynamics. The Page--Wootters-type
-construction is used only as a data-object construction for finite
-encoded simulations, the uncertainty proxy is an additive stress index
-rather than a calibrated posterior, and the default operating point is
-deliberately conservative rather than tuned. What the framework
-provides is a controlled, auditable setting in which relational
-spectral admissibility, partial observability, and downside-risk
-recovery control can be studied jointly, with explicit operating-zone,
-intervention-quality, and threshold diagnostics. This positions
-relational spectral evidence as a complementary safety layer above
-existing recovery and mitigation pipelines for encoded qubit networks,
-rather than as a competitor to optimized decoders. Extending the
-protocol to larger codes, optimized syndrome decoders, multi-candidate
-recovery sets, alternative graph functionals, and calibrated
-uncertainty models is a natural next step, and the present design is
-intentionally structured to support such extensions without changing
-the underlying decision geometry. We accordingly intend the present 
-study as the first of a planned sequence: a follow-up will test 
-whether the same admissibility and risk-control geometry generalizes 
-to nontrivial stabilizer codes, while a longer-term direction explores whether the same trajectory
-space may support learned structural representations of admissible
-recovery geometry. The component interfaces defined here are 
-chosen with both extensions in mind.
+The contribution should therefore be read as a reproducible
+negative-and-positive result: the submitted implementation does not validate the
+originally proposed mechanism, while the replacement experiment validates a
+narrower held-out residual filter under a specified finite-data
+template-switching task.  The finite-clock construction is only a controlled data
+construction, its uncertainty variable is not a calibrated posterior, and no
+claim is made for larger codes, optimized decoders, multi-candidate recovery, or
+generic unknown-state recovery.  Those questions require independently designed
+experiments with full channel-level recovery metrics.
 
 \funding{The authors received no specific funding for this work.}
 
 \section*{Competing interests}
 The authors declare no competing interests.
 
-\data{The source code, simulation scripts, and figure-generation assets used in this study are publicly available at \url{https://github.com/Jeong-Jaeyun/Risk-Aware-Relational-Spectral-Recovery-under-Partial-Quantum-Observability.git} and archived on Zenodo (DOI: \texttt{10.5281/zenodo.19471034}). Additional intermediate simulation outputs are available from the corresponding author upon reasonable request.}
+\data{The source code, simulation scripts, frozen protocols, and raw R3 outputs used in this study are available at \url{https://github.com/Jeong-Jaeyun/Risk-Aware-Relational-Spectral-Recovery-under-Partial-Quantum-Observability_Phase_1}. The archival submitted-grid materials are retained in the same repository.}
 
 \roles{J.Y.J. conceived the study, implemented the simulations, performed the data analysis, and drafted the manuscript. H.Y.J. supervised the research, provided critical intellectual input, and revised the manuscript. All authors have read and approved the final version of the manuscript.}
 

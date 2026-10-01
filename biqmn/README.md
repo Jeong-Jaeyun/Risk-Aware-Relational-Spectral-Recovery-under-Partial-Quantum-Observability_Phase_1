@@ -1,17 +1,17 @@
 # biqmn
 
-`biqmn` contains the simulation and analysis code for the relational spectral
-recovery experiments reported in the manuscript. The main reproducibility target
-is the C3R robust-policy analysis over clean, partial-syndrome, noisy-syndrome,
-partial-plus-noisy, and ambiguity-plus-measurement regimes.
+`biqmn` contains the simulation and analysis code for the submitted-grid audit
+and revised template-switching experiments. The primary reproducibility target is
+R3, the corrected held-out residual gate. The historical C3R robust-policy grid
+is retained for audit only; it is not final efficacy evidence.
 
 ## Environment
 
-The project was developed and run with the `QEC` conda environment.
+The maintained revision environment is the `quantum` conda environment.
 
 ```powershell
 cd biqmn
-conda activate QEC
+conda activate quantum
 python -m pip install -e ".[dev]"
 ```
 
@@ -39,6 +39,32 @@ results/plots/          Generated diagnostic figures
 scripts/                Reproduction helpers
 ```
 
+## Reproducing R3 (primary revised result)
+
+R3 fits the continuous candidate A and direct nearest-template candidate B on
+four fitting labels, then scores both unchanged candidates on the complementary
+four validation labels. Its primary comparison is the held-out-residual-only gate
+H versus score-only C2. It is a finite-copy template-switch safety experiment,
+not a QEC-channel or spectral-representation benchmark.
+
+The frozen design is specified in
+[`../manuscript/revision_r3_protocol.md`](../manuscript/revision_r3_protocol.md).
+Run a fresh replication with a new output directory; the runner intentionally
+refuses to overwrite an existing run:
+
+```powershell
+conda run -n quantum --no-capture-output python -m biqmn.experiments.revision_r3_holdout_recovery `
+  --replication 0 --workers 6 `
+  --output results/revision_experiments/R3_reproduction_r0
+```
+
+Repeat with replications 1, 2, and 3 and distinct output directories for the
+independent stream families. Every full run writes `dataset.json`,
+`thresholds.json`, `results.json`, `summary.json`, `REPORT.md`, and
+`manifest.json`. The manifest records source and protocol SHA-256 values; the
+summary uses a paired two-way cluster bootstrap over target pairs and measurement
+seeds.
+
 ## Basic Validation
 
 Run the test suite from the package root:
@@ -53,7 +79,7 @@ For a quick import/config check:
 python -c "import biqmn; print(biqmn.__version__)"
 ```
 
-## Reproducing the Reported C3R Results
+## Reproducing the historical C3R grid
 
 The full C3R batch can be run with:
 
@@ -63,7 +89,7 @@ The full C3R batch can be run with:
 
 Default settings:
 
-- conda environment: `QEC`
+- conda environment: `quantum`
 - seeds: `11,12,13,14,15,16,17,18,19,20`
 - output location: `results/raw`, `results/tables`, and `results/plots`
 - output suffix: `260427_seed10`
@@ -112,9 +138,9 @@ partial_noisy_syndrome_c3r_260427_seed10
 ambiguity_measurement_c3r_260427_seed10
 ```
 
-## Result Files Used by the Manuscript
+## Historical submitted-grid result files
 
-The current manuscript tables are based on:
+The historical audit tables are based on:
 
 ```text
 results/raw/*.json
@@ -122,8 +148,10 @@ results/tables/*.csv
 results/tables/*.md
 ```
 
-`result_c3r_260525/` is a preserved copy of a previous C3R result snapshot. The
-active manuscript-facing result tree is `results/`.
+`legacy/results/result_c3r_260525/` is a preserved copy of a previous C3R result
+snapshot. The primary revised-evidence tree is
+`results/revision_experiments/R3_*`; the historical submitted-grid tree is
+`results/`.
 
 ## Notes for Reviewers
 

@@ -1,0 +1,29 @@
+# Local-only workspace state
+.vscode/
+.pytest_cache/
+tmp/
+legacy/
+design/
+reference/
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.coverage
+htmlcov/
+
+# LaTeX build products (the source, bibliography, and required figure assets remain tracked)
+*.aux
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+
+# Local runners and transient logs
+biqmn/results/launch_logs/
+biqmn/results/revision_experiments/launch_logs/
+*.stdout.log
+*.stderr.log

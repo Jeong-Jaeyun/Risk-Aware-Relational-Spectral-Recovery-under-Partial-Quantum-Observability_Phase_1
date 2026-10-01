@@ -1,0 +1,21 @@
+{
+  "created_utc": "2026-09-27T22:17:12.561273+00:00",
+  "jobs": 288,
+  "limits": "Multi-copy restoration decision only; no generic QEC or spectral advantage claim.",
+  "numpy": "2.5.0",
+  "pilot": false,
+  "policies": [
+    "a_continuous",
+    "b_template",
+    "c2_score",
+    "u_uncertainty",
+    "s_structural",
+    "c3r"
+  ],
+  "protocol_sha256": "c305dc35ef45d66ba88681808c42bec8406547baa86bb17e6a727879b44c656e",
+  "python": "3.12.0 | packaged by Anaconda, Inc. | (main, Oct  2 2023, 17:20:38) [MSC v.1916 64 bit (AMD64)]",
+  "scipy": "1.18.0",
+  "source_sha256": "66e961e8d755307c70a724b13b3e1a67f07b730427a0d318e5eb63b16546d64e",
+  "target_states_per_job": 64,
+  "workers": 6
+}
