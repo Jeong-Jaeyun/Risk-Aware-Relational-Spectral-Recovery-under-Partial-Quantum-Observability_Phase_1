@@ -90,7 +90,7 @@ the clock orbit remains finite and can recur. These effects are handled by using
 fixed ordered set of clock labels and by calibrating clock-consistency thresholds
 from reference trajectories rather than asserting an ideal continuum clock.
 
-The implementation used for all reported policy comparisons fixes the clock
+The submitted implementation, retained only as an audit dataset, fixed the clock
 object rather than tuning it per regime. The clock Hilbert space is one qubit,
 the initial clock state is $|+\rangle_C$, and
 \begin{equation}
@@ -535,9 +535,9 @@ new ones.
 The useful diagnostics for $C_3^{\mathrm R}$ are therefore conditional on $C_2$
 proposing $B$. Unconditional switch rates can be misleading because most rows may
 already be preserved by $C_2$. The intervention analysis in the main text and
-result tables consequently reports block rate given $C_2=B$, harmful-block
-precision, harmful-switch recall, beneficial-switch retention, and net
-intervention gain.
+result tables consequently report block rate given $C_2=B$, harmful-block
+precision, harmful-switch recall, beneficial-switch block rate, and net
+intervention effect.  Beneficial-switch retention is the complementary quantity.
 
 \begin{table}[ht]
 \centering
@@ -669,8 +669,9 @@ H_2=\mathbf{1}[C_2=B]\mathbf{1}[\Delta F_A>\Delta F_B+\varepsilon_F],
 G_2=\mathbf{1}[C_2=B]\mathbf{1}[\Delta F_B>\Delta F_A+\varepsilon_F].
 \end{equation}
 We report block rate, harmful-block precision, harmful-switch recall,
-beneficial-switch retention, prevented loss, missed gain, and net intervention
-gain. The uncertainty-bin analysis groups rows by $u_{\mathrm{raw}}$ to check
+beneficial-switch block rate, prevented loss, missed gain, and net intervention
+effect.  Beneficial-switch retention is one minus the beneficial-switch block
+rate. The uncertainty-bin analysis groups rows by $u_{\mathrm{raw}}$ to check
 whether the robust policy behaves as an uncertainty-conditioned intervention rather
 than as an unconditional score adjustment.
 The scalar net intervention effect is
@@ -747,7 +748,8 @@ Ambig.+meas. & 1.00 & 0.1600 & 0.0000 & 0 & -- & -- & -- \\
 \end{tabular}
 \end{table}
 
-The admissibility thresholds also contain the calibration constant $\kappa$ in
+For historical implementation documentation, the admissibility thresholds contain
+the calibration constant $\kappa$ in
 $\theta_k=\mu_k+\kappa\sigma_k$. To check that the default $\kappa=1.5$ is not a
 single-point artifact, we ran the recovery-ablation sweep with
 $\kappa\in\{1.0,1.5,2.0\}$ while holding the noise families, noise strengths, and
@@ -759,7 +761,7 @@ calibration point.
 \centering
 \scriptsize
 \setlength{\tabcolsep}{4pt}
-\caption{Admissibility-calibration sensitivity for the recovery objective.
+\caption{Historical calibration-sweep sensitivity for the submitted recovery objective.
 Recovered admissible is the calibrated-admissibility rate of the final recovered
 trajectory. Candidate improvement is the rate at which the optional Stage-2
 admissible candidate improves the recovery objective relative to Stage 1, and
@@ -783,11 +785,11 @@ admissibility and gives a negative mean candidate objective gain. The helpful
 tradeoff rate is invariant across $\kappa$ in this sweep, indicating that these
 $\kappa$ changes affect admissibility coverage and Stage-2 candidate acceptance
 more than the underlying clean-distance behavior. This supports using
-$\kappa=1.5$ as a moderate nondegenerate operating point, but it should not be
-interpreted as a universally optimized threshold. No Stage-2 refinements were
-accepted by the conservative application rule in this sweep, so
-Table~\ref{tab:kappa-sens} is calibration evidence for the admissibility side of
-the method rather than a separate final-policy performance claim.
+$\kappa=1.5$ as a historical implementation tolerance, but it does not identify
+a discriminative admissibility gate on the submitted main grid: candidate $B$ is
+admissible in every row. No Stage-2 refinements were accepted by the conservative
+application rule in this sweep, so Table~\ref{tab:kappa-sens} is retained as
+calibration documentation rather than policy-performance evidence.
 
 \begin{table}[ht]
 \centering
@@ -838,24 +840,24 @@ diagnostics.
 \begin{table}[ht]
 \centering
 \scriptsize
-\caption{Full regime-level comparison between $C_2$ and $C_3^{\mathrm R}$.
-Entries are reported as $C_2/C_3^{\mathrm R}$.}
+\caption{Historical submitted-grid comparison between $C_2$ and $C_3^{\mathrm R}$.
+Entries are reported as $C_2/C_3^{\mathrm R}$ and are retained for audit only.}
 \label{tab:supp-full-regime}
-\begin{tabular}{@{}lcccccc@{}}
+\begin{tabular}{@{}lccccc@{}}
 \toprule
 Regime & $n$ & mean gain & logical success & non-worsen &
-$\mathrm{FS}_F$ & true failure boundary \\
+$\mathrm{FS}_F$ \\
 \midrule
 Clean & 2400 & 0.1273/0.1273 & 0.6358/0.6358 & 0.9554/0.9554 &
-0.0238/0.0238 & 0.2571/0.2571 \\
+0.0238/0.0238 \\
 Partial & 2880 & 0.1169/0.1189 & 0.4552/0.5976 & 0.8774/0.9306 &
-0.0694/0.0389 & 0.3611/0.2653 \\
+0.0694/0.0389 \\
 Noisy-only & 3600 & 0.1169/0.1169 & 0.4556/0.4556 & 0.8814/0.8814 &
-0.0678/0.0678 & 0.3589/0.3589 \\
+0.0678/0.0678 \\
 Partial+noisy & 2160 & 0.1170/0.1212 & 0.4551/0.7241 & 0.8792/0.9755 &
-0.0685/0.0134 & 0.3616/0.1819 \\
+0.0685/0.0134 \\
 Ambig.+meas. & 3600 & 0.1600/0.1604 & 0.5208/0.5978 & 1.0000/1.0000 &
-0.0000/0.0000 & 0.2136/0.1847 \\
+0.0000/0.0000 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -920,5 +922,244 @@ clean and noisy-only regimes, $C_3^{\mathrm R}$ blocked no $C_2$ switches. Thus
 the non-zero intervention rows are not evidence of a global conservative bias; they
 identify the regimes where the uncertainty and admissibility gates made the
 $C_2$ proposal unsafe enough to veto.
+
+\section{Revision audit and new experiments}\label{sec:revision-si}
+
+\subsection{Status of the submitted grid}
+
+The submitted grid is retained as an immutable audit dataset, but it is not used
+as efficacy evidence in the revision.  Its encoded system Hamiltonian was zero
+while the clock was initialized as $|+\rangle_C$ under $H_C=0.8X_C$.  The
+conditional-slice audit therefore finds constant normalized system densities
+(maximum change $3.51\times10^{-16}$) and a nonzero global-constraint residual
+(0.8).  In particular, the old clock-orbit labels differ only by a global phase
+for this initialization, so their projectors do not provide nine independent
+observation windows.  This also resolves the apparent endpoint-overlap issue:
+the overlap formula is a property of the submitted orbit, not evidence of a
+nondegenerate conditional trajectory.
+
+For clarity, the submitted encoded preparation was
+\begin{equation}
+|\Psi_{\mathrm{sub}}\rangle
+=c_0|0\rangle_C|0_L\rangle+c_1|1\rangle_C|1_L\rangle,
+\qquad H_S=0,
+\end{equation}
+with the clock initialized in $|+\rangle_C$.  This explicit construction is
+reported because the physical qualification of a nontrivial conditional
+trajectory was absent from the submitted experiment.
+
+The counterfactual $u_{\max}=1.00$ removes the uncertainty conjunct.  On the
+submitted grid the remaining score/admissibility conditions block zero proposed
+switches in every active regime.  We consequently interpret the submitted
+downside-risk effect as uncertainty-threshold control, not an independently
+identified relational-spectral effect.
+
+Candidate $B$ was marked admissible in every submitted row (2,400 clean, 2,880
+partial, 3,600 noisy-only, 2,160 partial-plus-noisy, and 3,600
+ambiguity-plus-measurement rows).  Thus the submitted admissibility condition did
+not supply an independent veto.  The seed-wise historical differences are shown
+in Table~\ref{tab:submitted-bootstrap}; these intervals are conditional on the
+fixed grid and ten seed blocks, and are not out-of-grid or confirmatory
+inference.  The row-level blocked-switch differences and the source manifest are
+released with the audit artifacts.
+
+For complete reproducibility of that historical implementation, the recovery
+weights were
+\begin{equation}
+(\alpha,\beta,\lambda_1,\lambda_2,\lambda_3)
+=(64.0,16.0,0.75,0.10,0.10),
+\end{equation}
+with an additional reference penalty weight zero.  The conservative
+policy-facing syndrome support for candidate $A$ was
+\begin{equation}
+s_A=\frac{1}{m}\sum_{r=1}^{m}p_r(00)\,I(o_r)\,c(o_r),
+\qquad s_B=0,
+\label{eq:submitted-support}
+\end{equation}
+where $p_r(00)$ is the simulated no-error syndrome probability, $I(o_r)$ is the
+observed-information fraction (1 for two known bits, $1/2$ for an ambiguous
+symbol, and the fraction of known bits otherwise), and $c(o_r)$ is 1 when the
+observed symbol is compatible with $00$, $1/2$ for the equal-ambiguity symbol,
+and 0 otherwise.  Candidate $A$ itself was the complete circuit syndrome-recovery
+channel applied to the underlying noisy density at every slice; missing,
+corrupted, and ambiguous syndrome symbols affected only this controller support
+and its uncertainty proxy.  It was therefore not a decoder operating solely on
+the damaged observed syndrome.  This limitation is explicit in the revision.
+
+The differing submitted sample sizes were caused by different numbers of swept
+parameter combinations, each with ten seeds: clean 240 combinations (2,400 rows),
+partial 288 (2,880), noisy-only 360 (3,600), partial-plus-noisy 216 (2,160), and
+ambiguity-plus-measurement 360 (3,600).  The column formerly named ``true failure
+boundary'' is removed because it was not a prespecified metric.  The standalone
+clean map and the zero-stress endpoints reported elsewhere in the submitted
+material are distinct parameter sweeps, not duplicate representations of the
+same rows; neither is used as revised efficacy evidence.
+
+\begin{table}[ht]
+\centering
+\scriptsize
+\caption{Historical submitted-grid paired differences, $C_3^{\mathrm R}-C_2$.
+False-safe differences are percentage points; negative is favorable.  Intervals
+are percentile bootstrap intervals over the ten fixed seed blocks and are
+reported for audit, not as confirmation of the withdrawn efficacy claim.}
+\label{tab:submitted-bootstrap}
+\begin{tabular}{@{}lrr@{}}
+\toprule
+Regime & mean-gain difference [95\% CI] & false-safe difference [95\% CI] \\
+\midrule
+Clean & $0.00000\ [0.00000,0.00000]$ & $0.000\ [0.000,0.000]$ \\
+Partial & $0.00197\ [0.00053,0.00347]$ & $-3.056\ [-3.472,-2.639]$ \\
+Noisy-only & $0.00000\ [0.00000,0.00000]$ & $0.000\ [0.000,0.000]$ \\
+Partial+noisy & $0.00422\ [0.00122,0.00717]$ & $-5.509\ [-6.574,-4.398]$ \\
+Ambig.+meas. & $0.00044\ [-0.00097,0.00186]$ & $0.000\ [0.000,0.000]$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\scriptsize
+\caption{Distribution of row-level historical blocked-switch effects in the
+three submitted regimes with nonzero interventions.  The effect is
+$\Delta F_A-\Delta F_B$, so a positive value is a prevented harmful switch;
+these are descriptive audit summaries, not efficacy evidence.}
+\label{tab:submitted-blocked-distribution}
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+Regime & rows & harmful & 5th percentile & median & 95th percentile \\
+\midrule
+Partial & 476 & 45 & $-0.14985$ & $0.03015$ & $0.03015$ \\
+Partial+noisy & 670 & 62 & $-0.06485$ & $0.03015$ & $0.03015$ \\
+Ambig.+meas. & 357 & 80 & $-0.14985$ & $0.03015$ & $0.03015$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{R1: energy-matched finite-clock qualification}
+
+The revision construction uses $H_C=\omega Z_C$ and
+$H_S=-\omega(n_xX_L+n_zZ_L)$ with $\omega=0.8$.  For an arbitrary logical state
+$|\psi\rangle=c_+|n_+\rangle+c_-|n_-\rangle$, the prepared joint state is
+\begin{equation}
+|\Psi\rangle=c_+|0\rangle_C|n_+\rangle_L+c_-|1\rangle_C|n_-\rangle_L.
+\end{equation}
+It obeys $(H_C+H_S)|\Psi\rangle=0$.  We use the eight effects
+\begin{equation}
+E_k=\frac{2}{8}|\tau_k\rangle\langle\tau_k|,
+\qquad \tau_k=\frac{k\pi}{8\omega},\qquad k=0,\ldots,7,
+\end{equation}
+which sum to the identity but are not orthogonal projectors.  The tilted setting
+$n=(1,0,1)/\sqrt2$ has rank-three population-observation design, whereas the
+aligned setting has rank one.  Across the qualified R1 construction, the maximum
+constraint residual is $1.58\times10^{-16}$, the maximum conditional-density gap
+is $1.01\times10^{-15}$, the POVM-completeness error is
+$1.26\times10^{-16}$, and the minimum adjacent-label geometry is 0.14645.
+R1 is a multi-copy observability qualification only; it is not an unknown-state
+QEC or recovery-efficacy experiment.
+
+\subsection{R2: superseded preliminary gate-definition run}
+
+R2 is retained as an archival preliminary analysis, not as final efficacy
+evidence.  Although it used disjoint reference, calibration, and target streams,
+its reported validation comparison refitted the continuous candidate $A$ to the
+validation labels.  It therefore compared a fixed template candidate with a
+validation-refitted reference rather than scoring two unchanged fitting-stage
+candidates.  Its intervals also resampled target pairs only after measurement
+seed averaging.  R2 is consequently superseded by the corrected R3 design below;
+its protocol, code, raw results, and manifest remain released for audit.
+
+\subsection{R3: corrected held-out template-switching risk test}
+
+R3 evaluates whether a gate can reject harmful switches from a continuous
+count-record estimate to a direct nearest-template baseline.  A 32-state template
+bank, 32 calibration targets, and 64 target states arranged in 32 antipodal pairs
+are disjoint.  The controller receives only fitting and validation count records,
+the known Hamiltonian, and the fixed bank; the target density is inaccessible
+until evaluator-only scoring.  The direct observation-space template candidate
+$B_{\mathrm{fit}}$ is the raw nearest-template baseline requested by the review;
+an oracle target-fidelity comparison is used offline only as a diagnostic.
+
+For each target and measurement seed, four of eight labels are fitting labels and
+the complementary four are validation labels.  The continuous candidate
+$A_{\mathrm{fit}}$ and $B_{\mathrm{fit}}$ are both fit once using fitting labels,
+then kept unchanged.  With the weighted count loss $L_{\mathrm{val}}$ on the
+validation labels, the held-out residual is
+\begin{equation}
+h=L_{\mathrm{val}}(B_{\mathrm{fit}})-L_{\mathrm{val}}(A_{\mathrm{fit}}).
+\label{eq:r3-heldout-residual}
+\end{equation}
+No candidate is refitted on validation labels.  The policies are continuous $A$,
+direct template $B$, score-only $C_2$, uncertainty-only $U$, residual-only $H$,
+and their combined gate $C_3^{\mathrm R}$.  Thresholds are calibrated once at
+the middle operating point on calibration targets and are not retuned on the
+test grid.
+
+The grid has two coupled basis-equivalent code conventions, two copy budgets
+(256 and 1,024), three physical-noise probabilities (0.01, 0.05, 0.10), two
+readout-flip probabilities (0, 0.05), 12 measurement seeds, and 32 target pairs:
+24 cells per stream.  R3 was run on four frozen stream families.  Stream r0
+reuses R2's random streams solely to isolate the corrected gate definition;
+r1--r3 use independent bank, calibration, target, and measurement streams.
+The two code conventions are checks, not independent replications.  Reported
+95\% intervals are paired two-way cluster bootstrap intervals resampling both
+target pairs and measurement seeds; calibration-threshold uncertainty is not
+included.
+
+\begin{table}[ht]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\caption{R3 grid summary.  A negative false-safe interval means fewer harmful
+template switches.  A positive $C_3^{\mathrm R}-A$ estimate denotes higher mean
+target fidelity, but its intervals are not uniformly positive.}
+\label{tab:r3-stream-summary}
+\begin{tabular}{@{}lrrrl@{}}
+\toprule
+Stream & $H-C_2<0$ & $C_3^{\mathrm R}-U<0$ & $C_3^{\mathrm R}-A>0$ &
+Grid mean $C_3^{\mathrm R}-A$ \\
+\midrule
+r0 & 24/24 & 12/24 & 0/24 & $-0.001184$ \\
+r1 & 24/24 & 8/24 & 2/24 & $-0.000550$ \\
+r2 & 24/24 & 12/24 & 12/24 & $+0.001251$ \\
+r3 & 24/24 & 6/24 & 6/24 & $-0.000011$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+In every one of the 96 evaluated cell--stream combinations, $H-C_2$ has a
+negative false-safe-rate interval excluding zero.  Thus the corrected held-out
+residual gate consistently filters harmful template proposals relative to the
+score-only gate.  The additional conjunction is more limited: $C_3^{\mathrm R}-U$
+is negative in 12/24, 8/24, 12/24, and 6/24 cells in r0--r3, respectively, and
+the mean-fidelity comparison $C_3^{\mathrm R}-A$ has no consistent sign.
+
+At the middle operating point (bit-flip, 1,024 copies, physical noise 0.05,
+readout flip 0.05), Table~\ref{tab:r3-middle} gives the two-way intervals.  The
+result supports a narrowly scoped decision-control claim: a held-out residual
+check can reduce harmful direct-template switches relative to score-only
+switching in this simulator.  It does not establish a uniform advantage over the
+uncertainty-only gate, an average-fidelity improvement over continuous fitting,
+a decoder for unknown states, or a relational-spectral representation advantage.
+
+\begin{table}[ht]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{2pt}
+\caption{R3 middle-point paired differences.  False-safe differences are
+percentage points; negative is favorable.  Fidelity differences are evaluator-only
+target metrics.}
+\label{tab:r3-middle}
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+Stream & $H-C_2$ FS [95\% CI] & $C_3^{\mathrm R}-U$ FS [95\% CI]
+& $C_3^{\mathrm R}-A$ $\Delta F$ [95\% CI] \\
+\midrule
+r0 & $-14.844\ [-21.615,-8.854]$ & $-7.813\ [-13.281,-3.646]$ & $-0.002308\ [-0.006547,0.002417]$ \\
+r1 & $-8.333\ [-13.281,-4.167]$ & $-3.125\ [-6.250,-0.781]$ & $-0.001203\ [-0.005841,0.003377]$ \\
+r2 & $-10.677\ [-17.187,-5.208]$ & $-6.771\ [-11.979,-2.604]$ & $0.002559\ [-0.000496,0.005887]$ \\
+r3 & $-5.990\ [-10.417,-2.604]$ & $-1.823\ [-4.427,-0.254]$ & $0.003306\ [-0.002715,0.009931]$ \\
+\bottomrule
+\end{tabular}
+\end{table}
 
 \end{document}

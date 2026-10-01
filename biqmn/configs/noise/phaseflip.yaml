@@ -1,9 +1,0 @@
-noise:
-  schedule:
-    - kind: phaseflip
-      qubit: 0
-      p: 0.08
-
-output:
-  stem: phaseflip_run
-

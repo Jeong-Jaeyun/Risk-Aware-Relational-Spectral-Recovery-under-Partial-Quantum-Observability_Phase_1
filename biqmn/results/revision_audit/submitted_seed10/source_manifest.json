@@ -1,0 +1,448 @@
+{
+  "created_utc": "2026-09-27T05:32:10.905568+00:00",
+  "python": "3.12.0 | packaged by Anaconda, Inc. | (main, Oct  2 2023, 17:20:38) [MSC v.1916 64 bit (AMD64)]",
+  "executable": "C:\\Users\\user\\anaconda3\\envs\\quantum\\python.exe",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "numpy": "2.5.0",
+  "sources": {
+    "Clean": {
+      "path": "D:\\pandora_box\\biqmn\\results\\raw\\hybrid_c123_regime_map_c3r_260427_seed10.json",
+      "sha256": "10555ce575dddad76be46dbad3ea9ee91543bbcfa137239d6624a0593e063459",
+      "grid": {
+        "codes": [
+          "bitflip",
+          "phaseflip"
+        ],
+        "noise_families": [
+          "bitflip",
+          "phaseflip",
+          "depolarizing",
+          "dephasing",
+          "mixed_pauli"
+        ],
+        "strengths": [
+          0.01,
+          0.03,
+          0.05,
+          0.1,
+          0.15,
+          0.2
+        ],
+        "depths": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "seeds": [
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "fidelity_margin": 0.01,
+        "logical_success_threshold": 0.99
+      },
+      "policies": {
+        "c2": {
+          "lambda_s": 1.0,
+          "lambda_t": 1.0,
+          "lambda_i": 2.0,
+          "lambda_o": 0.5
+        },
+        "c3": {
+          "lambda_s": 0.8,
+          "lambda_t": 1.2,
+          "lambda_i": 5.0,
+          "lambda_o": 0.3
+        },
+        "c3r": {
+          "score_margin_min": 0.0,
+          "admissibility_gap_min": 0.0,
+          "b_violation_tolerance": 0.0,
+          "uncertainty_max": 0.99
+        },
+        "c1": {
+          "objective_tol": 1e-09,
+          "tie_break_requires_syndrome_consistent": true
+        }
+      }
+    },
+    "Partial": {
+      "path": "D:\\pandora_box\\biqmn\\results\\raw\\partial_syndrome_c3r_260427_seed10.json",
+      "sha256": "100cd65fa3cfbc2524abdbe90bceaa959a835bb887109e86682092ba91f6dd6f",
+      "grid": {
+        "codes": [
+          "phaseflip"
+        ],
+        "noise_families": [
+          "phaseflip",
+          "dephasing",
+          "mixed_pauli"
+        ],
+        "strengths": [
+          0.01,
+          0.03,
+          0.05,
+          0.1,
+          0.15,
+          0.2
+        ],
+        "depths": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "seeds": [
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "observation_ratios": [
+          1.0,
+          0.75,
+          0.5,
+          0.25
+        ]
+      },
+      "policies": {
+        "c2": {
+          "lambda_s": 1.0,
+          "lambda_t": 1.0,
+          "lambda_i": 2.0,
+          "lambda_o": 0.5
+        },
+        "c3": {
+          "lambda_s": 0.8,
+          "lambda_t": 1.2,
+          "lambda_i": 5.0,
+          "lambda_o": 0.3
+        },
+        "c3r": {
+          "score_margin_min": 0.0,
+          "admissibility_gap_min": 0.0,
+          "b_violation_tolerance": 0.0,
+          "uncertainty_max": 0.99
+        },
+        "c1": {
+          "objective_tol": 1e-09,
+          "tie_break_requires_syndrome_consistent": true
+        }
+      }
+    },
+    "Noisy-only": {
+      "path": "D:\\pandora_box\\biqmn\\results\\raw\\noisy_syndrome_c3r_260427_seed10.json",
+      "sha256": "73ce959a41c2a753003a234372cf370e08f2d2de5ea205541ec3c3b275d5b67d",
+      "grid": {
+        "codes": [
+          "phaseflip"
+        ],
+        "noise_families": [
+          "phaseflip",
+          "dephasing",
+          "mixed_pauli"
+        ],
+        "strengths": [
+          0.01,
+          0.03,
+          0.05,
+          0.1,
+          0.15,
+          0.2
+        ],
+        "depths": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "seeds": [
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "syndrome_noise_probs": [
+          0.0,
+          0.01,
+          0.03,
+          0.05,
+          0.1
+        ]
+      },
+      "policies": {
+        "c2": {
+          "lambda_s": 1.0,
+          "lambda_t": 1.0,
+          "lambda_i": 2.0,
+          "lambda_o": 0.5
+        },
+        "c3": {
+          "lambda_s": 0.8,
+          "lambda_t": 1.2,
+          "lambda_i": 5.0,
+          "lambda_o": 0.3
+        },
+        "c3r": {
+          "score_margin_min": 0.0,
+          "admissibility_gap_min": 0.0,
+          "b_violation_tolerance": 0.0,
+          "uncertainty_max": 0.99
+        },
+        "c1": {
+          "objective_tol": 1e-09,
+          "tie_break_requires_syndrome_consistent": true
+        }
+      }
+    },
+    "Partial-plus-noisy": {
+      "path": "D:\\pandora_box\\biqmn\\results\\raw\\partial_noisy_syndrome_c3r_260427_seed10.json",
+      "sha256": "c61c94c15ade5fb4b3c8bfa2760e092c2049752a41ece024e181fe0f76150352",
+      "grid": {
+        "codes": [
+          "phaseflip"
+        ],
+        "noise_families": [
+          "phaseflip",
+          "dephasing",
+          "mixed_pauli"
+        ],
+        "strengths": [
+          0.01,
+          0.03,
+          0.05,
+          0.1,
+          0.15,
+          0.2
+        ],
+        "depths": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "seeds": [
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "observation_ratios": [
+          0.5
+        ],
+        "syndrome_noise_probs": [
+          0.03,
+          0.05,
+          0.1
+        ]
+      },
+      "policies": {
+        "c2": {
+          "lambda_s": 1.0,
+          "lambda_t": 1.0,
+          "lambda_i": 2.0,
+          "lambda_o": 0.5
+        },
+        "c3": {
+          "lambda_s": 0.8,
+          "lambda_t": 1.2,
+          "lambda_i": 5.0,
+          "lambda_o": 0.3
+        },
+        "c3r": {
+          "score_margin_min": 0.0,
+          "admissibility_gap_min": 0.0,
+          "b_violation_tolerance": 0.0,
+          "uncertainty_max": 0.99
+        },
+        "c1": {
+          "objective_tol": 1e-09,
+          "tie_break_requires_syndrome_consistent": true
+        }
+      }
+    },
+    "Ambiguity-plus-measurement": {
+      "path": "D:\\pandora_box\\biqmn\\results\\raw\\ambiguity_measurement_c3r_260427_seed10.json",
+      "sha256": "7aed7bb4857b785e39550d5ae807ff0cbd56cfcf65eeb995b337a138a286fbcc",
+      "grid": {
+        "codes": [
+          "phaseflip"
+        ],
+        "noise_families": [
+          "phaseflip",
+          "dephasing",
+          "mixed_pauli"
+        ],
+        "strengths": [
+          0.05,
+          0.1,
+          0.15
+        ],
+        "depths": [
+          2,
+          4
+        ],
+        "seeds": [
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "ambiguity_levels": [
+          0.0,
+          0.25,
+          0.5,
+          0.75,
+          1.0
+        ],
+        "measurement_reset_probs": [
+          0.0,
+          0.03,
+          0.05,
+          0.1
+        ]
+      },
+      "policies": {
+        "c2": {
+          "lambda_s": 1.0,
+          "lambda_t": 1.0,
+          "lambda_i": 2.0,
+          "lambda_o": 0.5
+        },
+        "c3": {
+          "lambda_s": 0.8,
+          "lambda_t": 1.2,
+          "lambda_i": 5.0,
+          "lambda_o": 0.3
+        },
+        "c3r": {
+          "score_margin_min": 0.0,
+          "admissibility_gap_min": 0.0,
+          "b_violation_tolerance": 0.0,
+          "uncertainty_max": 0.99
+        },
+        "c1": {
+          "objective_tol": 1e-09,
+          "tie_break_requires_syndrome_consistent": true
+        }
+      }
+    }
+  },
+  "code_and_config_sha256": {
+    "biqmn\\__init__.py": "0b00cbddd251f76fe2584c71ce69daecf33c97b49b19494a2bd6e5afe9db9e52",
+    "biqmn\\baselines\\syndrome_recovery.py": "d98e8cae6c66695b37268bb645ff76e8d2afef57338804ccb7d9ca7952e795d6",
+    "biqmn\\baselines\\__init__.py": "3e0606dc9f32ed13c4e5df2bb8b700aa2be87e8a671431ee7b080a9657fe9137",
+    "biqmn\\core\\admissibility.py": "0f22869561ee8ca0f90c7b9270c48ad2acc59db9b4e8c96b1f3e80aaf72e6375",
+    "biqmn\\core\\clock.py": "cc63529997610ea7c5de0f26630860ee0d3982b80ae9946b73fbe5ac19bafbca",
+    "biqmn\\core\\clock_consistency.py": "1b0cbf4b2579b99b1bf06917d26731a60cb946bf8998b205218da261478ac638",
+    "biqmn\\core\\encoding.py": "71df3b96145f8317d1c3b489cbb678afa9dce6f0050c7af1908ced1e8422b361",
+    "biqmn\\core\\global_state.py": "fa71866f414c4b7e36280d2d1506b11c4b0bcbb031e7a6cbd2fb461a7b76a68b",
+    "biqmn\\core\\graph_mapping.py": "ecaf379f9a023495cd0cb314ae6f9e5b0a2de175081226050190debde68b516a",
+    "biqmn\\core\\hamiltonian.py": "937bb7f39d6269f5f8ce812f1f305700ea6edb61b23c79ea584663f43800ad52",
+    "biqmn\\core\\laplacian.py": "202efd6b21cda2960cb8b9fdcbc6e5ed8a3a5142975e405176a15549cf243015",
+    "biqmn\\core\\metrics.py": "a1083f41be5cb8784362a11e7c7628cc2e8eb1bd3ebdd886e18eccd6e74e1d24",
+    "biqmn\\core\\noise.py": "feb60bd7a89a0f8a69d31672e59c67d582aa5d0d12e7c537c234d07f84c229f1",
+    "biqmn\\core\\recovery.py": "efe8721deb21cde89291b283a49d0789daa9a151b5f06439fbb32fbf0d5b8b84",
+    "biqmn\\core\\relative_state.py": "9ea7cbc7396b6dbac55aa49e63e1dec0c0b9844520f4571c384c33826cd3ebe7",
+    "biqmn\\core\\simulator.py": "d95a7332965e9e62352797b2b8f9836cc48e27bcdaee8c09289adee71b5c4e18",
+    "biqmn\\core\\spectral_density.py": "705435b97dac52ab31463fa5b9b101b4880fce56df698332d34a0663a8430b91",
+    "biqmn\\core\\trajectory.py": "9b29ed5c31e9f4313931e9db5cbfcfb67a1486b4c47ed7cbfddb9973f50305ac",
+    "biqmn\\core\\__init__.py": "b43090e008cbd5aeb46fc11481700338d04257b7c2816af5fcb523d59a28b7b2",
+    "biqmn\\experiments\\coherent_veto_common.py": "9da431af27b13a87685595fb1ea7c0e10110c2f953e4a3e315ff6e12e5161efa",
+    "biqmn\\experiments\\common.py": "0acd536f4890538f176526d609281e571d2bbf544c81de6fe1d07ff27fb74b59",
+    "biqmn\\experiments\\rebuild_c3r_results.py": "3758a193724a277df8d82869439179a602ec2ce375bacd004892b7b41ea1e984",
+    "biqmn\\experiments\\revision_audit.py": "3c3606e73d20ae91b1b4c260efa26e571763eeea159335206f9b38c98fe69113",
+    "biqmn\\experiments\\run_admissible_projection.py": "5ac67e34fc3015b213a461d51009d7f604ee11d15a2ffab5730dda65d44860ee",
+    "biqmn\\experiments\\run_ambiguity_measurement_syndrome_regime_map.py": "0ec8ccce8c25686a9d40401933dca1516a98fc7d4f7f771df93199651817c474",
+    "biqmn\\experiments\\run_c2_preferred_analysis.py": "6a01082e037260a2a8ccc3c573e7b9d647d3237f96a8a9b6e489bdb221ade586",
+    "biqmn\\experiments\\run_clock_consistency.py": "bb28c74991ee716400f46ac2e56479abb79ddc59399a425d89d4afe17a01fb51",
+    "biqmn\\experiments\\run_coherent_casebook.py": "9fdf46e9946e417bde98b5e9fa11d73f499f8f07904c333863d9f065be951cf0",
+    "biqmn\\experiments\\run_coherent_threshold_sweep.py": "b3f2790fd2d4f7ba21aeb051fe01d20f1ba97c61d1224f6e0ea46d6a74396ab7",
+    "biqmn\\experiments\\run_coherent_v1_baseline.py": "ca3c09482ad1276a56d7a148e886416108efec6002959ab9e46d78f9c6532e47",
+    "biqmn\\experiments\\run_coherent_veto_analysis.py": "c90fa4a50849a91023e10ae8453855b1e74532d2fe131ef941af127fb5a48729",
+    "biqmn\\experiments\\run_coherent_veto_threshold_sweep.py": "90dd506851a3f7efc5a5e63248809f2a7f5237797eca1d68e7f71329d276c2e0",
+    "biqmn\\experiments\\run_detection_metrics.py": "f9507efc74f19831bad3151960ae6853b9f5e000b49ccbfa63198ad06b1b22f1",
+    "biqmn\\experiments\\run_encoded_casebook.py": "9916b55d09611afa118d9d7469e1536179c084cbfc76161dfbf8bae9dfa786c1",
+    "biqmn\\experiments\\run_encoded_qec_baseline.py": "85757be7ed33546a47fb3609f00f6c2fffb23946d24969313609611fdc7976ab",
+    "biqmn\\experiments\\run_encoded_regime_map.py": "54db8c74f580e59148864fa7ec2d378d10d27543512f00b3953ac3819ef3e929",
+    "biqmn\\experiments\\run_hybrid_c123_baseline.py": "86a08914682d38e03536f6e149e98f44c14a1c5a5a55a0a7a24ff85e6a1b21a1",
+    "biqmn\\experiments\\run_hybrid_c123_casebook.py": "68d1ce1c42571cf581f69e153e410b3cd04f1e708b3ae73eed9313310af7668f",
+    "biqmn\\experiments\\run_hybrid_c123_regime_map.py": "95144e8ea5f50f3f0db303d48eb8382ff0abbec74b5e4bddf4026e503408dc87",
+    "biqmn\\experiments\\run_noise_trajectory.py": "e161096c002076faefeefe946aa99bbfae9f78534dacaba90eb837cabeed7d80",
+    "biqmn\\experiments\\run_noisy_syndrome_baseline.py": "3d7a0ca76bae351b08e129a750554b7fa8260781f852c8298f4aa64c34964b0f",
+    "biqmn\\experiments\\run_partial_noisy_syndrome_regime_map.py": "eb5c923d7df039672e26fa15aa61fca697a5a410d94391548633daa07a584524",
+    "biqmn\\experiments\\run_partial_syndrome_baseline.py": "012992fcf0d26957fd91f3c55fd5e03c771d8f8fc6b9c5880aa9bb097e808dfa",
+    "biqmn\\experiments\\run_random_noise_baseline.py": "a73c427b555d1545eb101de40563ed6a4c56f0241309a127139f9e3a4fc7c450",
+    "biqmn\\experiments\\run_recovery_ablation.py": "d9c9de234af2f9e8041876adc099df05febfc0c0ae3485d83a9d53fb40ffb384",
+    "biqmn\\experiments\\run_recovery_objective.py": "9f51a327fd8a4e662516abde86a678aff90064b13ab417d81bb0ea31ed8c9a20",
+    "biqmn\\experiments\\run_recovery_sweep.py": "32f6573a308f6cb0636bf1bcf7d070ede007b65d01537136159d7da6e62bdd8e",
+    "biqmn\\experiments\\run_ref_anchor_validation.py": "24bf44619c04e2ff9dbb92cb612d0919e21ab21592bfeac68aad881b1d237878",
+    "biqmn\\experiments\\run_relative_slices.py": "5c3f08c5e7920e51c02165e4c3443366565828c9041a9b96b7eef09d31b5195e",
+    "biqmn\\experiments\\syndrome_observation.py": "9e754ea1a5aba1e3aca140d6c07316eae1d9bca29517018f40b82ae5bcbb7a0f",
+    "biqmn\\experiments\\__init__.py": "2dcd2d80f419f7d0e04dd7ab053923b86bdfec8287f5c5308b5537fc3b4b2fc3",
+    "configs\\default.yaml": "c3f1e91a8c7d013b2cc13c52d218ea362d95134a0e87213e66ae80607eefee6c",
+    "configs\\experiment\\ambiguity_measurement_syndrome_regime_map.yaml": "7d33ea47bcc5bd914b3b25e1980bd5c146fd042701a0b78fa6e6416a255b30bb",
+    "configs\\experiment\\coherent_branch.yaml": "bf530d90d08d6d241a7b0ef1ad61191a7f394d60063d07155c3e987a70735ad9",
+    "configs\\experiment\\coherent_veto_analysis.yaml": "51ff6b14d850f517668e9b2a580aa1c43c1c11b1dc034b6ec68f560279a71d3c",
+    "configs\\experiment\\detection_eval.yaml": "6d9321d7fe46fac46f3524957d25fc33bc3c336b68d1369ef066eaeb0ff6983e",
+    "configs\\experiment\\encoded_coherent_validation.yaml": "57eb577790fd72712c0a98b6e5185c25dea0ca1f7d44ca20be35652748addf3a",
+    "configs\\experiment\\encoded_qec_baseline.yaml": "898e2cc4c54cf3a01634b651181f81d41e888cd4002254d1f4f90813de7ba525",
+    "configs\\experiment\\encoded_regime_map.yaml": "db6bcdf12a89c8d97b810071ca35b7b97b22ca94083c289231c5434bf5b798ca",
+    "configs\\experiment\\hybrid_c123_baseline.yaml": "de2cd78272e2063aadd0eadb36282a2115a648177888775ed1b0b8d17bc9b968",
+    "configs\\experiment\\hybrid_c123_regime_map.yaml": "d84a714836bec146a981ea06b7dcec9b0fbf83d87e98b447242246848f66f964",
+    "configs\\experiment\\noisy_syndrome_baseline.yaml": "4ccdaaa3322ff4aa28689b64801aa4710c38765d4888945679a8139bd6ec1c9e",
+    "configs\\experiment\\partial_noisy_syndrome_regime_map.yaml": "4417601d4cef42f6a979ee18a84ca23cec1c3bab4316b09372aea41c8e546b00",
+    "configs\\experiment\\partial_syndrome_baseline.yaml": "b2790f504255917db2701a909d2912b6c2b49503341436e2be38bbc5de032550",
+    "configs\\experiment\\random_noise_baseline.yaml": "84cf9f4162eaac332e8807c7c2cdbf0f411d2b046164070681ad0640e582a162",
+    "configs\\experiment\\recovery_eval.yaml": "96fe30d26b14374dd7e1999c2a8b14a05f28db100123beb8905f46208ed2c4f5",
+    "configs\\experiment\\trajectory_probe.yaml": "7e8c054cf360e0516aac566bcd76f9c408ff695c10f5859b189f89fadb3e0abb",
+    "configs\\noise\\amplitude_damping.yaml": "2d1b50296dbe650256f5fe0829bb3f7ad9e595a5babbbee6f7dd2bab4064d739",
+    "configs\\noise\\bitflip.yaml": "68809e6379766cc2fd406c5c11c4926a441c81a9768d067153ddf76f83883787",
+    "configs\\noise\\coherent_x.yaml": "245a7a607d82b9ea745999b8a3d0bd115c3d83cc1641a8d2f2143402ec99e7f1",
+    "configs\\noise\\coherent_z.yaml": "fd7987d5c7128cdcd853e11f7229f48e72a43e50c67a8313acb522e1ddc44eb0",
+    "configs\\noise\\dephasing.yaml": "4132b3b1f6d463d2891883f5004abf7acaf573511bcf6b1ac8e97bfc2248ad52",
+    "configs\\noise\\depolarizing.yaml": "f7b8bd47406b5b386265352446fbe82d442a946546caf29f945400f98c6af483",
+    "configs\\noise\\phaseflip.yaml": "7312e8e96317a53a750bceb8526903d27a7b36f913e84fdb47cbb95decb12212",
+    "configs\\states\\bell_clock.yaml": "0379528a491e709e9b1c5a7e116222b25616b4664878680c1c9e1087cb37c198",
+    "configs\\states\\custom_static.yaml": "365b6b1fadb3d1730be6a16b3f49b17b2cd7690aeb803dee1b41ca4d3637c6cb",
+    "configs\\states\\ghz_clock.yaml": "404e7dca9df79ebba7922d4a6c8dfeba591fef6f5e6b9f458f1c04ce341b907e",
+    "configs\\states\\null_clock.yaml": "06534f2dc8869517eeed72676104c807400f994c4592b5300b0ecddb2bcdd41e",
+    "configs\\states\\null_dynamic.yaml": "9ae030b3affd19bc09b273e4ce64d9d57ead66591b40053c9281e622114d2e1e",
+    "configs\\states\\repetition_bitflip.yaml": "8dbbf4327f1514d1ec82becad86450f8c1594be7ad0545a7229f59d5c453a8c2",
+    "configs\\states\\repetition_bitflip_coherent.yaml": "5c24ce5816b81d94413284e99d70ab7ec1c1fffe24a6ef9c736d9aeaf9c66915",
+    "configs\\states\\repetition_phaseflip.yaml": "9cc709e50ff6f96eacce3f9ce2e89e23032f8fb0f6f79ec026807cbd8f1f84b9",
+    "configs\\states\\repetition_phaseflip_coherent.yaml": "1bc3d8da5f9315c8b16df1805982601850407d51773849a5f82c5f0330a7504d"
+  }
+}

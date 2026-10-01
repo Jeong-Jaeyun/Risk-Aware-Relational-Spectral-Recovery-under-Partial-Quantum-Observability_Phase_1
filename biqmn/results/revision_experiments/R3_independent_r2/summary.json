@@ -1,0 +1,5786 @@
+[
+  {
+    "bootstrap": {
+      "conditional_on": "fixed_model_grid_and_calibration_set",
+      "draws": 5000,
+      "method": "two_way_cluster_bootstrap_target_pairs_and_measurement_seeds"
+    },
+    "code": "bitflip",
+    "copies": 256,
+    "design_rank": 3,
+    "measurement_seed_count": 12,
+    "oracle_direct_template_fidelity": {
+      "ci95_two_way": [
+        0.9442336306391128,
+        0.9730204155287561
+      ],
+      "mean": 0.9591797346290661,
+      "policy_input": false
+    },
+    "physical_noise": 0.01,
+    "pilot": false,
+    "policies": {
+      "a_continuous": {
+        "ci95_two_way": [
+          0.954812582242597,
+          0.9704063170601853
+        ],
+        "cvar05_exact_mass": 0.9291617361515396,
+        "false_safe_ci95_two_way": [
+          0.0,
+          0.0
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.3697916666666667,
+            -0.21354166666666666
+          ],
+          "estimate": -0.2916666666666667
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_rate": 0.0,
+        "mean_fidelity": 0.96352153355082,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "q05_fidelity": 0.9416349130788013,
+        "switch_rate": 0.0
+      },
+      "b_template": {
+        "ci95_two_way": [
+          0.9103202055877352,
+          0.9557580614800432
+        ],
+        "cvar05_exact_mass": 0.815652195856863,
+        "false_safe_ci95_two_way": [
+          0.4947916666666667,
+          0.7265625
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            0.19270833333333337,
+            0.4609375
+          ],
+          "estimate": 0.32031249999999994
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.4947916666666667,
+            0.7265625
+          ],
+          "estimate": 0.6119791666666666
+        },
+        "false_safe_rate": 0.6119791666666666,
+        "mean_fidelity": 0.9343562644804337,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.0518719218762473,
+            -0.008552134869532838
+          ],
+          "estimate": -0.0291652690703863
+        },
+        "q05_fidelity": 0.8394727279230915,
+        "switch_rate": 1.0
+      },
+      "c2_score": {
+        "ci95_two_way": [
+          0.9500102538805001,
+          0.9737785560924821
+        ],
+        "cvar05_exact_mass": 0.906900838082711,
+        "false_safe_ci95_two_way": [
+          0.21354166666666666,
+          0.3697916666666667
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.21354166666666666,
+            0.3697916666666667
+          ],
+          "estimate": 0.2916666666666667
+        },
+        "false_safe_rate": 0.2916666666666667,
+        "mean_fidelity": 0.9637948844319076,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.008195107522455128,
+            0.008527057994417858
+          ],
+          "estimate": 0.0002733508810875973
+        },
+        "q05_fidelity": 0.9236719373456578,
+        "switch_rate": 0.6171875
+      },
+      "c3r": {
+        "ci95_two_way": [
+          0.954812582242597,
+          0.9704063170601853
+        ],
+        "cvar05_exact_mass": 0.9291617361515396,
+        "false_safe_ci95_two_way": [
+          0.0,
+          0.0
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.3697916666666667,
+            -0.21354166666666666
+          ],
+          "estimate": -0.2916666666666667
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_rate": 0.0,
+        "mean_fidelity": 0.96352153355082,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "q05_fidelity": 0.9416349130788013,
+        "switch_rate": 0.0
+      },
+      "h_holdout_residual": {
+        "ci95_two_way": [
+          0.9621326107499738,
+          0.978122687318667
+        ],
+        "cvar05_exact_mass": 0.9378401276901331,
+        "false_safe_ci95_two_way": [
+          0.12239583333333333,
+          0.2630208333333333
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.15364583333333331,
+            -0.05722656250000091
+          ],
+          "estimate": -0.10156250000000003
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.12239583333333333,
+            0.2630208333333333
+          ],
+          "estimate": 0.19010416666666666
+        },
+        "false_safe_rate": 0.19010416666666666,
+        "mean_fidelity": 0.9712089490937118,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.0028934681813794078,
+            0.013821093929940189
+          ],
+          "estimate": 0.007687415542891762
+        },
+        "q05_fidelity": 0.950426791310257,
+        "switch_rate": 0.515625
+      },
+      "u_uncertainty": {
+        "ci95_two_way": [
+          0.954812582242597,
+          0.9704063170601853
+        ],
+        "cvar05_exact_mass": 0.9291617361515396,
+        "false_safe_ci95_two_way": [
+          0.0,
+          0.0
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.3697916666666667,
+            -0.21354166666666666
+          ],
+          "estimate": -0.2916666666666667
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_rate": 0.0,
+        "mean_fidelity": 0.96352153355082,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "q05_fidelity": 0.9416349130788013,
+        "switch_rate": 0.0
+      }
+    },
+    "readout_flip": 0.0,
+    "target_pair_count": 32
+  },
+  {
+    "bootstrap": {
+      "conditional_on": "fixed_model_grid_and_calibration_set",
+      "draws": 5000,
+      "method": "two_way_cluster_bootstrap_target_pairs_and_measurement_seeds"
+    },
+    "code": "bitflip",
+    "copies": 256,
+    "design_rank": 3,
+    "measurement_seed_count": 12,
+    "oracle_direct_template_fidelity": {
+      "ci95_two_way": [
+        0.9444250723788169,
+        0.9727926820770503
+      ],
+      "mean": 0.9591797346290661,
+      "policy_input": false
+    },
+    "physical_noise": 0.01,
+    "pilot": false,
+    "policies": {
+      "a_continuous": {
+        "ci95_two_way": [
+          0.9457816863822472,
+          0.9652294095115539
+        ],
+        "cvar05_exact_mass": 0.911855760174377,
+        "false_safe_ci95_two_way": [
+          0.0,
+          0.0
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.3515625,
+            -0.18489583333333334
+          ],
+          "estimate": -0.2682291666666667
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_rate": 0.0,
+        "mean_fidelity": 0.9563057808323321,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "q05_fidelity": 0.9207345995998549,
+        "switch_rate": 0.0
+      },
+      "b_template": {
+        "ci95_two_way": [
+          0.9045265489416848,
+          0.9516122617645939
+        ],
+        "cvar05_exact_mass": 0.7840867435473351,
+        "false_safe_ci95_two_way": [
+          0.4869791666666667,
+          0.71875
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            0.21093749999999994,
+            0.47395833333333337
+          ],
+          "estimate": 0.33593749999999994
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.4869791666666667,
+            0.71875
+          ],
+          "estimate": 0.6041666666666666
+        },
+        "false_safe_rate": 0.6041666666666666,
+        "mean_fidelity": 0.9297739275089212,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.05151353489455332,
+            -0.004003779076259192
+          ],
+          "estimate": -0.026531853323410903
+        },
+        "q05_fidelity": 0.7942945774411,
+        "switch_rate": 1.0
+      },
+      "c2_score": {
+        "ci95_two_way": [
+          0.9451555794622616,
+          0.9696120163665589
+        ],
+        "cvar05_exact_mass": 0.8896271064317405,
+        "false_safe_ci95_two_way": [
+          0.18489583333333334,
+          0.3515625
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.18489583333333334,
+            0.3515625
+          ],
+          "estimate": 0.2682291666666667
+        },
+        "false_safe_rate": 0.2682291666666667,
+        "mean_fidelity": 0.9586653574119692,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.0071387411595942585,
+            0.011256553133110483
+          ],
+          "estimate": 0.002359576579637146
+        },
+        "q05_fidelity": 0.9298963378919909,
+        "switch_rate": 0.5807291666666666
+      },
+      "c3r": {
+        "ci95_two_way": [
+          0.9457816863822472,
+          0.9652294095115539
+        ],
+        "cvar05_exact_mass": 0.911855760174377,
+        "false_safe_ci95_two_way": [
+          0.0,
+          0.0
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.3515625,
+            -0.18489583333333334
+          ],
+          "estimate": -0.2682291666666667
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_rate": 0.0,
+        "mean_fidelity": 0.9563057808323321,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "q05_fidelity": 0.9207345995998549,
+        "switch_rate": 0.0
+      },
+      "h_holdout_residual": {
+        "ci95_two_way": [
+          0.9551802467974515,
+          0.973921923971143
+        ],
+        "cvar05_exact_mass": 0.9182211923427505,
+        "false_safe_ci95_two_way": [
+          0.0859375,
+          0.22916666666666666
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.171875,
+            -0.06510416666666666
+          ],
+          "estimate": -0.11197916666666669
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.0859375,
+            0.22916666666666666
+          ],
+          "estimate": 0.15625
+        },
+        "false_safe_rate": 0.15625,
+        "mean_fidelity": 0.9654024312934916,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.0034558687860809373,
+            0.016093250304143117
+          ],
+          "estimate": 0.009096650461159483
+        },
+        "q05_fidelity": 0.9379729482451599,
+        "switch_rate": 0.4479166666666667
+      },
+      "u_uncertainty": {
+        "ci95_two_way": [
+          0.9457816863822472,
+          0.9652294095115539
+        ],
+        "cvar05_exact_mass": 0.911855760174377,
+        "false_safe_ci95_two_way": [
+          0.0,
+          0.0
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.3515625,
+            -0.18489583333333334
+          ],
+          "estimate": -0.2682291666666667
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_rate": 0.0,
+        "mean_fidelity": 0.9563057808323321,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "q05_fidelity": 0.9207345995998549,
+        "switch_rate": 0.0
+      }
+    },
+    "readout_flip": 0.05,
+    "target_pair_count": 32
+  },
+  {
+    "bootstrap": {
+      "conditional_on": "fixed_model_grid_and_calibration_set",
+      "draws": 5000,
+      "method": "two_way_cluster_bootstrap_target_pairs_and_measurement_seeds"
+    },
+    "code": "bitflip",
+    "copies": 256,
+    "design_rank": 3,
+    "measurement_seed_count": 12,
+    "oracle_direct_template_fidelity": {
+      "ci95_two_way": [
+        0.9444342899728603,
+        0.9725424751334178
+      ],
+      "mean": 0.9591797346290661,
+      "policy_input": false
+    },
+    "physical_noise": 0.05,
+    "pilot": false,
+    "policies": {
+      "a_continuous": {
+        "ci95_two_way": [
+          0.9426186371088867,
+          0.9631501617680495
+        ],
+        "cvar05_exact_mass": 0.9133467300226052,
+        "false_safe_ci95_two_way": [
+          0.0,
+          0.0
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.4166666666666667,
+            -0.234375
+          ],
+          "estimate": -0.3229166666666667
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_rate": 0.0,
+        "mean_fidelity": 0.9540089959233516,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "q05_fidelity": 0.9237460794332847,
+        "switch_rate": 0.0
+      },
+      "b_template": {
+        "ci95_two_way": [
+          0.9103130724774867,
+          0.9543178591970044
+        ],
+        "cvar05_exact_mass": 0.7818537928566809,
+        "false_safe_ci95_two_way": [
+          0.4921875,
+          0.7239583333333334
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            0.17708333333333331,
+            0.4114583333333333
+          ],
+          "estimate": 0.2864583333333333
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.4921875,
+            0.7239583333333334
+          ],
+          "estimate": 0.609375
+        },
+        "false_safe_rate": 0.609375,
+        "mean_fidelity": 0.9344738107814886,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.04269862965404944,
+            0.002226977975110701
+          ],
+          "estimate": -0.019535185141863032
+        },
+        "q05_fidelity": 0.8228546218245956,
+        "switch_rate": 1.0
+      },
+      "c2_score": {
+        "ci95_two_way": [
+          0.9403803897480892,
+          0.9666514366339679
+        ],
+        "cvar05_exact_mass": 0.8915059598446997,
+        "false_safe_ci95_two_way": [
+          0.234375,
+          0.4166666666666667
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.234375,
+            0.4166666666666667
+          ],
+          "estimate": 0.3229166666666667
+        },
+        "false_safe_rate": 0.3229166666666667,
+        "mean_fidelity": 0.9556386889662858,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.008310358750709585,
+            0.011479830883459835
+          ],
+          "estimate": 0.0016296930429341439
+        },
+        "q05_fidelity": 0.9230217253805388,
+        "switch_rate": 0.6484375
+      },
+      "c3r": {
+        "ci95_two_way": [
+          0.9426186371088867,
+          0.9631501617680495
+        ],
+        "cvar05_exact_mass": 0.9133467300226052,
+        "false_safe_ci95_two_way": [
+          0.0,
+          0.0
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.4166666666666667,
+            -0.234375
+          ],
+          "estimate": -0.3229166666666667
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_rate": 0.0,
+        "mean_fidelity": 0.9540089959233516,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "q05_fidelity": 0.9237460794332847,
+        "switch_rate": 0.0
+      },
+      "h_holdout_residual": {
+        "ci95_two_way": [
+          0.9521304152285733,
+          0.9710578016707679
+        ],
+        "cvar05_exact_mass": 0.9237755631917355,
+        "false_safe_ci95_two_way": [
+          0.14055989583333336,
+          0.3125
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.16145833333333334,
+            -0.05208333333333334
+          ],
+          "estimate": -0.10156250000000003
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.14055989583333336,
+            0.3125
+          ],
+          "estimate": 0.22135416666666666
+        },
+        "false_safe_rate": 0.22135416666666666,
+        "mean_fidelity": 0.9625580704846275,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.001570640539011009,
+            0.016835740664957657
+          ],
+          "estimate": 0.008549074561275849
+        },
+        "q05_fidelity": 0.9328021167716358,
+        "switch_rate": 0.5338541666666666
+      },
+      "u_uncertainty": {
+        "ci95_two_way": [
+          0.9426186371088867,
+          0.9631501617680495
+        ],
+        "cvar05_exact_mass": 0.9133467300226052,
+        "false_safe_ci95_two_way": [
+          0.0,
+          0.0
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.4166666666666667,
+            -0.234375
+          ],
+          "estimate": -0.3229166666666667
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_rate": 0.0,
+        "mean_fidelity": 0.9540089959233516,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "q05_fidelity": 0.9237460794332847,
+        "switch_rate": 0.0
+      }
+    },
+    "readout_flip": 0.0,
+    "target_pair_count": 32
+  },
+  {
+    "bootstrap": {
+      "conditional_on": "fixed_model_grid_and_calibration_set",
+      "draws": 5000,
+      "method": "two_way_cluster_bootstrap_target_pairs_and_measurement_seeds"
+    },
+    "code": "bitflip",
+    "copies": 256,
+    "design_rank": 3,
+    "measurement_seed_count": 12,
+    "oracle_direct_template_fidelity": {
+      "ci95_two_way": [
+        0.9447431182279596,
+        0.9730876282128983
+      ],
+      "mean": 0.9591797346290661,
+      "policy_input": false
+    },
+    "physical_noise": 0.05,
+    "pilot": false,
+    "policies": {
+      "a_continuous": {
+        "ci95_two_way": [
+          0.9375975809825293,
+          0.9581993318803965
+        ],
+        "cvar05_exact_mass": 0.9102024944231006,
+        "false_safe_ci95_two_way": [
+          0.0,
+          0.0
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.3828125,
+            -0.21875
+          ],
+          "estimate": -0.2994791666666667
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_rate": 0.0,
+        "mean_fidelity": 0.9485551351034363,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "q05_fidelity": 0.9224336811939658,
+        "switch_rate": 0.0
+      },
+      "b_template": {
+        "ci95_two_way": [
+          0.9099800485260222,
+          0.9516459744164005
+        ],
+        "cvar05_exact_mass": 0.8140700188243113,
+        "false_safe_ci95_two_way": [
+          0.46087239583333334,
+          0.6927083333333334
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            0.16666666666666669,
+            0.39843749999999994
+          ],
+          "estimate": 0.28124999999999994
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.46087239583333334,
+            0.6927083333333334
+          ],
+          "estimate": 0.5807291666666666
+        },
+        "false_safe_rate": 0.5807291666666666,
+        "mean_fidelity": 0.9318271026719341,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.03707721574329237,
+            0.003382349744865283
+          ],
+          "estimate": -0.016728032431502116
+        },
+        "q05_fidelity": 0.8496704014417396,
+        "switch_rate": 1.0
+      },
+      "c2_score": {
+        "ci95_two_way": [
+          0.938115266759342,
+          0.9629938231243093
+        ],
+        "cvar05_exact_mass": 0.9035449618621962,
+        "false_safe_ci95_two_way": [
+          0.21875,
+          0.3828125
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.21875,
+            0.3828125
+          ],
+          "estimate": 0.2994791666666667
+        },
+        "false_safe_rate": 0.2994791666666667,
+        "mean_fidelity": 0.9518159783620187,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.005694015412912404,
+            0.013005939185696291
+          ],
+          "estimate": 0.0032608432585824465
+        },
+        "q05_fidelity": 0.9198902076471497,
+        "switch_rate": 0.6510416666666666
+      },
+      "c3r": {
+        "ci95_two_way": [
+          0.9375975809825293,
+          0.9581993318803965
+        ],
+        "cvar05_exact_mass": 0.9102024944231006,
+        "false_safe_ci95_two_way": [
+          0.0,
+          0.0
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.3828125,
+            -0.21875
+          ],
+          "estimate": -0.2994791666666667
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_rate": 0.0,
+        "mean_fidelity": 0.9485551351034363,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "q05_fidelity": 0.9224336811939658,
+        "switch_rate": 0.0
+      },
+      "h_holdout_residual": {
+        "ci95_two_way": [
+          0.9494617273303227,
+          0.9693915223254339
+        ],
+        "cvar05_exact_mass": 0.9246619791422226,
+        "false_safe_ci95_two_way": [
+          0.109375,
+          0.24479166666666666
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.1796875,
+            -0.07552083333333331
+          ],
+          "estimate": -0.12500000000000003
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.109375,
+            0.24479166666666666
+          ],
+          "estimate": 0.17447916666666666
+        },
+        "false_safe_rate": 0.17447916666666666,
+        "mean_fidelity": 0.960241538681927,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.005339864355402513,
+            0.019423719791493793
+          ],
+          "estimate": 0.011686403578490712
+        },
+        "q05_fidelity": 0.9276739970882949,
+        "switch_rate": 0.5104166666666666
+      },
+      "u_uncertainty": {
+        "ci95_two_way": [
+          0.9375975809825293,
+          0.9581993318803965
+        ],
+        "cvar05_exact_mass": 0.9102024944231006,
+        "false_safe_ci95_two_way": [
+          0.0,
+          0.0
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.3828125,
+            -0.21875
+          ],
+          "estimate": -0.2994791666666667
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_rate": 0.0,
+        "mean_fidelity": 0.9485551351034363,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "q05_fidelity": 0.9224336811939658,
+        "switch_rate": 0.0
+      }
+    },
+    "readout_flip": 0.05,
+    "target_pair_count": 32
+  },
+  {
+    "bootstrap": {
+      "conditional_on": "fixed_model_grid_and_calibration_set",
+      "draws": 5000,
+      "method": "two_way_cluster_bootstrap_target_pairs_and_measurement_seeds"
+    },
+    "code": "bitflip",
+    "copies": 256,
+    "design_rank": 3,
+    "measurement_seed_count": 12,
+    "oracle_direct_template_fidelity": {
+      "ci95_two_way": [
+        0.9444709623056781,
+        0.972907458291667
+      ],
+      "mean": 0.9591797346290661,
+      "policy_input": false
+    },
+    "physical_noise": 0.1,
+    "pilot": false,
+    "policies": {
+      "a_continuous": {
+        "ci95_two_way": [
+          0.931843465385348,
+          0.9564438472177771
+        ],
+        "cvar05_exact_mass": 0.894894533062139,
+        "false_safe_ci95_two_way": [
+          0.0,
+          0.0
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.4192708333333333,
+            -0.2578125
+          ],
+          "estimate": -0.3385416666666667
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_rate": 0.0,
+        "mean_fidelity": 0.9451263385196129,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "q05_fidelity": 0.9030434187896317,
+        "switch_rate": 0.0
+      },
+      "b_template": {
+        "ci95_two_way": [
+          0.9004878673968391,
+          0.9444658830396251
+        ],
+        "cvar05_exact_mass": 0.806177272609347,
+        "false_safe_ci95_two_way": [
+          0.4765625,
+          0.7161458333333334
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            0.1484375,
+            0.3776041666666667
+          ],
+          "estimate": 0.25781249999999994
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.4765625,
+            0.7161458333333334
+          ],
+          "estimate": 0.5963541666666666
+        },
+        "false_safe_rate": 0.5963541666666666,
+        "mean_fidelity": 0.9231508617973528,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.04423556093522304,
+            -0.0009311396135563767
+          ],
+          "estimate": -0.02197547672226008
+        },
+        "q05_fidelity": 0.8178759682789203,
+        "switch_rate": 1.0
+      },
+      "c2_score": {
+        "ci95_two_way": [
+          0.9269574644167808,
+          0.9590434590990756
+        ],
+        "cvar05_exact_mass": 0.8753713263119373,
+        "false_safe_ci95_two_way": [
+          0.2578125,
+          0.4192708333333333
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.2578125,
+            0.4192708333333333
+          ],
+          "estimate": 0.3385416666666667
+        },
+        "false_safe_rate": 0.3385416666666667,
+        "mean_fidelity": 0.9444672542091249,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.013089755198538755,
+            0.010366842605891411
+          ],
+          "estimate": -0.0006590843104880006
+        },
+        "q05_fidelity": 0.8862808300758775,
+        "switch_rate": 0.703125
+      },
+      "c3r": {
+        "ci95_two_way": [
+          0.931843465385348,
+          0.9564438472177771
+        ],
+        "cvar05_exact_mass": 0.894894533062139,
+        "false_safe_ci95_two_way": [
+          0.0,
+          0.0
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.4192708333333333,
+            -0.2578125
+          ],
+          "estimate": -0.3385416666666667
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_rate": 0.0,
+        "mean_fidelity": 0.9451263385196129,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "q05_fidelity": 0.9030434187896317,
+        "switch_rate": 0.0
+      },
+      "h_holdout_residual": {
+        "ci95_two_way": [
+          0.9430017760314523,
+          0.9659897532329053
+        ],
+        "cvar05_exact_mass": 0.9139039351490552,
+        "false_safe_ci95_two_way": [
+          0.140625,
+          0.2734375
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.203125,
+            -0.07291666666666666
+          ],
+          "estimate": -0.13281250000000003
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.140625,
+            0.2734375
+          ],
+          "estimate": 0.20572916666666666
+        },
+        "false_safe_rate": 0.20572916666666666,
+        "mean_fidelity": 0.9554562619384583,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.004208282530490321,
+            0.017466202809592137
+          ],
+          "estimate": 0.010329923418845421
+        },
+        "q05_fidelity": 0.9220520617361975,
+        "switch_rate": 0.5598958333333334
+      },
+      "u_uncertainty": {
+        "ci95_two_way": [
+          0.931843465385348,
+          0.9564438472177771
+        ],
+        "cvar05_exact_mass": 0.894894533062139,
+        "false_safe_ci95_two_way": [
+          0.0,
+          0.0
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.4192708333333333,
+            -0.2578125
+          ],
+          "estimate": -0.3385416666666667
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_rate": 0.0,
+        "mean_fidelity": 0.9451263385196129,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "q05_fidelity": 0.9030434187896317,
+        "switch_rate": 0.0
+      }
+    },
+    "readout_flip": 0.0,
+    "target_pair_count": 32
+  },
+  {
+    "bootstrap": {
+      "conditional_on": "fixed_model_grid_and_calibration_set",
+      "draws": 5000,
+      "method": "two_way_cluster_bootstrap_target_pairs_and_measurement_seeds"
+    },
+    "code": "bitflip",
+    "copies": 256,
+    "design_rank": 3,
+    "measurement_seed_count": 12,
+    "oracle_direct_template_fidelity": {
+      "ci95_two_way": [
+        0.9446103642070243,
+        0.9726885717776925
+      ],
+      "mean": 0.9591797346290661,
+      "policy_input": false
+    },
+    "physical_noise": 0.1,
+    "pilot": false,
+    "policies": {
+      "a_continuous": {
+        "ci95_two_way": [
+          0.9220612287072262,
+          0.9484942951936793
+        ],
+        "cvar05_exact_mass": 0.8720805222971613,
+        "false_safe_ci95_two_way": [
+          0.0,
+          0.0
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.3776041666666667,
+            -0.20833333333333334
+          ],
+          "estimate": -0.2890625
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_rate": 0.0,
+        "mean_fidelity": 0.93571209742235,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "q05_fidelity": 0.8784081147711145,
+        "switch_rate": 0.0
+      },
+      "b_template": {
+        "ci95_two_way": [
+          0.897938131515107,
+          0.9428919268413851
+        ],
+        "cvar05_exact_mass": 0.809562552112556,
+        "false_safe_ci95_two_way": [
+          0.4114583333333333,
+          0.6458333333333334
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            0.13802083333333337,
+            0.34895833333333326
+          ],
+          "estimate": 0.23958333333333337
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.4114583333333333,
+            0.6458333333333334
+          ],
+          "estimate": 0.5286458333333334
+        },
+        "false_safe_rate": 0.5286458333333334,
+        "mean_fidelity": 0.9209756707103077,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.037108274624770794,
+            0.0072660110725144365
+          ],
+          "estimate": -0.014736426712042228
+        },
+        "q05_fidelity": 0.8166385680586506,
+        "switch_rate": 1.0
+      },
+      "c2_score": {
+        "ci95_two_way": [
+          0.9293329409162184,
+          0.9563213958064528
+        ],
+        "cvar05_exact_mass": 0.8807555711337959,
+        "false_safe_ci95_two_way": [
+          0.20833333333333334,
+          0.3776041666666667
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.20833333333333334,
+            0.3776041666666667
+          ],
+          "estimate": 0.2890625
+        },
+        "false_safe_rate": 0.2890625,
+        "mean_fidelity": 0.9436889311271023,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.002932146290454948,
+            0.01945150066018311
+          ],
+          "estimate": 0.007976833704752329
+        },
+        "q05_fidelity": 0.9043184484520341,
+        "switch_rate": 0.6927083333333334
+      },
+      "c3r": {
+        "ci95_two_way": [
+          0.9220612287072262,
+          0.9484942951936793
+        ],
+        "cvar05_exact_mass": 0.8720805222971613,
+        "false_safe_ci95_two_way": [
+          0.0,
+          0.0
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.3776041666666667,
+            -0.20833333333333334
+          ],
+          "estimate": -0.2890625
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_rate": 0.0,
+        "mean_fidelity": 0.93571209742235,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "q05_fidelity": 0.8784081147711145,
+        "switch_rate": 0.0
+      },
+      "h_holdout_residual": {
+        "ci95_two_way": [
+          0.9359030347605057,
+          0.9606875475402268
+        ],
+        "cvar05_exact_mass": 0.8835045748443597,
+        "false_safe_ci95_two_way": [
+          0.12760416666666666,
+          0.28125
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.14322916666666666,
+            -0.044270833333333315
+          ],
+          "estimate": -0.08854166666666666
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.12760416666666666,
+            0.28125
+          ],
+          "estimate": 0.20052083333333334
+        },
+        "false_safe_rate": 0.20052083333333334,
+        "mean_fidelity": 0.9491331834643266,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.00458371134804785,
+            0.023188362992778044
+          ],
+          "estimate": 0.013421086041976671
+        },
+        "q05_fidelity": 0.9124955252206809,
+        "switch_rate": 0.5911458333333334
+      },
+      "u_uncertainty": {
+        "ci95_two_way": [
+          0.9220612287072262,
+          0.9484942951936793
+        ],
+        "cvar05_exact_mass": 0.8720805222971613,
+        "false_safe_ci95_two_way": [
+          0.0,
+          0.0
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.3776041666666667,
+            -0.20833333333333334
+          ],
+          "estimate": -0.2890625
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_rate": 0.0,
+        "mean_fidelity": 0.93571209742235,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "q05_fidelity": 0.8784081147711145,
+        "switch_rate": 0.0
+      }
+    },
+    "readout_flip": 0.05,
+    "target_pair_count": 32
+  },
+  {
+    "bootstrap": {
+      "conditional_on": "fixed_model_grid_and_calibration_set",
+      "draws": 5000,
+      "method": "two_way_cluster_bootstrap_target_pairs_and_measurement_seeds"
+    },
+    "code": "bitflip",
+    "copies": 1024,
+    "design_rank": 3,
+    "measurement_seed_count": 12,
+    "oracle_direct_template_fidelity": {
+      "ci95_two_way": [
+        0.9447038393722852,
+        0.972444171563405
+      ],
+      "mean": 0.9591797346290661,
+      "policy_input": false
+    },
+    "physical_noise": 0.01,
+    "pilot": false,
+    "policies": {
+      "a_continuous": {
+        "ci95_two_way": [
+          0.9763842062438344,
+          0.985492646493723
+        ],
+        "cvar05_exact_mass": 0.9635765402396463,
+        "false_safe_ci95_two_way": [
+          0.0,
+          0.0
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.4661458333333333,
+            -0.24479166666666666
+          ],
+          "estimate": -0.3515625
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            -0.4193359375,
+            -0.203125
+          ],
+          "estimate": -0.3046875
+        },
+        "false_safe_rate": 0.0,
+        "mean_fidelity": 0.9813448445675537,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "q05_fidelity": 0.9652817997670473,
+        "switch_rate": 0.0
+      },
+      "b_template": {
+        "ci95_two_way": [
+          0.9163004906682714,
+          0.9634446870510317
+        ],
+        "cvar05_exact_mass": 0.7708980889629862,
+        "false_safe_ci95_two_way": [
+          0.6197916666666666,
+          0.8463541666666666
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            0.24479166666666669,
+            0.5338541666666666
+          ],
+          "estimate": 0.38802083333333337
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.2916666666666667,
+            0.5755208333333334
+          ],
+          "estimate": 0.43489583333333337
+        },
+        "false_safe_rate": 0.7395833333333334,
+        "mean_fidelity": 0.9419118634315459,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.06477747814987342,
+            -0.017551299191468115
+          ],
+          "estimate": -0.039432981136007794
+        },
+        "q05_fidelity": 0.7998610993342933,
+        "switch_rate": 1.0
+      },
+      "c2_score": {
+        "ci95_two_way": [
+          0.9765889403738627,
+          0.9861373743683206
+        ],
+        "cvar05_exact_mass": 0.9638281437061549,
+        "false_safe_ci95_two_way": [
+          0.24479166666666666,
+          0.4661458333333333
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.013020833333333315,
+            0.09375
+          ],
+          "estimate": 0.046875
+        },
+        "false_safe_rate": 0.3515625,
+        "mean_fidelity": 0.98144926827662,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.00606263403619828,
+            0.006586757009343371
+          ],
+          "estimate": 0.00010442370906638132
+        },
+        "q05_fidelity": 0.9672922385169305,
+        "switch_rate": 0.5989583333333334
+      },
+      "c3r": {
+        "ci95_two_way": [
+          0.9798802572223926,
+          0.9884668142010412
+        ],
+        "cvar05_exact_mass": 0.9702322899425022,
+        "false_safe_ci95_two_way": [
+          0.140625,
+          0.359375
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.171875,
+            -0.0546875
+          ],
+          "estimate": -0.109375
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            -0.11197916666666666,
+            -0.0234375
+          ],
+          "estimate": -0.0625
+        },
+        "false_safe_rate": 0.2421875,
+        "mean_fidelity": 0.984534348527022,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.0006231267956729097,
+            0.007439340885605444
+          ],
+          "estimate": 0.003189503959468376
+        },
+        "q05_fidelity": 0.9720718391558375,
+        "switch_rate": 0.4557291666666667
+      },
+      "h_holdout_residual": {
+        "ci95_two_way": [
+          0.9820683809359209,
+          0.9893730597167082
+        ],
+        "cvar05_exact_mass": 0.971912082584004,
+        "false_safe_ci95_two_way": [
+          0.1640625,
+          0.3854166666666667
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.13541666666666669,
+            -0.03645833333333337
+          ],
+          "estimate": -0.08333333333333331
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            -0.09375,
+            0.020833333333333315
+          ],
+          "estimate": -0.036458333333333315
+        },
+        "false_safe_rate": 0.2682291666666667,
+        "mean_fidelity": 0.9860118198688411,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            6.659559585737166e-05,
+            0.009872441992059774
+          ],
+          "estimate": 0.004666975301287457
+        },
+        "q05_fidelity": 0.9749484499203622,
+        "switch_rate": 0.5078125
+      },
+      "u_uncertainty": {
+        "ci95_two_way": [
+          0.9766273112892514,
+          0.9862784176273351
+        ],
+        "cvar05_exact_mass": 0.9684835705111294,
+        "false_safe_ci95_two_way": [
+          0.203125,
+          0.41933593749999903
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.09375,
+            -0.013020833333333315
+          ],
+          "estimate": -0.046875
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_rate": 0.3046875,
+        "mean_fidelity": 0.9816202121529423,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.004672901869218584,
+            0.005413278118112287
+          ],
+          "estimate": 0.0002753675853885973
+        },
+        "q05_fidelity": 0.9689596673870334,
+        "switch_rate": 0.5260416666666666
+      }
+    },
+    "readout_flip": 0.0,
+    "target_pair_count": 32
+  },
+  {
+    "bootstrap": {
+      "conditional_on": "fixed_model_grid_and_calibration_set",
+      "draws": 5000,
+      "method": "two_way_cluster_bootstrap_target_pairs_and_measurement_seeds"
+    },
+    "code": "bitflip",
+    "copies": 1024,
+    "design_rank": 3,
+    "measurement_seed_count": 12,
+    "oracle_direct_template_fidelity": {
+      "ci95_two_way": [
+        0.9442453047736471,
+        0.9730127944250261
+      ],
+      "mean": 0.9591797346290661,
+      "policy_input": false
+    },
+    "physical_noise": 0.01,
+    "pilot": false,
+    "policies": {
+      "a_continuous": {
+        "ci95_two_way": [
+          0.9745634226918956,
+          0.9850637559938604
+        ],
+        "cvar05_exact_mass": 0.9540214411474996,
+        "false_safe_ci95_two_way": [
+          0.0,
+          0.0
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.3958333333333333,
+            -0.21354166666666666
+          ],
+          "estimate": -0.3046875
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            -0.3489583333333333,
+            -0.17447916666666666
+          ],
+          "estimate": -0.2604166666666667
+        },
+        "false_safe_rate": 0.0,
+        "mean_fidelity": 0.9802250466924226,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "q05_fidelity": 0.9609762816168216,
+        "switch_rate": 0.0
+      },
+      "b_template": {
+        "ci95_two_way": [
+          0.9253081168586947,
+          0.965333325516891
+        ],
+        "cvar05_exact_mass": 0.8210732615909948,
+        "false_safe_ci95_two_way": [
+          0.5728515625,
+          0.8020833333333334
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            0.2421223958333333,
+            0.5364583333333334
+          ],
+          "estimate": 0.38541666666666663
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.28125000000000006,
+            0.5781901041666657
+          ],
+          "estimate": 0.42968749999999994
+        },
+        "false_safe_rate": 0.6901041666666666,
+        "mean_fidelity": 0.9466293177412214,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.05525838583630347,
+            -0.014465826217470494
+          ],
+          "estimate": -0.03359572895120122
+        },
+        "q05_fidelity": 0.8303521479318586,
+        "switch_rate": 1.0
+      },
+      "c2_score": {
+        "ci95_two_way": [
+          0.9753166868498935,
+          0.9866127346026837
+        ],
+        "cvar05_exact_mass": 0.95171436021554,
+        "false_safe_ci95_two_way": [
+          0.21354166666666666,
+          0.3958333333333333
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.01302083333333337,
+            0.08333333333333334
+          ],
+          "estimate": 0.044270833333333315
+        },
+        "false_safe_rate": 0.3046875,
+        "mean_fidelity": 0.9816344931628781,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.004034233357592473,
+            0.00679411345653605
+          ],
+          "estimate": 0.0014094464704554888
+        },
+        "q05_fidelity": 0.9579772920371492,
+        "switch_rate": 0.5989583333333334
+      },
+      "c3r": {
+        "ci95_two_way": [
+          0.978956482225518,
+          0.9879976613906126
+        ],
+        "cvar05_exact_mass": 0.9538820861173989,
+        "false_safe_ci95_two_way": [
+          0.125,
+          0.2916666666666667
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.14583333333333334,
+            -0.0546875
+          ],
+          "estimate": -0.09895833333333334
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            -0.09375000000000003,
+            -0.0234375
+          ],
+          "estimate": -0.05468750000000003
+        },
+        "false_safe_rate": 0.20572916666666666,
+        "mean_fidelity": 0.9838894989552777,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.000803618503511866,
+            0.006902812528257273
+          ],
+          "estimate": 0.0036644522628550558
+        },
+        "q05_fidelity": 0.9671594133771193,
+        "switch_rate": 0.4505208333333333
+      },
+      "h_holdout_residual": {
+        "ci95_two_way": [
+          0.9801852979962464,
+          0.9890155172663927
+        ],
+        "cvar05_exact_mass": 0.9538820861173989,
+        "false_safe_ci95_two_way": [
+          0.14322916666666666,
+          0.3229166666666667
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.1171875,
+            -0.036458333333333315
+          ],
+          "estimate": -0.07291666666666666
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            -0.078125,
+            0.02089843749999909
+          ],
+          "estimate": -0.028645833333333343
+        },
+        "false_safe_rate": 0.23177083333333334,
+        "mean_fidelity": 0.9850784666318079,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.0010501285884950918,
+            0.00946577766959286
+          ],
+          "estimate": 0.004853419939385262
+        },
+        "q05_fidelity": 0.9671594133771193,
+        "switch_rate": 0.515625
+      },
+      "u_uncertainty": {
+        "ci95_two_way": [
+          0.9765897020671254,
+          0.9861427454296375
+        ],
+        "cvar05_exact_mass": 0.9532665570244183,
+        "false_safe_ci95_two_way": [
+          0.17447916666666666,
+          0.3489583333333333
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.08333333333333334,
+            -0.01302083333333337
+          ],
+          "estimate": -0.044270833333333315
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_rate": 0.2604166666666667,
+        "mean_fidelity": 0.9817047856227098,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.0025219228911470158,
+            0.00538336368403756
+          ],
+          "estimate": 0.0014797389302871888
+        },
+        "q05_fidelity": 0.9634832745789269,
+        "switch_rate": 0.5104166666666666
+      }
+    },
+    "readout_flip": 0.05,
+    "target_pair_count": 32
+  },
+  {
+    "bootstrap": {
+      "conditional_on": "fixed_model_grid_and_calibration_set",
+      "draws": 5000,
+      "method": "two_way_cluster_bootstrap_target_pairs_and_measurement_seeds"
+    },
+    "code": "bitflip",
+    "copies": 1024,
+    "design_rank": 3,
+    "measurement_seed_count": 12,
+    "oracle_direct_template_fidelity": {
+      "ci95_two_way": [
+        0.9448183035231134,
+        0.9726563532842671
+      ],
+      "mean": 0.9591797346290661,
+      "policy_input": false
+    },
+    "physical_noise": 0.05,
+    "pilot": false,
+    "policies": {
+      "a_continuous": {
+        "ci95_two_way": [
+          0.9754868662200643,
+          0.9858001156630334
+        ],
+        "cvar05_exact_mass": 0.9589179373816815,
+        "false_safe_ci95_two_way": [
+          0.0,
+          0.0
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.4817708333333333,
+            -0.2578125
+          ],
+          "estimate": -0.3671875
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            -0.3880208333333333,
+            -0.18489583333333334
+          ],
+          "estimate": -0.2864583333333333
+        },
+        "false_safe_rate": 0.0,
+        "mean_fidelity": 0.9811326843455759,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "q05_fidelity": 0.9647207967686594,
+        "switch_rate": 0.0
+      },
+      "b_template": {
+        "ci95_two_way": [
+          0.9245010539201499,
+          0.9638224474357037
+        ],
+        "cvar05_exact_mass": 0.8365283924868347,
+        "false_safe_ci95_two_way": [
+          0.6197916666666666,
+          0.8333333333333334
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            0.22395833333333331,
+            0.5078125
+          ],
+          "estimate": 0.36458333333333337
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.2994791666666667,
+            0.5885416666666666
+          ],
+          "estimate": 0.44531250000000006
+        },
+        "false_safe_rate": 0.7317708333333334,
+        "mean_fidelity": 0.9450247462201031,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.056668074052818415,
+            -0.016347741012838764
+          ],
+          "estimate": -0.03610793812547275
+        },
+        "q05_fidelity": 0.8487479936180972,
+        "switch_rate": 1.0
+      },
+      "c2_score": {
+        "ci95_two_way": [
+          0.9730472520942408,
+          0.985646476465753
+        ],
+        "cvar05_exact_mass": 0.9376671829860559,
+        "false_safe_ci95_two_way": [
+          0.2578125,
+          0.4817708333333333
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.033854166666666685,
+            0.13802083333333334
+          ],
+          "estimate": 0.08072916666666669
+        },
+        "false_safe_rate": 0.3671875,
+        "mean_fidelity": 0.9800084642924319,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.00951925605505047,
+            0.00623235925625609
+          ],
+          "estimate": -0.0011242200531439428
+        },
+        "q05_fidelity": 0.9492319802542636,
+        "switch_rate": 0.6197916666666666
+      },
+      "c3r": {
+        "ci95_two_way": [
+          0.9788728421221232,
+          0.9878663272482665
+        ],
+        "cvar05_exact_mass": 0.9640713122012474,
+        "false_safe_ci95_two_way": [
+          0.14583333333333334,
+          0.3463541666666667
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.1875,
+            -0.06770833333333334
+          ],
+          "estimate": -0.125
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            -0.0859375,
+            -0.013020833333333343
+          ],
+          "estimate": -0.044270833333333315
+        },
+        "false_safe_rate": 0.2421875,
+        "mean_fidelity": 0.9838145056029947,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.0007496847223645353,
+            0.007017534308507826
+          ],
+          "estimate": 0.0026818212574187816
+        },
+        "q05_fidelity": 0.9660633898264469,
+        "switch_rate": 0.4401041666666667
+      },
+      "h_holdout_residual": {
+        "ci95_two_way": [
+          0.9811827656516314,
+          0.9886197651813773
+        ],
+        "cvar05_exact_mass": 0.9640002601319961,
+        "false_safe_ci95_two_way": [
+          0.18489583333333334,
+          0.4036458333333333
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.13020833333333337,
+            -0.03385416666666663
+          ],
+          "estimate": -0.078125
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            -0.05208333333333334,
+            0.059895833333333315
+          ],
+          "estimate": 0.002604166666666685
+        },
+        "false_safe_rate": 0.2890625,
+        "mean_fidelity": 0.98528270557521,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.0002552362862545119,
+            0.00976718614626474
+          ],
+          "estimate": 0.004150021229634149
+        },
+        "q05_fidelity": 0.9700911128252717,
+        "switch_rate": 0.5338541666666666
+      },
+      "u_uncertainty": {
+        "ci95_two_way": [
+          0.9758962499207187,
+          0.9864888650592558
+        ],
+        "cvar05_exact_mass": 0.9632630641788069,
+        "false_safe_ci95_two_way": [
+          0.18489583333333334,
+          0.3880208333333333
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.13802083333333334,
+            -0.033854166666666685
+          ],
+          "estimate": -0.08072916666666669
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_rate": 0.2864583333333333,
+        "mean_fidelity": 0.9817605760035031,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.003483345960745848,
+            0.005357725207556238
+          ],
+          "estimate": 0.0006278916579272042
+        },
+        "q05_fidelity": 0.9653359666062504,
+        "switch_rate": 0.4921875
+      }
+    },
+    "readout_flip": 0.0,
+    "target_pair_count": 32
+  },
+  {
+    "bootstrap": {
+      "conditional_on": "fixed_model_grid_and_calibration_set",
+      "draws": 5000,
+      "method": "two_way_cluster_bootstrap_target_pairs_and_measurement_seeds"
+    },
+    "code": "bitflip",
+    "copies": 1024,
+    "design_rank": 3,
+    "measurement_seed_count": 12,
+    "oracle_direct_template_fidelity": {
+      "ci95_two_way": [
+        0.9447082562680914,
+        0.9725069918145264
+      ],
+      "mean": 0.9591797346290661,
+      "policy_input": false
+    },
+    "physical_noise": 0.05,
+    "pilot": false,
+    "policies": {
+      "a_continuous": {
+        "ci95_two_way": [
+          0.9767894896382407,
+          0.9851077387761683
+        ],
+        "cvar05_exact_mass": 0.9651152083921479,
+        "false_safe_ci95_two_way": [
+          0.0,
+          0.0
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.4973958333333333,
+            -0.2916666666666667
+          ],
+          "estimate": -0.3932291666666667
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            -0.3854166666666667,
+            -0.21354166666666666
+          ],
+          "estimate": -0.296875
+        },
+        "false_safe_rate": 0.0,
+        "mean_fidelity": 0.9811655495866329,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "q05_fidelity": 0.9687019769678163,
+        "switch_rate": 0.0
+      },
+      "b_template": {
+        "ci95_two_way": [
+          0.9184187229192272,
+          0.961762925933008
+        ],
+        "cvar05_exact_mass": 0.7722149674120744,
+        "false_safe_ci95_two_way": [
+          0.6145182291666668,
+          0.828125
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            0.2056640625,
+            0.4740234374999991
+          ],
+          "estimate": 0.3333333333333333
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.29687499999999994,
+            0.5651041666666666
+          ],
+          "estimate": 0.4296875
+        },
+        "false_safe_rate": 0.7265625,
+        "mean_fidelity": 0.9413336881447608,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.06315295970371672,
+            -0.019104906998365534
+          ],
+          "estimate": -0.03983186144187212
+        },
+        "q05_fidelity": 0.8172885589730814,
+        "switch_rate": 1.0
+      },
+      "c2_score": {
+        "ci95_two_way": [
+          0.9676362858904409,
+          0.9821286186573531
+        ],
+        "cvar05_exact_mass": 0.9294702753117994,
+        "false_safe_ci95_two_way": [
+          0.2916666666666667,
+          0.4973958333333333
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.052083333333333315,
+            0.1484375
+          ],
+          "estimate": 0.09635416666666669
+        },
+        "false_safe_rate": 0.3932291666666667,
+        "mean_fidelity": 0.9756743600548886,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.013895029799629213,
+            0.0019181093510177076
+          ],
+          "estimate": -0.005491189531744323
+        },
+        "q05_fidelity": 0.9505075815795755,
+        "switch_rate": 0.6588541666666666
+      },
+      "c3r": {
+        "ci95_two_way": [
+          0.9798763075808011,
+          0.9870633462912674
+        ],
+        "cvar05_exact_mass": 0.9686748201930533,
+        "false_safe_ci95_two_way": [
+          0.13802083333333334,
+          0.3255208333333333
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.24218749999999997,
+            -0.09635416666666666
+          ],
+          "estimate": -0.16406250000000003
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            -0.11979166666666666,
+            -0.026041666666666657
+          ],
+          "estimate": -0.06770833333333334
+        },
+        "false_safe_rate": 0.22916666666666666,
+        "mean_fidelity": 0.9837240529101597,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.0004958388887255303,
+            0.005886826713656786
+          ],
+          "estimate": 0.002558503323526806
+        },
+        "q05_fidelity": 0.9716687581140462,
+        "switch_rate": 0.4557291666666667
+      },
+      "h_holdout_residual": {
+        "ci95_two_way": [
+          0.9795078365915575,
+          0.9869423241185501
+        ],
+        "cvar05_exact_mass": 0.9680562834492823,
+        "false_safe_ci95_two_way": [
+          0.18489583333333334,
+          0.3958333333333333
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.17187499999999997,
+            -0.052083333333333315
+          ],
+          "estimate": -0.10677083333333337
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            -0.06770833333333334,
+            0.04427083333333337
+          ],
+          "estimate": -0.010416666666666685
+        },
+        "false_safe_rate": 0.2864583333333333,
+        "mean_fidelity": 0.983489823108655,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.0012736877442653949,
+            0.006581050441294627
+          ],
+          "estimate": 0.0023242735220220245
+        },
+        "q05_fidelity": 0.9709498838635535,
+        "switch_rate": 0.5494791666666666
+      },
+      "u_uncertainty": {
+        "ci95_two_way": [
+          0.9765292959803952,
+          0.98481690452542
+        ],
+        "cvar05_exact_mass": 0.960921959363539,
+        "false_safe_ci95_two_way": [
+          0.21354166666666666,
+          0.3854166666666667
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.1484375,
+            -0.052083333333333315
+          ],
+          "estimate": -0.09635416666666669
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_rate": 0.296875,
+        "mean_fidelity": 0.9808428427697266,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.004193326756451546,
+            0.0038546770645196456
+          ],
+          "estimate": -0.0003227068169063818
+        },
+        "q05_fidelity": 0.964250822023064,
+        "switch_rate": 0.5260416666666666
+      }
+    },
+    "readout_flip": 0.05,
+    "target_pair_count": 32
+  },
+  {
+    "bootstrap": {
+      "conditional_on": "fixed_model_grid_and_calibration_set",
+      "draws": 5000,
+      "method": "two_way_cluster_bootstrap_target_pairs_and_measurement_seeds"
+    },
+    "code": "bitflip",
+    "copies": 1024,
+    "design_rank": 3,
+    "measurement_seed_count": 12,
+    "oracle_direct_template_fidelity": {
+      "ci95_two_way": [
+        0.9444976363383328,
+        0.9731301676471616
+      ],
+      "mean": 0.9591797346290661,
+      "policy_input": false
+    },
+    "physical_noise": 0.1,
+    "pilot": false,
+    "policies": {
+      "a_continuous": {
+        "ci95_two_way": [
+          0.9668050026759756,
+          0.980635082170215
+        ],
+        "cvar05_exact_mass": 0.9464858320730425,
+        "false_safe_ci95_two_way": [
+          0.0,
+          0.0
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.4947916666666667,
+            -0.2916666666666667
+          ],
+          "estimate": -0.390625
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            -0.265625,
+            -0.12760416666666666
+          ],
+          "estimate": -0.19270833333333334
+        },
+        "false_safe_rate": 0.0,
+        "mean_fidelity": 0.9745135925853065,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "q05_fidelity": 0.9515920143928999,
+        "switch_rate": 0.0
+      },
+      "b_template": {
+        "ci95_two_way": [
+          0.9207532570514463,
+          0.9627960695765752
+        ],
+        "cvar05_exact_mass": 0.8279905763513252,
+        "false_safe_ci95_two_way": [
+          0.53125,
+          0.7708333333333334
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            0.14576822916666668,
+            0.3932291666666667
+          ],
+          "estimate": 0.265625
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.33847656249999997,
+            0.5911458333333334
+          ],
+          "estimate": 0.46354166666666663
+        },
+        "false_safe_rate": 0.65625,
+        "mean_fidelity": 0.9427885580829538,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.05443853505932884,
+            -0.010547470037784038
+          ],
+          "estimate": -0.031725034502352645
+        },
+        "q05_fidelity": 0.8385486862666329,
+        "switch_rate": 1.0
+      },
+      "c2_score": {
+        "ci95_two_way": [
+          0.9618434560260181,
+          0.9801990762729563
+        ],
+        "cvar05_exact_mass": 0.9365615388413171,
+        "false_safe_ci95_two_way": [
+          0.2916666666666667,
+          0.4947916666666667
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.13541666666666669,
+            0.26822916666666663
+          ],
+          "estimate": 0.19791666666666666
+        },
+        "false_safe_rate": 0.390625,
+        "mean_fidelity": 0.9719432020212887,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.012973722311799015,
+            0.007338425345678114
+          ],
+          "estimate": -0.002570390564017755
+        },
+        "q05_fidelity": 0.9442401954330505,
+        "switch_rate": 0.7161458333333334
+      },
+      "c3r": {
+        "ci95_two_way": [
+          0.9680925039280863,
+          0.981384619007237
+        ],
+        "cvar05_exact_mass": 0.9458263595605785,
+        "false_safe_ci95_two_way": [
+          0.10677083333333333,
+          0.24479166666666666
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.2942708333333333,
+            -0.15364583333333331
+          ],
+          "estimate": -0.21875
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            -0.046875,
+            -0.0026041666666666574
+          ],
+          "estimate": -0.020833333333333343
+        },
+        "false_safe_rate": 0.171875,
+        "mean_fidelity": 0.9754656814149859,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.00214954054709848,
+            0.004513170277721125
+          ],
+          "estimate": 0.0009520888296794539
+        },
+        "q05_fidelity": 0.9482798812730204,
+        "switch_rate": 0.3359375
+      },
+      "h_holdout_residual": {
+        "ci95_two_way": [
+          0.9743425791045366,
+          0.9849952945308651
+        ],
+        "cvar05_exact_mass": 0.9551243867821315,
+        "false_safe_ci95_two_way": [
+          0.2109375,
+          0.4114583333333333
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.13802083333333331,
+            -0.0390625
+          ],
+          "estimate": -0.08333333333333331
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.05208333333333334,
+            0.17708333333333334
+          ],
+          "estimate": 0.11458333333333334
+        },
+        "false_safe_rate": 0.3072916666666667,
+        "mean_fidelity": 0.9798595269208993,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.0006742808882331834,
+            0.012422077253476885
+          ],
+          "estimate": 0.005345934335592828
+        },
+        "q05_fidelity": 0.9608406335643721,
+        "switch_rate": 0.6302083333333334
+      },
+      "u_uncertainty": {
+        "ci95_two_way": [
+          0.9669058083054739,
+          0.9807564940940307
+        ],
+        "cvar05_exact_mass": 0.9435724936881519,
+        "false_safe_ci95_two_way": [
+          0.12760416666666666,
+          0.265625
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.26822916666666663,
+            -0.13541666666666669
+          ],
+          "estimate": -0.19791666666666666
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_rate": 0.19270833333333334,
+        "mean_fidelity": 0.9744174134905021,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.0037145766625443196,
+            0.003913730536057017
+          ],
+          "estimate": -9.617909480430509e-05
+        },
+        "q05_fidelity": 0.9460164295137006,
+        "switch_rate": 0.359375
+      }
+    },
+    "readout_flip": 0.0,
+    "target_pair_count": 32
+  },
+  {
+    "bootstrap": {
+      "conditional_on": "fixed_model_grid_and_calibration_set",
+      "draws": 5000,
+      "method": "two_way_cluster_bootstrap_target_pairs_and_measurement_seeds"
+    },
+    "code": "bitflip",
+    "copies": 1024,
+    "design_rank": 3,
+    "measurement_seed_count": 12,
+    "oracle_direct_template_fidelity": {
+      "ci95_two_way": [
+        0.9439662018077954,
+        0.9723220517534339
+      ],
+      "mean": 0.9591797346290661,
+      "policy_input": false
+    },
+    "physical_noise": 0.1,
+    "pilot": false,
+    "policies": {
+      "a_continuous": {
+        "ci95_two_way": [
+          0.9637104064064892,
+          0.9773941799209922
+        ],
+        "cvar05_exact_mass": 0.9300629635547479,
+        "false_safe_ci95_two_way": [
+          0.0,
+          0.0
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.4895833333333333,
+            -0.3046223958333343
+          ],
+          "estimate": -0.3958333333333333
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            -0.2890625,
+            -0.13802083333333334
+          ],
+          "estimate": -0.2109375
+        },
+        "false_safe_rate": 0.0,
+        "mean_fidelity": 0.9713209717305973,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "q05_fidelity": 0.946011051780672,
+        "switch_rate": 0.0
+      },
+      "b_template": {
+        "ci95_two_way": [
+          0.9144365172111928,
+          0.9610578533157405
+        ],
+        "cvar05_exact_mass": 0.784768318247715,
+        "false_safe_ci95_two_way": [
+          0.5442708333333334,
+          0.7760416666666666
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            0.15104166666666669,
+            0.3932291666666667
+          ],
+          "estimate": 0.26562500000000006
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.3255208333333333,
+            0.5833333333333334
+          ],
+          "estimate": 0.45052083333333337
+        },
+        "false_safe_rate": 0.6614583333333334,
+        "mean_fidelity": 0.9406815383876039,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.05707616442571014,
+            -0.0078058741069384355
+          ],
+          "estimate": -0.03063943334299335
+        },
+        "q05_fidelity": 0.820909756468062,
+        "switch_rate": 1.0
+      },
+      "c2_score": {
+        "ci95_two_way": [
+          0.9606650137235502,
+          0.9786205135544424
+        ],
+        "cvar05_exact_mass": 0.9298034267174093,
+        "false_safe_ci95_two_way": [
+          0.30462239583333334,
+          0.4895833333333333
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.11718750000000003,
+            0.2604166666666667
+          ],
+          "estimate": 0.18489583333333331
+        },
+        "false_safe_rate": 0.3958333333333333,
+        "mean_fidelity": 0.9705211670476407,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.011367516269956865,
+            0.010290736324172274
+          ],
+          "estimate": -0.0007998046829565952
+        },
+        "q05_fidelity": 0.9402607691460695,
+        "switch_rate": 0.7265625
+      },
+      "c3r": {
+        "ci95_two_way": [
+          0.9655597947935756,
+          0.978602874610377
+        ],
+        "cvar05_exact_mass": 0.9399571234234358,
+        "false_safe_ci95_two_way": [
+          0.09895833333333333,
+          0.24485677083333238
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.30729166666666663,
+            -0.15625
+          ],
+          "estimate": -0.22656249999999997
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            -0.08333333333333334,
+            -0.010416666666666657
+          ],
+          "estimate": -0.04166666666666666
+        },
+        "false_safe_rate": 0.16927083333333334,
+        "mean_fidelity": 0.9727842160839852,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.0018973642114464698,
+            0.005196719581109862
+          ],
+          "estimate": 0.0014632443533879602
+        },
+        "q05_fidelity": 0.9503530910066909,
+        "switch_rate": 0.3229166666666667
+      },
+      "h_holdout_residual": {
+        "ci95_two_way": [
+          0.9738990994418398,
+          0.9839972462455131
+        ],
+        "cvar05_exact_mass": 0.9557058165822543,
+        "false_safe_ci95_two_way": [
+          0.18229166666666666,
+          0.3723958333333333
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.18750000000000003,
+            -0.0625
+          ],
+          "estimate": -0.11979166666666663
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            -0.005208333333333343,
+            0.13541666666666666
+          ],
+          "estimate": 0.06510416666666669
+        },
+        "false_safe_rate": 0.2760416666666667,
+        "mean_fidelity": 0.979149053339781,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.0004852360618257724,
+            0.017003823880515252
+          ],
+          "estimate": 0.00782808160918369
+        },
+        "q05_fidelity": 0.9617588073800465,
+        "switch_rate": 0.6015625
+      },
+      "u_uncertainty": {
+        "ci95_two_way": [
+          0.9634231083117099,
+          0.9767637255803084
+        ],
+        "cvar05_exact_mass": 0.9399571234234358,
+        "false_safe_ci95_two_way": [
+          0.13802083333333334,
+          0.2890625
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.2604166666666667,
+            -0.11718750000000003
+          ],
+          "estimate": -0.18489583333333331
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_rate": 0.2109375,
+        "mean_fidelity": 0.9706933287765377,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.004649281113132298,
+            0.0035345372320687357
+          ],
+          "estimate": -0.0006276429540595929
+        },
+        "q05_fidelity": 0.9479320374933741,
+        "switch_rate": 0.3671875
+      }
+    },
+    "readout_flip": 0.05,
+    "target_pair_count": 32
+  },
+  {
+    "bootstrap": {
+      "conditional_on": "fixed_model_grid_and_calibration_set",
+      "draws": 5000,
+      "method": "two_way_cluster_bootstrap_target_pairs_and_measurement_seeds"
+    },
+    "code": "phaseflip",
+    "copies": 256,
+    "design_rank": 3,
+    "measurement_seed_count": 12,
+    "oracle_direct_template_fidelity": {
+      "ci95_two_way": [
+        0.9445934764080224,
+        0.9727697023910117
+      ],
+      "mean": 0.9591797346290661,
+      "policy_input": false
+    },
+    "physical_noise": 0.01,
+    "pilot": false,
+    "policies": {
+      "a_continuous": {
+        "ci95_two_way": [
+          0.9501451627228703,
+          0.9696537989254383
+        ],
+        "cvar05_exact_mass": 0.9166029448142307,
+        "false_safe_ci95_two_way": [
+          0.0,
+          0.0
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.3802083333333333,
+            -0.20833333333333334
+          ],
+          "estimate": -0.2890625
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_rate": 0.0,
+        "mean_fidelity": 0.9610205461576141,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "q05_fidelity": 0.929560821391821,
+        "switch_rate": 0.0
+      },
+      "b_template": {
+        "ci95_two_way": [
+          0.9113676839749915,
+          0.9552106634360076
+        ],
+        "cvar05_exact_mass": 0.8155100651029137,
+        "false_safe_ci95_two_way": [
+          0.5052083333333334,
+          0.7369791666666666
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            0.20572916666666669,
+            0.46875
+          ],
+          "estimate": 0.33333333333333337
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.5052083333333334,
+            0.7369791666666666
+          ],
+          "estimate": 0.6223958333333334
+        },
+        "false_safe_rate": 0.6223958333333334,
+        "mean_fidelity": 0.934334030479873,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.04919602199708978,
+            -0.00650887103743154
+          ],
+          "estimate": -0.026686515677741163
+        },
+        "q05_fidelity": 0.8336125923040618,
+        "switch_rate": 1.0
+      },
+      "c2_score": {
+        "ci95_two_way": [
+          0.9507726985061994,
+          0.9743242078212301
+        ],
+        "cvar05_exact_mass": 0.9056934839371147,
+        "false_safe_ci95_two_way": [
+          0.20833333333333334,
+          0.3802083333333333
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.20833333333333334,
+            0.3802083333333333
+          ],
+          "estimate": 0.2890625
+        },
+        "false_safe_rate": 0.2890625,
+        "mean_fidelity": 0.9637362180823065,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.005990651058230939,
+            0.010493246453910258
+          ],
+          "estimate": 0.0027156719246923533
+        },
+        "q05_fidelity": 0.9176510500056413,
+        "switch_rate": 0.6041666666666666
+      },
+      "c3r": {
+        "ci95_two_way": [
+          0.9501451627228703,
+          0.9696537989254383
+        ],
+        "cvar05_exact_mass": 0.9166029448142307,
+        "false_safe_ci95_two_way": [
+          0.0,
+          0.0
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.3802083333333333,
+            -0.20833333333333334
+          ],
+          "estimate": -0.2890625
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_rate": 0.0,
+        "mean_fidelity": 0.9610205461576141,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "q05_fidelity": 0.929560821391821,
+        "switch_rate": 0.0
+      },
+      "h_holdout_residual": {
+        "ci95_two_way": [
+          0.9585765300734979,
+          0.9781175845819157
+        ],
+        "cvar05_exact_mass": 0.9156963274552707,
+        "false_safe_ci95_two_way": [
+          0.12760416666666666,
+          0.2864583333333333
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.13541666666666669,
+            -0.046875
+          ],
+          "estimate": -0.0859375
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.12760416666666666,
+            0.2864583333333333
+          ],
+          "estimate": 0.203125
+        },
+        "false_safe_rate": 0.203125,
+        "mean_fidelity": 0.9693940494576188,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.003038998090774664,
+            0.014516098846041024
+          ],
+          "estimate": 0.008373503300004637
+        },
+        "q05_fidelity": 0.933557797660826,
+        "switch_rate": 0.5026041666666666
+      },
+      "u_uncertainty": {
+        "ci95_two_way": [
+          0.9501451627228703,
+          0.9696537989254383
+        ],
+        "cvar05_exact_mass": 0.9166029448142307,
+        "false_safe_ci95_two_way": [
+          0.0,
+          0.0
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.3802083333333333,
+            -0.20833333333333334
+          ],
+          "estimate": -0.2890625
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_rate": 0.0,
+        "mean_fidelity": 0.9610205461576141,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "q05_fidelity": 0.929560821391821,
+        "switch_rate": 0.0
+      }
+    },
+    "readout_flip": 0.0,
+    "target_pair_count": 32
+  },
+  {
+    "bootstrap": {
+      "conditional_on": "fixed_model_grid_and_calibration_set",
+      "draws": 5000,
+      "method": "two_way_cluster_bootstrap_target_pairs_and_measurement_seeds"
+    },
+    "code": "phaseflip",
+    "copies": 256,
+    "design_rank": 3,
+    "measurement_seed_count": 12,
+    "oracle_direct_template_fidelity": {
+      "ci95_two_way": [
+        0.9450634633664655,
+        0.9728110159462028
+      ],
+      "mean": 0.9591797346290661,
+      "policy_input": false
+    },
+    "physical_noise": 0.01,
+    "pilot": false,
+    "policies": {
+      "a_continuous": {
+        "ci95_two_way": [
+          0.9456370297306843,
+          0.9635064354594904
+        ],
+        "cvar05_exact_mass": 0.9205294475556809,
+        "false_safe_ci95_two_way": [
+          0.0,
+          0.0
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.3854166666666667,
+            -0.2109375
+          ],
+          "estimate": -0.296875
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_rate": 0.0,
+        "mean_fidelity": 0.9548132212730512,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "q05_fidelity": 0.9348320550212694,
+        "switch_rate": 0.0
+      },
+      "b_template": {
+        "ci95_two_way": [
+          0.9108667305938261,
+          0.9531953386532502
+        ],
+        "cvar05_exact_mass": 0.7990458079023464,
+        "false_safe_ci95_two_way": [
+          0.4765625,
+          0.7005859374999991
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            0.17447916666666669,
+            0.421875
+          ],
+          "estimate": 0.29427083333333337
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.4765625,
+            0.7005859374999991
+          ],
+          "estimate": 0.5911458333333334
+        },
+        "false_safe_rate": 0.5911458333333334,
+        "mean_fidelity": 0.9332392183721421,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.04431127150399205,
+            -0.001248894267381368
+          ],
+          "estimate": -0.02157400290090916
+        },
+        "q05_fidelity": 0.8428524326469184,
+        "switch_rate": 1.0
+      },
+      "c2_score": {
+        "ci95_two_way": [
+          0.9470198788766182,
+          0.967897703559405
+        ],
+        "cvar05_exact_mass": 0.9145658363195357,
+        "false_safe_ci95_two_way": [
+          0.2109375,
+          0.3854166666666667
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.2109375,
+            0.3854166666666667
+          ],
+          "estimate": 0.296875
+        },
+        "false_safe_rate": 0.296875,
+        "mean_fidelity": 0.9583475289853983,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.004088819395756618,
+            0.011125783516940858
+          ],
+          "estimate": 0.0035343077123470845
+        },
+        "q05_fidelity": 0.9271484083208564,
+        "switch_rate": 0.6197916666666666
+      },
+      "c3r": {
+        "ci95_two_way": [
+          0.9456370297306843,
+          0.9635064354594904
+        ],
+        "cvar05_exact_mass": 0.9205294475556809,
+        "false_safe_ci95_two_way": [
+          0.0,
+          0.0
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.3854166666666667,
+            -0.2109375
+          ],
+          "estimate": -0.296875
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_rate": 0.0,
+        "mean_fidelity": 0.9548132212730512,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "q05_fidelity": 0.9348320550212694,
+        "switch_rate": 0.0
+      },
+      "h_holdout_residual": {
+        "ci95_two_way": [
+          0.9546853834635003,
+          0.9721583222480925
+        ],
+        "cvar05_exact_mass": 0.9272894947506891,
+        "false_safe_ci95_two_way": [
+          0.12760416666666666,
+          0.2734375
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.15104166666666666,
+            -0.057291666666666685
+          ],
+          "estimate": -0.1015625
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.12760416666666666,
+            0.2734375
+          ],
+          "estimate": 0.1953125
+        },
+        "false_safe_rate": 0.1953125,
+        "mean_fidelity": 0.964154997785748,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.003786399720413383,
+            0.015587087867185602
+          ],
+          "estimate": 0.009341776512696742
+        },
+        "q05_fidelity": 0.9351556485036991,
+        "switch_rate": 0.4973958333333333
+      },
+      "u_uncertainty": {
+        "ci95_two_way": [
+          0.9456370297306843,
+          0.9635064354594904
+        ],
+        "cvar05_exact_mass": 0.9205294475556809,
+        "false_safe_ci95_two_way": [
+          0.0,
+          0.0
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.3854166666666667,
+            -0.2109375
+          ],
+          "estimate": -0.296875
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_rate": 0.0,
+        "mean_fidelity": 0.9548132212730512,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "q05_fidelity": 0.9348320550212694,
+        "switch_rate": 0.0
+      }
+    },
+    "readout_flip": 0.05,
+    "target_pair_count": 32
+  },
+  {
+    "bootstrap": {
+      "conditional_on": "fixed_model_grid_and_calibration_set",
+      "draws": 5000,
+      "method": "two_way_cluster_bootstrap_target_pairs_and_measurement_seeds"
+    },
+    "code": "phaseflip",
+    "copies": 256,
+    "design_rank": 3,
+    "measurement_seed_count": 12,
+    "oracle_direct_template_fidelity": {
+      "ci95_two_way": [
+        0.9445414086685698,
+        0.972860512612576
+      ],
+      "mean": 0.9591797346290661,
+      "policy_input": false
+    },
+    "physical_noise": 0.05,
+    "pilot": false,
+    "policies": {
+      "a_continuous": {
+        "ci95_two_way": [
+          0.9460201974058041,
+          0.9665067462278876
+        ],
+        "cvar05_exact_mass": 0.9086307557927916,
+        "false_safe_ci95_two_way": [
+          0.0,
+          0.0
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.4166666666666667,
+            -0.2421875
+          ],
+          "estimate": -0.328125
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_rate": 0.0,
+        "mean_fidelity": 0.9571962108256679,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "q05_fidelity": 0.9270028290482311,
+        "switch_rate": 0.0
+      },
+      "b_template": {
+        "ci95_two_way": [
+          0.9033939163011229,
+          0.9502441505073307
+        ],
+        "cvar05_exact_mass": 0.7792676774445764,
+        "false_safe_ci95_two_way": [
+          0.5182291666666666,
+          0.734375
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            0.17701822916666668,
+            0.43229166666666663
+          ],
+          "estimate": 0.29947916666666663
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.5182291666666666,
+            0.734375
+          ],
+          "estimate": 0.6276041666666666
+        },
+        "false_safe_rate": 0.6276041666666666,
+        "mean_fidelity": 0.9287501607175163,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.0542721836979158,
+            -0.0065754193445105346
+          ],
+          "estimate": -0.0284460501081516
+        },
+        "q05_fidelity": 0.805948494902833,
+        "switch_rate": 1.0
+      },
+      "c2_score": {
+        "ci95_two_way": [
+          0.9467116949951153,
+          0.9679224442590395
+        ],
+        "cvar05_exact_mass": 0.9091284178807143,
+        "false_safe_ci95_two_way": [
+          0.2421875,
+          0.4166666666666667
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.2421875,
+            0.4166666666666667
+          ],
+          "estimate": 0.328125
+        },
+        "false_safe_rate": 0.328125,
+        "mean_fidelity": 0.9580891578241472,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.0067406809705031325,
+            0.00874527011217833
+          ],
+          "estimate": 0.0008929469984793048
+        },
+        "q05_fidelity": 0.9187625126547622,
+        "switch_rate": 0.6432291666666666
+      },
+      "c3r": {
+        "ci95_two_way": [
+          0.9460201974058041,
+          0.9665067462278876
+        ],
+        "cvar05_exact_mass": 0.9086307557927916,
+        "false_safe_ci95_two_way": [
+          0.0,
+          0.0
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.4166666666666667,
+            -0.2421875
+          ],
+          "estimate": -0.328125
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_rate": 0.0,
+        "mean_fidelity": 0.9571962108256679,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "q05_fidelity": 0.9270028290482311,
+        "switch_rate": 0.0
+      },
+      "h_holdout_residual": {
+        "ci95_two_way": [
+          0.9545651721017756,
+          0.974014448841486
+        ],
+        "cvar05_exact_mass": 0.9189519835950269,
+        "false_safe_ci95_two_way": [
+          0.13541666666666666,
+          0.2838541666666667
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.19010416666666666,
+            -0.06770833333333334
+          ],
+          "estimate": -0.125
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.13541666666666666,
+            0.2838541666666667
+          ],
+          "estimate": 0.203125
+        },
+        "false_safe_rate": 0.203125,
+        "mean_fidelity": 0.965001328227513,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.002339315542362763,
+            0.01416151976879734
+          ],
+          "estimate": 0.007805117401845196
+        },
+        "q05_fidelity": 0.9320500641804585,
+        "switch_rate": 0.5026041666666666
+      },
+      "u_uncertainty": {
+        "ci95_two_way": [
+          0.9460201974058041,
+          0.9665067462278876
+        ],
+        "cvar05_exact_mass": 0.9086307557927916,
+        "false_safe_ci95_two_way": [
+          0.0,
+          0.0
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.4166666666666667,
+            -0.2421875
+          ],
+          "estimate": -0.328125
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_rate": 0.0,
+        "mean_fidelity": 0.9571962108256679,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "q05_fidelity": 0.9270028290482311,
+        "switch_rate": 0.0
+      }
+    },
+    "readout_flip": 0.0,
+    "target_pair_count": 32
+  },
+  {
+    "bootstrap": {
+      "conditional_on": "fixed_model_grid_and_calibration_set",
+      "draws": 5000,
+      "method": "two_way_cluster_bootstrap_target_pairs_and_measurement_seeds"
+    },
+    "code": "phaseflip",
+    "copies": 256,
+    "design_rank": 3,
+    "measurement_seed_count": 12,
+    "oracle_direct_template_fidelity": {
+      "ci95_two_way": [
+        0.9448174883010971,
+        0.9728413460732572
+      ],
+      "mean": 0.9591797346290661,
+      "policy_input": false
+    },
+    "physical_noise": 0.05,
+    "pilot": false,
+    "policies": {
+      "a_continuous": {
+        "ci95_two_way": [
+          0.9273999662732899,
+          0.9547504110631058
+        ],
+        "cvar05_exact_mass": 0.8957293793760293,
+        "false_safe_ci95_two_way": [
+          0.0,
+          0.0
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.3645833333333333,
+            -0.203125
+          ],
+          "estimate": -0.28125
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_rate": 0.0,
+        "mean_fidelity": 0.9419203552583375,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "q05_fidelity": 0.906810871671389,
+        "switch_rate": 0.0
+      },
+      "b_template": {
+        "ci95_two_way": [
+          0.8927378565023846,
+          0.9447242235705791
+        ],
+        "cvar05_exact_mass": 0.7698183366824838,
+        "false_safe_ci95_two_way": [
+          0.4583333333333333,
+          0.671875
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            0.171875,
+            0.40624999999999994
+          ],
+          "estimate": 0.28645833333333337
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.4583333333333333,
+            0.671875
+          ],
+          "estimate": 0.5677083333333334
+        },
+        "false_safe_rate": 0.5677083333333334,
+        "mean_fidelity": 0.9210050246640461,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.04340078904866503,
+            -0.00042909971439756346
+          ],
+          "estimate": -0.020915330594291404
+        },
+        "q05_fidelity": 0.7992364600875985,
+        "switch_rate": 1.0
+      },
+      "c2_score": {
+        "ci95_two_way": [
+          0.9278704985383813,
+          0.9603293679524867
+        ],
+        "cvar05_exact_mass": 0.8880158253600107,
+        "false_safe_ci95_two_way": [
+          0.203125,
+          0.3645833333333333
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.203125,
+            0.3645833333333333
+          ],
+          "estimate": 0.28125
+        },
+        "false_safe_rate": 0.28125,
+        "mean_fidelity": 0.9457255534383866,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.005182227610230414,
+            0.01268878099003575
+          ],
+          "estimate": 0.0038051981800490964
+        },
+        "q05_fidelity": 0.9080458302333871,
+        "switch_rate": 0.625
+      },
+      "c3r": {
+        "ci95_two_way": [
+          0.9273999662732899,
+          0.9547504110631058
+        ],
+        "cvar05_exact_mass": 0.8957293793760293,
+        "false_safe_ci95_two_way": [
+          0.0,
+          0.0
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.3645833333333333,
+            -0.203125
+          ],
+          "estimate": -0.28125
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_rate": 0.0,
+        "mean_fidelity": 0.9419203552583375,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "q05_fidelity": 0.906810871671389,
+        "switch_rate": 0.0
+      },
+      "h_holdout_residual": {
+        "ci95_two_way": [
+          0.9381118961348182,
+          0.9645144295708864
+        ],
+        "cvar05_exact_mass": 0.901987503307162,
+        "false_safe_ci95_two_way": [
+          0.10677083333333333,
+          0.2552083333333333
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.16927083333333331,
+            -0.049479166666666685
+          ],
+          "estimate": -0.10416666666666666
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.10677083333333333,
+            0.2552083333333333
+          ],
+          "estimate": 0.17708333333333334
+        },
+        "false_safe_rate": 0.17708333333333334,
+        "mean_fidelity": 0.9520791368553962,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.0040169098240508405,
+            0.01765065571499577
+          ],
+          "estimate": 0.010158781597058741
+        },
+        "q05_fidelity": 0.913705064537364,
+        "switch_rate": 0.5026041666666666
+      },
+      "u_uncertainty": {
+        "ci95_two_way": [
+          0.9273999662732899,
+          0.9547504110631058
+        ],
+        "cvar05_exact_mass": 0.8957293793760293,
+        "false_safe_ci95_two_way": [
+          0.0,
+          0.0
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.3645833333333333,
+            -0.203125
+          ],
+          "estimate": -0.28125
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_rate": 0.0,
+        "mean_fidelity": 0.9419203552583375,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "q05_fidelity": 0.906810871671389,
+        "switch_rate": 0.0
+      }
+    },
+    "readout_flip": 0.05,
+    "target_pair_count": 32
+  },
+  {
+    "bootstrap": {
+      "conditional_on": "fixed_model_grid_and_calibration_set",
+      "draws": 5000,
+      "method": "two_way_cluster_bootstrap_target_pairs_and_measurement_seeds"
+    },
+    "code": "phaseflip",
+    "copies": 256,
+    "design_rank": 3,
+    "measurement_seed_count": 12,
+    "oracle_direct_template_fidelity": {
+      "ci95_two_way": [
+        0.944678666693014,
+        0.9727784654136561
+      ],
+      "mean": 0.9591797346290661,
+      "policy_input": false
+    },
+    "physical_noise": 0.1,
+    "pilot": false,
+    "policies": {
+      "a_continuous": {
+        "ci95_two_way": [
+          0.9294434565045379,
+          0.9522712737529381
+        ],
+        "cvar05_exact_mass": 0.8998543243961866,
+        "false_safe_ci95_two_way": [
+          0.0,
+          0.0
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.4244791666666667,
+            -0.2734375
+          ],
+          "estimate": -0.34375
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_rate": 0.0,
+        "mean_fidelity": 0.9412697462409559,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "q05_fidelity": 0.9177280991255525,
+        "switch_rate": 0.0
+      },
+      "b_template": {
+        "ci95_two_way": [
+          0.9051289812111918,
+          0.9474650833097497
+        ],
+        "cvar05_exact_mass": 0.8155684908619192,
+        "false_safe_ci95_two_way": [
+          0.484375,
+          0.7005208333333334
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            0.14062500000000006,
+            0.3645833333333333
+          ],
+          "estimate": 0.25
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.484375,
+            0.7005208333333334
+          ],
+          "estimate": 0.59375
+        },
+        "false_safe_rate": 0.59375,
+        "mean_fidelity": 0.9274945375931526,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.03497307215707985,
+            0.006992028938972347
+          ],
+          "estimate": -0.01377520864780335
+        },
+        "q05_fidelity": 0.8235971216750629,
+        "switch_rate": 1.0
+      },
+      "c2_score": {
+        "ci95_two_way": [
+          0.933836660628433,
+          0.9591066754168333
+        ],
+        "cvar05_exact_mass": 0.8826209583419782,
+        "false_safe_ci95_two_way": [
+          0.2734375,
+          0.4244791666666667
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.2734375,
+            0.4244791666666667
+          ],
+          "estimate": 0.34375
+        },
+        "false_safe_rate": 0.34375,
+        "mean_fidelity": 0.9473214976264042,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.0043625864632264475,
+            0.01750589596103618
+          ],
+          "estimate": 0.006051751385448223
+        },
+        "q05_fidelity": 0.9083741581686533,
+        "switch_rate": 0.6796875
+      },
+      "c3r": {
+        "ci95_two_way": [
+          0.9294434565045379,
+          0.9522712737529381
+        ],
+        "cvar05_exact_mass": 0.8998543243961866,
+        "false_safe_ci95_two_way": [
+          0.0,
+          0.0
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.4244791666666667,
+            -0.2734375
+          ],
+          "estimate": -0.34375
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_rate": 0.0,
+        "mean_fidelity": 0.9412697462409559,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "q05_fidelity": 0.9177280991255525,
+        "switch_rate": 0.0
+      },
+      "h_holdout_residual": {
+        "ci95_two_way": [
+          0.9423036306023039,
+          0.964431742967432
+        ],
+        "cvar05_exact_mass": 0.9032376750872501,
+        "false_safe_ci95_two_way": [
+          0.1796875,
+          0.328125
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.15624999999999997,
+            -0.046875
+          ],
+          "estimate": -0.09375
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.1796875,
+            0.328125
+          ],
+          "estimate": 0.25
+        },
+        "false_safe_rate": 0.25,
+        "mean_fidelity": 0.9543046229021122,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.005032813972057107,
+            0.02248836349144273
+          ],
+          "estimate": 0.013034876661156214
+        },
+        "q05_fidelity": 0.9266819067207707,
+        "switch_rate": 0.5729166666666666
+      },
+      "u_uncertainty": {
+        "ci95_two_way": [
+          0.9294434565045379,
+          0.9522712737529381
+        ],
+        "cvar05_exact_mass": 0.8998543243961866,
+        "false_safe_ci95_two_way": [
+          0.0,
+          0.0
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.4244791666666667,
+            -0.2734375
+          ],
+          "estimate": -0.34375
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_rate": 0.0,
+        "mean_fidelity": 0.9412697462409559,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "q05_fidelity": 0.9177280991255525,
+        "switch_rate": 0.0
+      }
+    },
+    "readout_flip": 0.0,
+    "target_pair_count": 32
+  },
+  {
+    "bootstrap": {
+      "conditional_on": "fixed_model_grid_and_calibration_set",
+      "draws": 5000,
+      "method": "two_way_cluster_bootstrap_target_pairs_and_measurement_seeds"
+    },
+    "code": "phaseflip",
+    "copies": 256,
+    "design_rank": 3,
+    "measurement_seed_count": 12,
+    "oracle_direct_template_fidelity": {
+      "ci95_two_way": [
+        0.9449702147447595,
+        0.9728554267648298
+      ],
+      "mean": 0.9591797346290661,
+      "policy_input": false
+    },
+    "physical_noise": 0.1,
+    "pilot": false,
+    "policies": {
+      "a_continuous": {
+        "ci95_two_way": [
+          0.9133371899735456,
+          0.9451726857612548
+        ],
+        "cvar05_exact_mass": 0.8495528644905447,
+        "false_safe_ci95_two_way": [
+          0.0,
+          0.0
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.4140625,
+            -0.234375
+          ],
+          "estimate": -0.3229166666666667
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_rate": 0.0,
+        "mean_fidelity": 0.9305778581883474,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "q05_fidelity": 0.8826206794589273,
+        "switch_rate": 0.0
+      },
+      "b_template": {
+        "ci95_two_way": [
+          0.8950344404506745,
+          0.9416993138221584
+        ],
+        "cvar05_exact_mass": 0.8066284518501261,
+        "false_safe_ci95_two_way": [
+          0.43743489583333334,
+          0.6771484374999991
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            0.1328125,
+            0.35156250000000006
+          ],
+          "estimate": 0.23697916666666669
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.43743489583333334,
+            0.6771484374999991
+          ],
+          "estimate": 0.5598958333333334
+        },
+        "false_safe_rate": 0.5598958333333334,
+        "mean_fidelity": 0.919684533048467,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.03524809511960367,
+            0.013199471735364432
+          ],
+          "estimate": -0.010893325139880394
+        },
+        "q05_fidelity": 0.817948589779073,
+        "switch_rate": 1.0
+      },
+      "c2_score": {
+        "ci95_two_way": [
+          0.9180474904435385,
+          0.9552576422703642
+        ],
+        "cvar05_exact_mass": 0.8318007163579879,
+        "false_safe_ci95_two_way": [
+          0.234375,
+          0.4140625
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.234375,
+            0.4140625
+          ],
+          "estimate": 0.3229166666666667
+        },
+        "false_safe_rate": 0.3229166666666667,
+        "mean_fidelity": 0.9388251488065299,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.007426083003179948,
+            0.024399576220172515
+          ],
+          "estimate": 0.008247290618182523
+        },
+        "q05_fidelity": 0.8630016877384987,
+        "switch_rate": 0.7161458333333334
+      },
+      "c3r": {
+        "ci95_two_way": [
+          0.9133371899735456,
+          0.9451726857612548
+        ],
+        "cvar05_exact_mass": 0.8495528644905447,
+        "false_safe_ci95_two_way": [
+          0.0,
+          0.0
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.4140625,
+            -0.234375
+          ],
+          "estimate": -0.3229166666666667
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_rate": 0.0,
+        "mean_fidelity": 0.9305778581883474,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "q05_fidelity": 0.8826206794589273,
+        "switch_rate": 0.0
+      },
+      "h_holdout_residual": {
+        "ci95_two_way": [
+          0.9329942032748794,
+          0.9604006419417405
+        ],
+        "cvar05_exact_mass": 0.8698484873299284,
+        "false_safe_ci95_two_way": [
+          0.13541666666666666,
+          0.2734375
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.19270833333333334,
+            -0.0625
+          ],
+          "estimate": -0.12239583333333334
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.13541666666666666,
+            0.2734375
+          ],
+          "estimate": 0.20052083333333334
+        },
+        "false_safe_rate": 0.20052083333333334,
+        "mean_fidelity": 0.9479337797746396,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.006813932297170658,
+            0.030257391905224987
+          ],
+          "estimate": 0.017355921586292178
+        },
+        "q05_fidelity": 0.9017518374615083,
+        "switch_rate": 0.5729166666666666
+      },
+      "u_uncertainty": {
+        "ci95_two_way": [
+          0.9133371899735456,
+          0.9451726857612548
+        ],
+        "cvar05_exact_mass": 0.8495528644905447,
+        "false_safe_ci95_two_way": [
+          0.0,
+          0.0
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.4140625,
+            -0.234375
+          ],
+          "estimate": -0.3229166666666667
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_rate": 0.0,
+        "mean_fidelity": 0.9305778581883474,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "q05_fidelity": 0.8826206794589273,
+        "switch_rate": 0.0
+      }
+    },
+    "readout_flip": 0.05,
+    "target_pair_count": 32
+  },
+  {
+    "bootstrap": {
+      "conditional_on": "fixed_model_grid_and_calibration_set",
+      "draws": 5000,
+      "method": "two_way_cluster_bootstrap_target_pairs_and_measurement_seeds"
+    },
+    "code": "phaseflip",
+    "copies": 1024,
+    "design_rank": 3,
+    "measurement_seed_count": 12,
+    "oracle_direct_template_fidelity": {
+      "ci95_two_way": [
+        0.9444917277432199,
+        0.9727716080281478
+      ],
+      "mean": 0.9591797346290661,
+      "policy_input": false
+    },
+    "physical_noise": 0.01,
+    "pilot": false,
+    "policies": {
+      "a_continuous": {
+        "ci95_two_way": [
+          0.9772996853766329,
+          0.9870373746531431
+        ],
+        "cvar05_exact_mass": 0.9599107512434575,
+        "false_safe_ci95_two_way": [
+          0.0,
+          0.0
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.46875,
+            -0.2552083333333333
+          ],
+          "estimate": -0.3619791666666667
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            -0.4244791666666667,
+            -0.22135416666666666
+          ],
+          "estimate": -0.3255208333333333
+        },
+        "false_safe_rate": 0.0,
+        "mean_fidelity": 0.9828450987891836,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "q05_fidelity": 0.9663704360458236,
+        "switch_rate": 0.0
+      },
+      "b_template": {
+        "ci95_two_way": [
+          0.9186635796929123,
+          0.9631123577197603
+        ],
+        "cvar05_exact_mass": 0.8053509915326336,
+        "false_safe_ci95_two_way": [
+          0.6197916666666666,
+          0.8411458333333334
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            0.23697916666666663,
+            0.5260416666666667
+          ],
+          "estimate": 0.3776041666666667
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.2708333333333333,
+            0.5598958333333334
+          ],
+          "estimate": 0.41406250000000006
+        },
+        "false_safe_rate": 0.7395833333333334,
+        "mean_fidelity": 0.942698373534807,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.06438683223226448,
+            -0.018579083184646038
+          ],
+          "estimate": -0.04014672525437657
+        },
+        "q05_fidelity": 0.826052424728549,
+        "switch_rate": 1.0
+      },
+      "c2_score": {
+        "ci95_two_way": [
+          0.9755504301562572,
+          0.9864964288061245
+        ],
+        "cvar05_exact_mass": 0.9553096727829131,
+        "false_safe_ci95_two_way": [
+          0.2552083333333333,
+          0.46875
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.01041666666666663,
+            0.078125
+          ],
+          "estimate": 0.03645833333333337
+        },
+        "false_safe_rate": 0.3619791666666667,
+        "mean_fidelity": 0.9812982062789289,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.007268183472183748,
+            0.004645952262780066
+          ],
+          "estimate": -0.0015468925102546383
+        },
+        "q05_fidelity": 0.9591207370564314,
+        "switch_rate": 0.5963541666666666
+      },
+      "c3r": {
+        "ci95_two_way": [
+          0.9815203819405509,
+          0.9898020233064325
+        ],
+        "cvar05_exact_mass": 0.9664428404419998,
+        "false_safe_ci95_two_way": [
+          0.15364583333333334,
+          0.3541666666666667
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.171875,
+            -0.0546875
+          ],
+          "estimate": -0.109375
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            -0.12760416666666666,
+            -0.028645833333333315
+          ],
+          "estimate": -0.07291666666666663
+        },
+        "false_safe_rate": 0.2526041666666667,
+        "mean_fidelity": 0.9859914323331934,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.0003808882378533718,
+            0.008041248502193505
+          ],
+          "estimate": 0.0031463335440098383
+        },
+        "q05_fidelity": 0.9696333718404037,
+        "switch_rate": 0.4739583333333333
+      },
+      "h_holdout_residual": {
+        "ci95_two_way": [
+          0.9815877012640977,
+          0.9897160886633535
+        ],
+        "cvar05_exact_mass": 0.9664428404419998,
+        "false_safe_ci95_two_way": [
+          0.16927083333333334,
+          0.3828125
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.14322916666666669,
+            -0.036458333333333315
+          ],
+          "estimate": -0.0859375
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            -0.10937499999999997,
+            0.0078125
+          ],
+          "estimate": -0.04947916666666663
+        },
+        "false_safe_rate": 0.2760416666666667,
+        "mean_fidelity": 0.9859909773077832,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.0005136332763849283,
+            0.00822551076500516
+          ],
+          "estimate": 0.0031458785185995986
+        },
+        "q05_fidelity": 0.9709505968411268,
+        "switch_rate": 0.5052083333333334
+      },
+      "u_uncertainty": {
+        "ci95_two_way": [
+          0.977667388719129,
+          0.9871693816685833
+        ],
+        "cvar05_exact_mass": 0.9639050124707542,
+        "false_safe_ci95_two_way": [
+          0.22135416666666666,
+          0.4244791666666667
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.078125,
+            -0.01041666666666663
+          ],
+          "estimate": -0.03645833333333337
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_rate": 0.3255208333333333,
+        "mean_fidelity": 0.9826147477545849,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.005036533801049259,
+            0.005361087031318262
+          ],
+          "estimate": -0.0002303510345986748
+        },
+        "q05_fidelity": 0.9658265815101938,
+        "switch_rate": 0.5520833333333334
+      }
+    },
+    "readout_flip": 0.0,
+    "target_pair_count": 32
+  },
+  {
+    "bootstrap": {
+      "conditional_on": "fixed_model_grid_and_calibration_set",
+      "draws": 5000,
+      "method": "two_way_cluster_bootstrap_target_pairs_and_measurement_seeds"
+    },
+    "code": "phaseflip",
+    "copies": 1024,
+    "design_rank": 3,
+    "measurement_seed_count": 12,
+    "oracle_direct_template_fidelity": {
+      "ci95_two_way": [
+        0.9441728975465137,
+        0.9732009234128126
+      ],
+      "mean": 0.9591797346290661,
+      "policy_input": false
+    },
+    "physical_noise": 0.01,
+    "pilot": false,
+    "policies": {
+      "a_continuous": {
+        "ci95_two_way": [
+          0.9744669235035102,
+          0.9839264487823194
+        ],
+        "cvar05_exact_mass": 0.961167930852159,
+        "false_safe_ci95_two_way": [
+          0.0,
+          0.0
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.4166666666666667,
+            -0.2265625
+          ],
+          "estimate": -0.3177083333333333
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            -0.3802083333333333,
+            -0.1875
+          ],
+          "estimate": -0.28125
+        },
+        "false_safe_rate": 0.0,
+        "mean_fidelity": 0.9796444587808547,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "q05_fidelity": 0.9678441350260467,
+        "switch_rate": 0.0
+      },
+      "b_template": {
+        "ci95_two_way": [
+          0.9210877592401828,
+          0.9638020981314587
+        ],
+        "cvar05_exact_mass": 0.8202401635390562,
+        "false_safe_ci95_two_way": [
+          0.5989583333333334,
+          0.8125
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            0.24999999999999994,
+            0.5364583333333334
+          ],
+          "estimate": 0.39062500000000006
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.2838541666666667,
+            0.5755859374999991
+          ],
+          "estimate": 0.42708333333333337
+        },
+        "false_safe_rate": 0.7083333333333334,
+        "mean_fidelity": 0.9442536511751145,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.058721854328858854,
+            -0.015507053716994406
+          ],
+          "estimate": -0.035390807605740204
+        },
+        "q05_fidelity": 0.8596411855390096,
+        "switch_rate": 1.0
+      },
+      "c2_score": {
+        "ci95_two_way": [
+          0.9757222757060146,
+          0.9861336719356267
+        ],
+        "cvar05_exact_mass": 0.9566967184886939,
+        "false_safe_ci95_two_way": [
+          0.2265625,
+          0.4166666666666667
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.010416666666666657,
+            0.07291666666666666
+          ],
+          "estimate": 0.036458333333333315
+        },
+        "false_safe_rate": 0.3177083333333333,
+        "mean_fidelity": 0.981241845986324,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.003306351727884532,
+            0.007258713674264609
+          ],
+          "estimate": 0.001597387205469314
+        },
+        "q05_fidelity": 0.9640932571221419,
+        "switch_rate": 0.578125
+      },
+      "c3r": {
+        "ci95_two_way": [
+          0.9776207615620139,
+          0.9875249625252237
+        ],
+        "cvar05_exact_mass": 0.9611143885257594,
+        "false_safe_ci95_two_way": [
+          0.14322916666666666,
+          0.33339843749999903
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.13541666666666669,
+            -0.0390625
+          ],
+          "estimate": -0.08333333333333331
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            -0.08854166666666666,
+            -0.015625
+          ],
+          "estimate": -0.046875
+        },
+        "false_safe_rate": 0.234375,
+        "mean_fidelity": 0.9829274939019181,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            1.0456233966529918e-05,
+            0.007120882723473389
+          ],
+          "estimate": 0.0032830351210634268
+        },
+        "q05_fidelity": 0.9678532384883709,
+        "switch_rate": 0.4505208333333333
+      },
+      "h_holdout_residual": {
+        "ci95_two_way": [
+          0.9792053308700347,
+          0.9881464044986799
+        ],
+        "cvar05_exact_mass": 0.9611143885257594,
+        "false_safe_ci95_two_way": [
+          0.15104166666666666,
+          0.3541666666666667
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.12239583333333331,
+            -0.02864583333333337
+          ],
+          "estimate": -0.07031249999999997
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            -0.078125,
+            0.002604166666666685
+          ],
+          "estimate": -0.03385416666666666
+        },
+        "false_safe_rate": 0.24739583333333334,
+        "mean_fidelity": 0.9840056659155602,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.0004847655795469502,
+            0.009169380624572869
+          ],
+          "estimate": 0.004361207134705447
+        },
+        "q05_fidelity": 0.9678532384883709,
+        "switch_rate": 0.5
+      },
+      "u_uncertainty": {
+        "ci95_two_way": [
+          0.9755259652833952,
+          0.9860790935710313
+        ],
+        "cvar05_exact_mass": 0.9601384593127775,
+        "false_safe_ci95_two_way": [
+          0.1875,
+          0.3802083333333333
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.07291666666666666,
+            -0.010416666666666657
+          ],
+          "estimate": -0.036458333333333315
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_rate": 0.28125,
+        "mean_fidelity": 0.981214185084511,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.0024714338304798744,
+            0.005874517665946741
+          ],
+          "estimate": 0.0015697263036562603
+        },
+        "q05_fidelity": 0.9640932571221419,
+        "switch_rate": 0.5052083333333334
+      }
+    },
+    "readout_flip": 0.05,
+    "target_pair_count": 32
+  },
+  {
+    "bootstrap": {
+      "conditional_on": "fixed_model_grid_and_calibration_set",
+      "draws": 5000,
+      "method": "two_way_cluster_bootstrap_target_pairs_and_measurement_seeds"
+    },
+    "code": "phaseflip",
+    "copies": 1024,
+    "design_rank": 3,
+    "measurement_seed_count": 12,
+    "oracle_direct_template_fidelity": {
+      "ci95_two_way": [
+        0.9443196385491126,
+        0.9731577145007871
+      ],
+      "mean": 0.9591797346290661,
+      "policy_input": false
+    },
+    "physical_noise": 0.05,
+    "pilot": false,
+    "policies": {
+      "a_continuous": {
+        "ci95_two_way": [
+          0.9739171550894952,
+          0.9838965218829285
+        ],
+        "cvar05_exact_mass": 0.9579978056257352,
+        "false_safe_ci95_two_way": [
+          0.0,
+          0.0
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.5026041666666666,
+            -0.2707682291666676
+          ],
+          "estimate": -0.3854166666666667
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            -0.421875,
+            -0.20833333333333334
+          ],
+          "estimate": -0.3125
+        },
+        "false_safe_rate": 0.0,
+        "mean_fidelity": 0.9793839693544987,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "q05_fidelity": 0.9659841634089771,
+        "switch_rate": 0.0
+      },
+      "b_template": {
+        "ci95_two_way": [
+          0.9157232431160857,
+          0.9618371623243052
+        ],
+        "cvar05_exact_mass": 0.780399207914504,
+        "false_safe_ci95_two_way": [
+          0.5885416666666666,
+          0.8229166666666666
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            0.1875,
+            0.47656249999999994
+          ],
+          "estimate": 0.3255208333333333
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.2604166666666667,
+            0.5442708333333334
+          ],
+          "estimate": 0.3984375
+        },
+        "false_safe_rate": 0.7109375,
+        "mean_fidelity": 0.9402716513228908,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.06384302058796565,
+            -0.017519103113377302
+          ],
+          "estimate": -0.03911231803160786
+        },
+        "q05_fidelity": 0.8326461025027435,
+        "switch_rate": 1.0
+      },
+      "c2_score": {
+        "ci95_two_way": [
+          0.9679120589717157,
+          0.9829512316938833
+        ],
+        "cvar05_exact_mass": 0.9396217402684361,
+        "false_safe_ci95_two_way": [
+          0.27076822916666665,
+          0.5026041666666666
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.033854166666666685,
+            0.12239583333333331
+          ],
+          "estimate": 0.07291666666666669
+        },
+        "false_safe_rate": 0.3854166666666667,
+        "mean_fidelity": 0.9760459056688889,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.010818581638632118,
+            0.0035675131340759114
+          ],
+          "estimate": -0.003338063685609738
+        },
+        "q05_fidelity": 0.9529695820900497,
+        "switch_rate": 0.6484375
+      },
+      "c3r": {
+        "ci95_two_way": [
+          0.9749167766410706,
+          0.9852626511358029
+        ],
+        "cvar05_exact_mass": 0.9544661522119218,
+        "false_safe_ci95_two_way": [
+          0.15885416666666666,
+          0.3542317708333324
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.20052083333333334,
+            -0.07291666666666669
+          ],
+          "estimate": -0.1328125
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            -0.10677083333333331,
+            -0.0234375
+          ],
+          "estimate": -0.059895833333333315
+        },
+        "false_safe_rate": 0.2526041666666667,
+        "mean_fidelity": 0.9805826037741187,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.0024662514832899966,
+            0.0052762325349392505
+          ],
+          "estimate": 0.0011986344196199816
+        },
+        "q05_fidelity": 0.9678496664298335,
+        "switch_rate": 0.4453125
+      },
+      "h_holdout_residual": {
+        "ci95_two_way": [
+          0.9766194755279671,
+          0.986864902313553
+        ],
+        "cvar05_exact_mass": 0.9544661522119218,
+        "false_safe_ci95_two_way": [
+          0.18229166666666666,
+          0.3984375
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.16145833333333337,
+            -0.046875
+          ],
+          "estimate": -0.09895833333333337
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            -0.08333333333333331,
+            0.028645833333333315
+          ],
+          "estimate": -0.026041666666666685
+        },
+        "false_safe_rate": 0.2864583333333333,
+        "mean_fidelity": 0.9823307570329405,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.0014253437679349224,
+            0.007918084489178759
+          ],
+          "estimate": 0.002946787678441809
+        },
+        "q05_fidelity": 0.9678496664298335,
+        "switch_rate": 0.5416666666666666
+      },
+      "u_uncertainty": {
+        "ci95_two_way": [
+          0.971097336103314,
+          0.9833177406150257
+        ],
+        "cvar05_exact_mass": 0.94846294317094,
+        "false_safe_ci95_two_way": [
+          0.20833333333333334,
+          0.421875
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.12239583333333331,
+            -0.033854166666666685
+          ],
+          "estimate": -0.07291666666666669
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_rate": 0.3125,
+        "mean_fidelity": 0.9778237035699514,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.006516010656920748,
+            0.0033016017644390406
+          ],
+          "estimate": -0.0015602657845472656
+        },
+        "q05_fidelity": 0.960046040422446,
+        "switch_rate": 0.5104166666666666
+      }
+    },
+    "readout_flip": 0.0,
+    "target_pair_count": 32
+  },
+  {
+    "bootstrap": {
+      "conditional_on": "fixed_model_grid_and_calibration_set",
+      "draws": 5000,
+      "method": "two_way_cluster_bootstrap_target_pairs_and_measurement_seeds"
+    },
+    "code": "phaseflip",
+    "copies": 1024,
+    "design_rank": 3,
+    "measurement_seed_count": 12,
+    "oracle_direct_template_fidelity": {
+      "ci95_two_way": [
+        0.9444421485859457,
+        0.9726452001535107
+      ],
+      "mean": 0.9591797346290661,
+      "policy_input": false
+    },
+    "physical_noise": 0.05,
+    "pilot": false,
+    "policies": {
+      "a_continuous": {
+        "ci95_two_way": [
+          0.9716148406342249,
+          0.9827499403204333
+        ],
+        "cvar05_exact_mass": 0.9505022282920972,
+        "false_safe_ci95_two_way": [
+          0.0,
+          0.0
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.4322916666666667,
+            -0.21614583333333334
+          ],
+          "estimate": -0.3203125
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            -0.3307291666666667,
+            -0.1640625
+          ],
+          "estimate": -0.24479166666666666
+        },
+        "false_safe_rate": 0.0,
+        "mean_fidelity": 0.977622410975755,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "q05_fidelity": 0.9547599383839763,
+        "switch_rate": 0.0
+      },
+      "b_template": {
+        "ci95_two_way": [
+          0.922547319517275,
+          0.962975347829008
+        ],
+        "cvar05_exact_mass": 0.8394016190014287,
+        "false_safe_ci95_two_way": [
+          0.5625,
+          0.8020833333333334
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            0.22395833333333331,
+            0.5130208333333333
+          ],
+          "estimate": 0.36458333333333337
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.30989583333333337,
+            0.5729166666666666
+          ],
+          "estimate": 0.44010416666666674
+        },
+        "false_safe_rate": 0.6848958333333334,
+        "mean_fidelity": 0.9440858063869482,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.054711433125158616,
+            -0.013369702239875209
+          ],
+          "estimate": -0.033536604588806807
+        },
+        "q05_fidelity": 0.8506020431366248,
+        "switch_rate": 1.0
+      },
+      "c2_score": {
+        "ci95_two_way": [
+          0.973721040926016,
+          0.985427483943378
+        ],
+        "cvar05_exact_mass": 0.9452067982685124,
+        "false_safe_ci95_two_way": [
+          0.21614583333333334,
+          0.4322916666666667
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.03125,
+            0.13020833333333337
+          ],
+          "estimate": 0.07552083333333334
+        },
+        "false_safe_rate": 0.3203125,
+        "mean_fidelity": 0.9802247349657982,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.004283446756072606,
+            0.009991084415957727
+          ],
+          "estimate": 0.0026023239900432316
+        },
+        "q05_fidelity": 0.9583893106561103,
+        "switch_rate": 0.6197916666666666
+      },
+      "c3r": {
+        "ci95_two_way": [
+          0.9754792626888565,
+          0.9859888501830039
+        ],
+        "cvar05_exact_mass": 0.9479575732772582,
+        "false_safe_ci95_two_way": [
+          0.11197916666666667,
+          0.2708333333333333
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.20833333333333331,
+            -0.0703125
+          ],
+          "estimate": -0.1328125
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            -0.10677083333333331,
+            -0.018229166666666685
+          ],
+          "estimate": -0.05729166666666666
+        },
+        "false_safe_rate": 0.1875,
+        "mean_fidelity": 0.9814397911252084,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.0006337238207428376,
+            0.007589687238789388
+          ],
+          "estimate": 0.003817380149453431
+        },
+        "q05_fidelity": 0.9611393789656955,
+        "switch_rate": 0.4140625
+      },
+      "h_holdout_residual": {
+        "ci95_two_way": [
+          0.9786851159237846,
+          0.9879577061813399
+        ],
+        "cvar05_exact_mass": 0.9553605294083692,
+        "false_safe_ci95_two_way": [
+          0.15364583333333334,
+          0.3567708333333333
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.12766927083333332,
+            -0.026041666666666657
+          ],
+          "estimate": -0.0703125
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            -0.05989583333333334,
+            0.07291666666666666
+          ],
+          "estimate": 0.005208333333333343
+        },
+        "false_safe_rate": 0.25,
+        "mean_fidelity": 0.9840162486310927,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.0017619358361898123,
+            0.012298185262118061
+          ],
+          "estimate": 0.006393837655337742
+        },
+        "q05_fidelity": 0.9686606432668844,
+        "switch_rate": 0.5390625
+      },
+      "u_uncertainty": {
+        "ci95_two_way": [
+          0.9724778262558886,
+          0.9837750037900103
+        ],
+        "cvar05_exact_mass": 0.9416853930911611,
+        "false_safe_ci95_two_way": [
+          0.1640625,
+          0.3307291666666667
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.13020833333333337,
+            -0.03125
+          ],
+          "estimate": -0.07552083333333334
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_rate": 0.24479166666666666,
+        "mean_fidelity": 0.9786946516667552,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.003508846422000522,
+            0.0059012478170745244
+          ],
+          "estimate": 0.0010722406910002036
+        },
+        "q05_fidelity": 0.9560675567166106,
+        "switch_rate": 0.4791666666666667
+      }
+    },
+    "readout_flip": 0.05,
+    "target_pair_count": 32
+  },
+  {
+    "bootstrap": {
+      "conditional_on": "fixed_model_grid_and_calibration_set",
+      "draws": 5000,
+      "method": "two_way_cluster_bootstrap_target_pairs_and_measurement_seeds"
+    },
+    "code": "phaseflip",
+    "copies": 1024,
+    "design_rank": 3,
+    "measurement_seed_count": 12,
+    "oracle_direct_template_fidelity": {
+      "ci95_two_way": [
+        0.9442787382046353,
+        0.9731622174043053
+      ],
+      "mean": 0.9591797346290661,
+      "policy_input": false
+    },
+    "physical_noise": 0.1,
+    "pilot": false,
+    "policies": {
+      "a_continuous": {
+        "ci95_two_way": [
+          0.9691795908845486,
+          0.9801083754520737
+        ],
+        "cvar05_exact_mass": 0.9561189277959785,
+        "false_safe_ci95_two_way": [
+          0.0,
+          0.0
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.5026041666666666,
+            -0.3072916666666667
+          ],
+          "estimate": -0.4036458333333333
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            -0.3072916666666667,
+            -0.13541666666666666
+          ],
+          "estimate": -0.21614583333333334
+        },
+        "false_safe_rate": 0.0,
+        "mean_fidelity": 0.9750163055036971,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "q05_fidelity": 0.9563998840817706,
+        "switch_rate": 0.0
+      },
+      "b_template": {
+        "ci95_two_way": [
+          0.9174613028045256,
+          0.9629413310681014
+        ],
+        "cvar05_exact_mass": 0.8003134505358841,
+        "false_safe_ci95_two_way": [
+          0.5572916666666666,
+          0.7786458333333334
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            0.14843750000000006,
+            0.3985026041666658
+          ],
+          "estimate": 0.2682291666666667
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.3229166666666667,
+            0.59375
+          ],
+          "estimate": 0.45572916666666663
+        },
+        "false_safe_rate": 0.671875,
+        "mean_fidelity": 0.941997147876149,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.05692141965437867,
+            -0.011752808656739184
+          ],
+          "estimate": -0.033019157627548146
+        },
+        "q05_fidelity": 0.8315955940601517,
+        "switch_rate": 1.0
+      },
+      "c2_score": {
+        "ci95_two_way": [
+          0.9623928516876635,
+          0.98074105990153
+        ],
+        "cvar05_exact_mass": 0.9236602508799334,
+        "false_safe_ci95_two_way": [
+          0.3072916666666667,
+          0.5026041666666666
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.12760416666666666,
+            0.25520833333333337
+          ],
+          "estimate": 0.18749999999999997
+        },
+        "false_safe_rate": 0.4036458333333333,
+        "mean_fidelity": 0.9727297330941697,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.011080434648307543,
+            0.006006985464200844
+          ],
+          "estimate": -0.0022865724095274542
+        },
+        "q05_fidelity": 0.9382735452543572,
+        "switch_rate": 0.71875
+      },
+      "c3r": {
+        "ci95_two_way": [
+          0.9716799196593549,
+          0.9826466764655561
+        ],
+        "cvar05_exact_mass": 0.9511840947878848,
+        "false_safe_ci95_two_way": [
+          0.11458333333333333,
+          0.2786458333333333
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.2890625,
+            -0.14583333333333334
+          ],
+          "estimate": -0.21354166666666666
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            -0.05729166666666666,
+            -0.005208333333333343
+          ],
+          "estimate": -0.026041666666666685
+        },
+        "false_safe_rate": 0.19010416666666666,
+        "mean_fidelity": 0.977451563649514,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.0012162047990834286,
+            0.0071258984750242225
+          ],
+          "estimate": 0.00243525814581691
+        },
+        "q05_fidelity": 0.959161668538852,
+        "switch_rate": 0.3645833333333333
+      },
+      "h_holdout_residual": {
+        "ci95_two_way": [
+          0.974060414296289,
+          0.9854501806215645
+        ],
+        "cvar05_exact_mass": 0.95030185204904,
+        "false_safe_ci95_two_way": [
+          0.203125,
+          0.4010416666666667
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.16666666666666669,
+            -0.054622395833334225
+          ],
+          "estimate": -0.10416666666666663
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.028645833333333315,
+            0.140625
+          ],
+          "estimate": 0.08333333333333334
+        },
+        "false_safe_rate": 0.2994791666666667,
+        "mean_fidelity": 0.9802728629185874,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.00032747562926236653,
+            0.010988504032759921
+          ],
+          "estimate": 0.005256557414890284
+        },
+        "q05_fidelity": 0.9600228032906419,
+        "switch_rate": 0.609375
+      },
+      "u_uncertainty": {
+        "ci95_two_way": [
+          0.9703214621611455,
+          0.9819098162980967
+        ],
+        "cvar05_exact_mass": 0.9457728662695888,
+        "false_safe_ci95_two_way": [
+          0.13541666666666666,
+          0.3072916666666667
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.25520833333333337,
+            -0.12760416666666666
+          ],
+          "estimate": -0.18749999999999997
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_rate": 0.21614583333333334,
+        "mean_fidelity": 0.9765036165899467,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.002600543080355572,
+            0.006377303249275597
+          ],
+          "estimate": 0.0014873110862495542
+        },
+        "q05_fidelity": 0.9527848360543156,
+        "switch_rate": 0.3932291666666667
+      }
+    },
+    "readout_flip": 0.0,
+    "target_pair_count": 32
+  },
+  {
+    "bootstrap": {
+      "conditional_on": "fixed_model_grid_and_calibration_set",
+      "draws": 5000,
+      "method": "two_way_cluster_bootstrap_target_pairs_and_measurement_seeds"
+    },
+    "code": "phaseflip",
+    "copies": 1024,
+    "design_rank": 3,
+    "measurement_seed_count": 12,
+    "oracle_direct_template_fidelity": {
+      "ci95_two_way": [
+        0.9443274760646914,
+        0.9727667107540141
+      ],
+      "mean": 0.9591797346290661,
+      "policy_input": false
+    },
+    "physical_noise": 0.1,
+    "pilot": false,
+    "policies": {
+      "a_continuous": {
+        "ci95_two_way": [
+          0.9639883600778375,
+          0.9779521182147612
+        ],
+        "cvar05_exact_mass": 0.941517322397671,
+        "false_safe_ci95_two_way": [
+          0.0,
+          0.0
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.484375,
+            -0.2838541666666667
+          ],
+          "estimate": -0.3802083333333333
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            -0.2864583333333333,
+            -0.13020833333333334
+          ],
+          "estimate": -0.203125
+        },
+        "false_safe_rate": 0.0,
+        "mean_fidelity": 0.9716145388358993,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "q05_fidelity": 0.945005061968668,
+        "switch_rate": 0.0
+      },
+      "b_template": {
+        "ci95_two_way": [
+          0.920314667193957,
+          0.961256097902692
+        ],
+        "cvar05_exact_mass": 0.8325226492619532,
+        "false_safe_ci95_two_way": [
+          0.546875,
+          0.7760416666666666
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            0.16927083333333331,
+            0.4166666666666667
+          ],
+          "estimate": 0.2838541666666667
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.34375,
+            0.5859375
+          ],
+          "estimate": 0.4609375
+        },
+        "false_safe_rate": 0.6640625,
+        "mean_fidelity": 0.942172145875643,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.051051534926219534,
+            -0.009843849747865386
+          ],
+          "estimate": -0.029442392960256303
+        },
+        "q05_fidelity": 0.8370983789083444,
+        "switch_rate": 1.0
+      },
+      "c2_score": {
+        "ci95_two_way": [
+          0.9598948727247204,
+          0.979489979240153
+        ],
+        "cvar05_exact_mass": 0.9297512015222122,
+        "false_safe_ci95_two_way": [
+          0.2838541666666667,
+          0.484375
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.10677083333333331,
+            0.2552083333333333
+          ],
+          "estimate": 0.17708333333333331
+        },
+        "false_safe_rate": 0.3802083333333333,
+        "mean_fidelity": 0.971211886984423,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.00995501631250466,
+            0.008553158066199195
+          ],
+          "estimate": -0.0004026518514763655
+        },
+        "q05_fidelity": 0.9356542451560432,
+        "switch_rate": 0.6927083333333334
+      },
+      "c3r": {
+        "ci95_two_way": [
+          0.9662568455800425,
+          0.9792255418536258
+        ],
+        "cvar05_exact_mass": 0.948139010902217,
+        "false_safe_ci95_two_way": [
+          0.10677083333333333,
+          0.2552083333333333
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.2838541666666667,
+            -0.13541666666666666
+          ],
+          "estimate": -0.20572916666666666
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            -0.06510416666666666,
+            -0.005208333333333315
+          ],
+          "estimate": -0.028645833333333343
+        },
+        "false_safe_rate": 0.17447916666666666,
+        "mean_fidelity": 0.9732553009054145,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.00121848659550165,
+            0.004850333901214435
+          ],
+          "estimate": 0.0016407620695151337
+        },
+        "q05_fidelity": 0.9547265208016932,
+        "switch_rate": 0.3489583333333333
+      },
+      "h_holdout_residual": {
+        "ci95_two_way": [
+          0.9719507374068026,
+          0.983033176610715
+        ],
+        "cvar05_exact_mass": 0.9560192697338828,
+        "false_safe_ci95_two_way": [
+          0.203125,
+          0.40625
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.1328125,
+            -0.033854166666666685
+          ],
+          "estimate": -0.078125
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.026041666666666657,
+            0.17708333333333334
+          ],
+          "estimate": 0.09895833333333331
+        },
+        "false_safe_rate": 0.3020833333333333,
+        "mean_fidelity": 0.9780703926271652,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            0.0006687259554506442,
+            0.013639150193870988
+          ],
+          "estimate": 0.0064558537912658975
+        },
+        "q05_fidelity": 0.9616249116796493,
+        "switch_rate": 0.6067708333333334
+      },
+      "u_uncertainty": {
+        "ci95_two_way": [
+          0.9642604533966476,
+          0.9780473669439712
+        ],
+        "cvar05_exact_mass": 0.9480873664651328,
+        "false_safe_ci95_two_way": [
+          0.13020833333333334,
+          0.2864583333333333
+        ],
+        "false_safe_difference_vs_c2": {
+          "ci95_two_way": [
+            -0.2552083333333333,
+            -0.10677083333333331
+          ],
+          "estimate": -0.17708333333333331
+        },
+        "false_safe_difference_vs_u": {
+          "ci95_two_way": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "false_safe_rate": 0.203125,
+        "mean_fidelity": 0.971661102430759,
+        "mean_fidelity_difference_vs_a": {
+          "ci95_two_way": [
+            -0.0037482759385270123,
+            0.003614856960075326
+          ],
+          "estimate": 4.6563594859660995e-05
+        },
+        "q05_fidelity": 0.9523172580657102,
+        "switch_rate": 0.3828125
+      }
+    },
+    "readout_flip": 0.05,
+    "target_pair_count": 32
+  }
+]

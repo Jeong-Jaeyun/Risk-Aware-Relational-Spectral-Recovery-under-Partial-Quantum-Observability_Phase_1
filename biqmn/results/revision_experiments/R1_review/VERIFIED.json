@@ -1,0 +1,31 @@
+{
+  "verified_utc": "2026-09-27T18:33:04.797082+00:00",
+  "state": "verified",
+  "jobs": 1296,
+  "target_rows": 82944,
+  "independent_test_pairs": 32,
+  "grid_cells": 108,
+  "measurement_seeds_per_cell": 12,
+  "max_raw_spectral_fidelity_gap": 7.216449660063518e-16,
+  "max_legacy_pair_mean_error_from_half": 0.0,
+  "selected_replays": [
+    "bitflip_aligned_n128_k1_q0.00_s00",
+    "bitflip_tilted_n128_k1_q0.00_s00",
+    "phaseflip_aligned_n128_k1_q0.00_s00",
+    "phaseflip_tilted_n2048_k8_q0.15_s11"
+  ],
+  "source_hashes_verified": 56,
+  "protocol_hash_verified": true,
+  "review_script_sha256": "c9e77600a2df6d3e6eb077c5d29391899a51393866b30b1d619cffa15925bca3",
+  "input_hashes": {
+    "dataset.json": "9acbf7d3a5df4cde38671f94f2283576ccec0eaef01cc57e5e946a5db2e653b4",
+    "DONE.json": "8d27cb7168a478c639d8cd4697d51b7e7af1eb221ebc5202cfe258651aea35ab",
+    "jobs.json": "4d6dc164e2ec4e2deda608c27e05a10e98d452707b4c38abfea1a4ef53f6ac28",
+    "job_results.jsonl": "56b464fdf7b6e3b9a0365a4aae1f60c78e03cf29e2a42ffa682017c11200ce14",
+    "manifest.json": "e4e302289a6ed361220fff80f88a35d51068b370e7e881828d4fbdcf5320c372",
+    "qualification.json": "b7b69a1a33da56aaa3e3ced006207399a9a09c9260ca15a3d0fcdd800a437f10",
+    "REPORT.md": "8174cae557f27c51ffbe929f7fb43e87cef9b2e92d054ff4e45c8ce9f9f285b6",
+    "status.json": "8d27cb7168a478c639d8cd4697d51b7e7af1eb221ebc5202cfe258651aea35ab",
+    "summary.json": "b4c6414188416e5b060e5c1ba1edf3fafa0407c32cd9c125bfb9c55cfde48e8f"
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "bitflip": {
+    "clock_initial_state": "plus",
+    "clock_overlap_min": 1.0,
+    "clock_overlap_max": 1.0000000000000002,
+    "max_density_change_across_clock": 3.189890244900504e-16,
+    "max_spectrum_change_across_clock": 0.0,
+    "constraint_residual": 0.8,
+    "nullspace_dimension": 0,
+    "reference_labels": [
+      "logical_plus",
+      "logical_plus_20deg",
+      "logical_minus_20deg"
+    ],
+    "reference_spectral_distances": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "reference_density_frobenius_distances": [
+      [
+        0.0,
+        0.2455756079379457,
+        0.24557560793794567
+      ],
+      [
+        0.2455756079379457,
+        0.0,
+        0.4836895252959505
+      ],
+      [
+        0.24557560793794567,
+        0.4836895252959505,
+        0.0
+      ]
+    ],
+    "stage2_apply_rule": "diagnostic_only",
+    "objective_weights": {
+      "obs_fit": 64.0,
+      "ref_anchor": 16.0,
+      "lap": 0.75,
+      "smooth": 0.1,
+      "clock": 0.1,
+      "phi_ref": 0.0
+    },
+    "clean_projection_selected_label": "logical_plus",
+    "clean_projection_objectives": [
+      8.320017359752859e-32,
+      8.320017359752859e-32,
+      8.320017359752859e-32
+    ]
+  },
+  "phaseflip": {
+    "clock_initial_state": "plus",
+    "clock_overlap_min": 1.0,
+    "clock_overlap_max": 1.0000000000000002,
+    "max_density_change_across_clock": 3.506802347710058e-16,
+    "max_spectrum_change_across_clock": 3.76985705904379e-15,
+    "constraint_residual": 0.8,
+    "nullspace_dimension": 0,
+    "reference_labels": [
+      "logical_plus",
+      "logical_plus_20deg",
+      "logical_minus_20deg"
+    ],
+    "reference_spectral_distances": [
+      [
+        0.0,
+        9.310882158171201e-16,
+        9.310882158171201e-16
+      ],
+      [
+        9.310882158171201e-16,
+        0.0,
+        2.6168207644729585e-16
+      ],
+      [
+        9.310882158171201e-16,
+        2.6168207644729585e-16,
+        0.0
+      ]
+    ],
+    "reference_density_frobenius_distances": [
+      [
+        0.0,
+        0.24557560793794567,
+        0.24557560793794567
+      ],
+      [
+        0.24557560793794567,
+        0.0,
+        0.4836895252959505
+      ],
+      [
+        0.24557560793794567,
+        0.4836895252959505,
+        0.0
+      ]
+    ],
+    "stage2_apply_rule": "diagnostic_only",
+    "objective_weights": {
+      "obs_fit": 64.0,
+      "ref_anchor": 16.0,
+      "lap": 0.75,
+      "smooth": 0.1,
+      "clock": 0.1,
+      "phi_ref": 0.0
+    },
+    "clean_projection_selected_label": "logical_plus_20deg",
+    "clean_projection_objectives": [
+      1.507942823617516e-07,
+      8.079440854397668e-08,
+      8.079440854397668e-08
+    ]
+  }
+}

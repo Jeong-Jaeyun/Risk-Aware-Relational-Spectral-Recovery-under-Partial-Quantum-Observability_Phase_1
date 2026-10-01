@@ -1,0 +1,22 @@
+{
+  "created_utc": "2026-10-01T05:52:06.125474+00:00",
+  "jobs": 288,
+  "limits": "Corrected held-out residual gate; finite-copy template-switch safety only.",
+  "numpy": "2.5.0",
+  "pilot": false,
+  "policies": [
+    "a_continuous",
+    "b_template",
+    "c2_score",
+    "u_uncertainty",
+    "h_holdout_residual",
+    "c3r"
+  ],
+  "protocol_sha256": "90c2941f4f1a7a64a7c8a40fc2c50141d6132aee1b4767d5bb32fefe9f6a1644",
+  "python": "3.12.0 | packaged by Anaconda, Inc. | (main, Oct  2 2023, 17:20:38) [MSC v.1916 64 bit (AMD64)]",
+  "replication": 3,
+  "scipy": "1.18.0",
+  "source_sha256": "750708b3645f3fce65b6538be589534f74492a4b6a600314720c71dd61001b16",
+  "target_states_per_job": 64,
+  "workers": 6
+}

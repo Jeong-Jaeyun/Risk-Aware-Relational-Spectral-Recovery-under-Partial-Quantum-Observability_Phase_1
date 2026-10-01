@@ -1,0 +1,18 @@
+{
+  "calibration_operating_point": {
+    "axis": "tilted",
+    "code": "bitflip",
+    "copies": 1024,
+    "physical_noise": 0.05,
+    "readout_flip": 0.05
+  },
+  "calibration_records": 384,
+  "holdout_residual_max": 0.06709675135029244,
+  "quantiles": {
+    "holdout_residual": 0.75,
+    "score": 0.75,
+    "uncertainty": 0.75
+  },
+  "score_max": 0.047701092929348154,
+  "uncertainty_max": 0.21277003276563572
+}

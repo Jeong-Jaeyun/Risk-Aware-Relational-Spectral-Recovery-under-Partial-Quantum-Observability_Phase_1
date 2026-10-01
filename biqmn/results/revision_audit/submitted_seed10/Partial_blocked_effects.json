@@ -1,0 +1,3334 @@
+[
+  {
+    "source_row": 1440,
+    "experiment_id": "phaseflip-phaseflip-p0.01-d1-seed011-sample000",
+    "seed": 11,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 1442,
+    "experiment_id": "phaseflip-phaseflip-p0.01-d3-seed011-sample002",
+    "seed": 11,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0555555555555556
+  },
+  {
+    "source_row": 1445,
+    "experiment_id": "phaseflip-phaseflip-p0.03-d2-seed011-sample005",
+    "seed": 11,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 1446,
+    "experiment_id": "phaseflip-phaseflip-p0.03-d3-seed011-sample006",
+    "seed": 11,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0555555555555556
+  },
+  {
+    "source_row": 1452,
+    "experiment_id": "phaseflip-phaseflip-p0.10-d1-seed011-sample012",
+    "seed": 11,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 1453,
+    "experiment_id": "phaseflip-phaseflip-p0.10-d2-seed011-sample013",
+    "seed": 11,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 1454,
+    "experiment_id": "phaseflip-phaseflip-p0.10-d3-seed011-sample014",
+    "seed": 11,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0555555555555556
+  },
+  {
+    "source_row": 1456,
+    "experiment_id": "phaseflip-phaseflip-p0.15-d1-seed011-sample016",
+    "seed": 11,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 1457,
+    "experiment_id": "phaseflip-phaseflip-p0.15-d2-seed011-sample017",
+    "seed": 11,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 1458,
+    "experiment_id": "phaseflip-phaseflip-p0.15-d3-seed011-sample018",
+    "seed": 11,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0555555555555556
+  },
+  {
+    "source_row": 1460,
+    "experiment_id": "phaseflip-phaseflip-p0.20-d1-seed011-sample020",
+    "seed": 11,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 1461,
+    "experiment_id": "phaseflip-phaseflip-p0.20-d2-seed011-sample021",
+    "seed": 11,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 1464,
+    "experiment_id": "phaseflip-dephasing-p0.01-d1-seed011-sample024",
+    "seed": 11,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 1466,
+    "experiment_id": "phaseflip-dephasing-p0.01-d3-seed011-sample026",
+    "seed": 11,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0555555555555556
+  },
+  {
+    "source_row": 1467,
+    "experiment_id": "phaseflip-dephasing-p0.01-d4-seed011-sample027",
+    "seed": 11,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0555555555555556
+  },
+  {
+    "source_row": 1470,
+    "experiment_id": "phaseflip-dephasing-p0.03-d3-seed011-sample030",
+    "seed": 11,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0555555555555556
+  },
+  {
+    "source_row": 1474,
+    "experiment_id": "phaseflip-dephasing-p0.05-d3-seed011-sample034",
+    "seed": 11,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0555555555555556
+  },
+  {
+    "source_row": 1480,
+    "experiment_id": "phaseflip-dephasing-p0.15-d1-seed011-sample040",
+    "seed": 11,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 1481,
+    "experiment_id": "phaseflip-dephasing-p0.15-d2-seed011-sample041",
+    "seed": 11,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 1484,
+    "experiment_id": "phaseflip-dephasing-p0.20-d1-seed011-sample044",
+    "seed": 11,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 1485,
+    "experiment_id": "phaseflip-dephasing-p0.20-d2-seed011-sample045",
+    "seed": 11,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 1488,
+    "experiment_id": "phaseflip-mixed_pauli-p0.01-d1-seed011-sample048",
+    "seed": 11,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 1489,
+    "experiment_id": "phaseflip-mixed_pauli-p0.01-d2-seed011-sample049",
+    "seed": 11,
+    "effect": 0.020153689607045777,
+    "raw_uncertainty": 1.0555555555555556
+  },
+  {
+    "source_row": 1492,
+    "experiment_id": "phaseflip-mixed_pauli-p0.03-d1-seed011-sample052",
+    "seed": 11,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 1493,
+    "experiment_id": "phaseflip-mixed_pauli-p0.03-d2-seed011-sample053",
+    "seed": 11,
+    "effect": 0.00015368960704553736,
+    "raw_uncertainty": 1.0555555555555556
+  },
+  {
+    "source_row": 1497,
+    "experiment_id": "phaseflip-mixed_pauli-p0.05-d2-seed011-sample057",
+    "seed": 11,
+    "effect": -0.01984631039295437,
+    "raw_uncertainty": 1.0555555555555556
+  },
+  {
+    "source_row": 1500,
+    "experiment_id": "phaseflip-mixed_pauli-p0.10-d1-seed011-sample060",
+    "seed": 11,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 1504,
+    "experiment_id": "phaseflip-mixed_pauli-p0.15-d1-seed011-sample064",
+    "seed": 11,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 1508,
+    "experiment_id": "phaseflip-mixed_pauli-p0.20-d1-seed011-sample068",
+    "seed": 11,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 1509,
+    "experiment_id": "phaseflip-mixed_pauli-p0.20-d2-seed011-sample069",
+    "seed": 11,
+    "effect": -0.1698463103929546,
+    "raw_uncertainty": 1.0555555555555556
+  },
+  {
+    "source_row": 1512,
+    "experiment_id": "phaseflip-phaseflip-p0.01-d1-seed012-sample072",
+    "seed": 12,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 1516,
+    "experiment_id": "phaseflip-phaseflip-p0.03-d1-seed012-sample076",
+    "seed": 12,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 1520,
+    "experiment_id": "phaseflip-phaseflip-p0.05-d1-seed012-sample080",
+    "seed": 12,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 1521,
+    "experiment_id": "phaseflip-phaseflip-p0.05-d2-seed012-sample081",
+    "seed": 12,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 1528,
+    "experiment_id": "phaseflip-phaseflip-p0.15-d1-seed012-sample088",
+    "seed": 12,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 1529,
+    "experiment_id": "phaseflip-phaseflip-p0.15-d2-seed012-sample089",
+    "seed": 12,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 1533,
+    "experiment_id": "phaseflip-phaseflip-p0.20-d2-seed012-sample093",
+    "seed": 12,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 1536,
+    "experiment_id": "phaseflip-dephasing-p0.01-d1-seed012-sample096",
+    "seed": 12,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 1537,
+    "experiment_id": "phaseflip-dephasing-p0.01-d2-seed012-sample097",
+    "seed": 12,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 1544,
+    "experiment_id": "phaseflip-dephasing-p0.05-d1-seed012-sample104",
+    "seed": 12,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 1545,
+    "experiment_id": "phaseflip-dephasing-p0.05-d2-seed012-sample105",
+    "seed": 12,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 1548,
+    "experiment_id": "phaseflip-dephasing-p0.10-d1-seed012-sample108",
+    "seed": 12,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 1549,
+    "experiment_id": "phaseflip-dephasing-p0.10-d2-seed012-sample109",
+    "seed": 12,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 1552,
+    "experiment_id": "phaseflip-dephasing-p0.15-d1-seed012-sample112",
+    "seed": 12,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 1562,
+    "experiment_id": "phaseflip-mixed_pauli-p0.01-d3-seed012-sample122",
+    "seed": 12,
+    "effect": 0.020153689607045777,
+    "raw_uncertainty": 1.0555555555555556
+  },
+  {
+    "source_row": 1566,
+    "experiment_id": "phaseflip-mixed_pauli-p0.03-d3-seed012-sample126",
+    "seed": 12,
+    "effect": 0.0001536896070457594,
+    "raw_uncertainty": 1.0555555555555556
+  },
+  {
+    "source_row": 1570,
+    "experiment_id": "phaseflip-mixed_pauli-p0.05-d3-seed012-sample130",
+    "seed": 12,
+    "effect": -0.01984631039295437,
+    "raw_uncertainty": 1.0555555555555556
+  },
+  {
+    "source_row": 1576,
+    "experiment_id": "phaseflip-mixed_pauli-p0.15-d1-seed012-sample136",
+    "seed": 12,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 1580,
+    "experiment_id": "phaseflip-mixed_pauli-p0.20-d1-seed012-sample140",
+    "seed": 12,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 1582,
+    "experiment_id": "phaseflip-mixed_pauli-p0.20-d3-seed012-sample142",
+    "seed": 12,
+    "effect": -0.1698463103929546,
+    "raw_uncertainty": 1.0555555555555556
+  },
+  {
+    "source_row": 1585,
+    "experiment_id": "phaseflip-phaseflip-p0.01-d2-seed013-sample145",
+    "seed": 13,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0555555555555556
+  },
+  {
+    "source_row": 1586,
+    "experiment_id": "phaseflip-phaseflip-p0.01-d3-seed013-sample146",
+    "seed": 13,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.1111111111111112
+  },
+  {
+    "source_row": 1588,
+    "experiment_id": "phaseflip-phaseflip-p0.03-d1-seed013-sample148",
+    "seed": 13,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0555555555555556
+  },
+  {
+    "source_row": 1591,
+    "experiment_id": "phaseflip-phaseflip-p0.03-d4-seed013-sample151",
+    "seed": 13,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.1111111111111112
+  },
+  {
+    "source_row": 1592,
+    "experiment_id": "phaseflip-phaseflip-p0.05-d1-seed013-sample152",
+    "seed": 13,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0555555555555556
+  },
+  {
+    "source_row": 1599,
+    "experiment_id": "phaseflip-phaseflip-p0.10-d4-seed013-sample159",
+    "seed": 13,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.1111111111111112
+  },
+  {
+    "source_row": 1601,
+    "experiment_id": "phaseflip-phaseflip-p0.15-d2-seed013-sample161",
+    "seed": 13,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0555555555555556
+  },
+  {
+    "source_row": 1604,
+    "experiment_id": "phaseflip-phaseflip-p0.20-d1-seed013-sample164",
+    "seed": 13,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0555555555555556
+  },
+  {
+    "source_row": 1605,
+    "experiment_id": "phaseflip-phaseflip-p0.20-d2-seed013-sample165",
+    "seed": 13,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0555555555555556
+  },
+  {
+    "source_row": 1608,
+    "experiment_id": "phaseflip-dephasing-p0.01-d1-seed013-sample168",
+    "seed": 13,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0555555555555556
+  },
+  {
+    "source_row": 1609,
+    "experiment_id": "phaseflip-dephasing-p0.01-d2-seed013-sample169",
+    "seed": 13,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0555555555555556
+  },
+  {
+    "source_row": 1611,
+    "experiment_id": "phaseflip-dephasing-p0.01-d4-seed013-sample171",
+    "seed": 13,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.1111111111111112
+  },
+  {
+    "source_row": 1617,
+    "experiment_id": "phaseflip-dephasing-p0.05-d2-seed013-sample177",
+    "seed": 13,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0555555555555556
+  },
+  {
+    "source_row": 1620,
+    "experiment_id": "phaseflip-dephasing-p0.10-d1-seed013-sample180",
+    "seed": 13,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0555555555555556
+  },
+  {
+    "source_row": 1631,
+    "experiment_id": "phaseflip-dephasing-p0.20-d4-seed013-sample191",
+    "seed": 13,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.1111111111111112
+  },
+  {
+    "source_row": 1632,
+    "experiment_id": "phaseflip-mixed_pauli-p0.01-d1-seed013-sample192",
+    "seed": 13,
+    "effect": 0.020153689607045777,
+    "raw_uncertainty": 1.0555555555555556
+  },
+  {
+    "source_row": 1636,
+    "experiment_id": "phaseflip-mixed_pauli-p0.03-d1-seed013-sample196",
+    "seed": 13,
+    "effect": 0.00015368960704553736,
+    "raw_uncertainty": 1.0555555555555556
+  },
+  {
+    "source_row": 1637,
+    "experiment_id": "phaseflip-mixed_pauli-p0.03-d2-seed013-sample197",
+    "seed": 13,
+    "effect": -0.028046310392954243,
+    "raw_uncertainty": 1.1111111111111112
+  },
+  {
+    "source_row": 1654,
+    "experiment_id": "phaseflip-mixed_pauli-p0.20-d3-seed013-sample214",
+    "seed": 13,
+    "effect": -0.2898463103929545,
+    "raw_uncertainty": 1.1666666666666667
+  },
+  {
+    "source_row": 1656,
+    "experiment_id": "phaseflip-phaseflip-p0.01-d1-seed014-sample216",
+    "seed": 14,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.1666666666666667
+  },
+  {
+    "source_row": 1657,
+    "experiment_id": "phaseflip-phaseflip-p0.01-d2-seed014-sample217",
+    "seed": 14,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.1666666666666667
+  },
+  {
+    "source_row": 1658,
+    "experiment_id": "phaseflip-phaseflip-p0.01-d3-seed014-sample218",
+    "seed": 14,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.2222222222222223
+  },
+  {
+    "source_row": 1659,
+    "experiment_id": "phaseflip-phaseflip-p0.01-d4-seed014-sample219",
+    "seed": 14,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.2222222222222223
+  },
+  {
+    "source_row": 1660,
+    "experiment_id": "phaseflip-phaseflip-p0.03-d1-seed014-sample220",
+    "seed": 14,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.1666666666666667
+  },
+  {
+    "source_row": 1661,
+    "experiment_id": "phaseflip-phaseflip-p0.03-d2-seed014-sample221",
+    "seed": 14,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.1666666666666667
+  },
+  {
+    "source_row": 1663,
+    "experiment_id": "phaseflip-phaseflip-p0.03-d4-seed014-sample223",
+    "seed": 14,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.2222222222222223
+  },
+  {
+    "source_row": 1666,
+    "experiment_id": "phaseflip-phaseflip-p0.05-d3-seed014-sample226",
+    "seed": 14,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.2222222222222223
+  },
+  {
+    "source_row": 1668,
+    "experiment_id": "phaseflip-phaseflip-p0.10-d1-seed014-sample228",
+    "seed": 14,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.1666666666666667
+  },
+  {
+    "source_row": 1672,
+    "experiment_id": "phaseflip-phaseflip-p0.15-d1-seed014-sample232",
+    "seed": 14,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.1666666666666667
+  },
+  {
+    "source_row": 1676,
+    "experiment_id": "phaseflip-phaseflip-p0.20-d1-seed014-sample236",
+    "seed": 14,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.1666666666666667
+  },
+  {
+    "source_row": 1677,
+    "experiment_id": "phaseflip-phaseflip-p0.20-d2-seed014-sample237",
+    "seed": 14,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.1666666666666667
+  },
+  {
+    "source_row": 1681,
+    "experiment_id": "phaseflip-dephasing-p0.01-d2-seed014-sample241",
+    "seed": 14,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.1666666666666667
+  },
+  {
+    "source_row": 1682,
+    "experiment_id": "phaseflip-dephasing-p0.01-d3-seed014-sample242",
+    "seed": 14,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.2222222222222223
+  },
+  {
+    "source_row": 1685,
+    "experiment_id": "phaseflip-dephasing-p0.03-d2-seed014-sample245",
+    "seed": 14,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.1666666666666667
+  },
+  {
+    "source_row": 1691,
+    "experiment_id": "phaseflip-dephasing-p0.05-d4-seed014-sample251",
+    "seed": 14,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.2222222222222223
+  },
+  {
+    "source_row": 1694,
+    "experiment_id": "phaseflip-dephasing-p0.10-d3-seed014-sample254",
+    "seed": 14,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.2222222222222223
+  },
+  {
+    "source_row": 1696,
+    "experiment_id": "phaseflip-dephasing-p0.15-d1-seed014-sample256",
+    "seed": 14,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.1666666666666667
+  },
+  {
+    "source_row": 1700,
+    "experiment_id": "phaseflip-dephasing-p0.20-d1-seed014-sample260",
+    "seed": 14,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.1666666666666667
+  },
+  {
+    "source_row": 1704,
+    "experiment_id": "phaseflip-mixed_pauli-p0.01-d1-seed014-sample264",
+    "seed": 14,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.1666666666666667
+  },
+  {
+    "source_row": 1705,
+    "experiment_id": "phaseflip-mixed_pauli-p0.01-d2-seed014-sample265",
+    "seed": 14,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.2222222222222223
+  },
+  {
+    "source_row": 1707,
+    "experiment_id": "phaseflip-mixed_pauli-p0.01-d4-seed014-sample267",
+    "seed": 14,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.1111111111111112
+  },
+  {
+    "source_row": 1708,
+    "experiment_id": "phaseflip-mixed_pauli-p0.03-d1-seed014-sample268",
+    "seed": 14,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.1666666666666667
+  },
+  {
+    "source_row": 1709,
+    "experiment_id": "phaseflip-mixed_pauli-p0.03-d2-seed014-sample269",
+    "seed": 14,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.2222222222222223
+  },
+  {
+    "source_row": 1712,
+    "experiment_id": "phaseflip-mixed_pauli-p0.05-d1-seed014-sample272",
+    "seed": 14,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.1666666666666667
+  },
+  {
+    "source_row": 1713,
+    "experiment_id": "phaseflip-mixed_pauli-p0.05-d2-seed014-sample273",
+    "seed": 14,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.2222222222222223
+  },
+  {
+    "source_row": 1724,
+    "experiment_id": "phaseflip-mixed_pauli-p0.20-d1-seed014-sample284",
+    "seed": 14,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.1666666666666667
+  },
+  {
+    "source_row": 1728,
+    "experiment_id": "phaseflip-phaseflip-p0.01-d1-seed015-sample288",
+    "seed": 15,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 1729,
+    "experiment_id": "phaseflip-phaseflip-p0.01-d2-seed015-sample289",
+    "seed": 15,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 1732,
+    "experiment_id": "phaseflip-phaseflip-p0.03-d1-seed015-sample292",
+    "seed": 15,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 1736,
+    "experiment_id": "phaseflip-phaseflip-p0.05-d1-seed015-sample296",
+    "seed": 15,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 1745,
+    "experiment_id": "phaseflip-phaseflip-p0.15-d2-seed015-sample305",
+    "seed": 15,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 1748,
+    "experiment_id": "phaseflip-phaseflip-p0.20-d1-seed015-sample308",
+    "seed": 15,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 1749,
+    "experiment_id": "phaseflip-phaseflip-p0.20-d2-seed015-sample309",
+    "seed": 15,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 1752,
+    "experiment_id": "phaseflip-dephasing-p0.01-d1-seed015-sample312",
+    "seed": 15,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 1753,
+    "experiment_id": "phaseflip-dephasing-p0.01-d2-seed015-sample313",
+    "seed": 15,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 1764,
+    "experiment_id": "phaseflip-dephasing-p0.10-d1-seed015-sample324",
+    "seed": 15,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 1776,
+    "experiment_id": "phaseflip-mixed_pauli-p0.01-d1-seed015-sample336",
+    "seed": 15,
+    "effect": 0.020153689607045777,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 1780,
+    "experiment_id": "phaseflip-mixed_pauli-p0.03-d1-seed015-sample340",
+    "seed": 15,
+    "effect": 0.00015368960704553736,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 1800,
+    "experiment_id": "phaseflip-phaseflip-p0.01-d1-seed016-sample360",
+    "seed": 16,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.2222222222222223
+  },
+  {
+    "source_row": 1801,
+    "experiment_id": "phaseflip-phaseflip-p0.01-d2-seed016-sample361",
+    "seed": 16,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.2222222222222223
+  },
+  {
+    "source_row": 1802,
+    "experiment_id": "phaseflip-phaseflip-p0.01-d3-seed016-sample362",
+    "seed": 16,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.1111111111111112
+  },
+  {
+    "source_row": 1804,
+    "experiment_id": "phaseflip-phaseflip-p0.03-d1-seed016-sample364",
+    "seed": 16,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.2222222222222223
+  },
+  {
+    "source_row": 1805,
+    "experiment_id": "phaseflip-phaseflip-p0.03-d2-seed016-sample365",
+    "seed": 16,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.2222222222222223
+  },
+  {
+    "source_row": 1806,
+    "experiment_id": "phaseflip-phaseflip-p0.03-d3-seed016-sample366",
+    "seed": 16,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.1111111111111112
+  },
+  {
+    "source_row": 1808,
+    "experiment_id": "phaseflip-phaseflip-p0.05-d1-seed016-sample368",
+    "seed": 16,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.2222222222222223
+  },
+  {
+    "source_row": 1811,
+    "experiment_id": "phaseflip-phaseflip-p0.05-d4-seed016-sample371",
+    "seed": 16,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.1111111111111112
+  },
+  {
+    "source_row": 1813,
+    "experiment_id": "phaseflip-phaseflip-p0.10-d2-seed016-sample373",
+    "seed": 16,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.2222222222222223
+  },
+  {
+    "source_row": 1816,
+    "experiment_id": "phaseflip-phaseflip-p0.15-d1-seed016-sample376",
+    "seed": 16,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.2222222222222223
+  },
+  {
+    "source_row": 1817,
+    "experiment_id": "phaseflip-phaseflip-p0.15-d2-seed016-sample377",
+    "seed": 16,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.2222222222222223
+  },
+  {
+    "source_row": 1821,
+    "experiment_id": "phaseflip-phaseflip-p0.20-d2-seed016-sample381",
+    "seed": 16,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.2222222222222223
+  },
+  {
+    "source_row": 1824,
+    "experiment_id": "phaseflip-dephasing-p0.01-d1-seed016-sample384",
+    "seed": 16,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.2222222222222223
+  },
+  {
+    "source_row": 1829,
+    "experiment_id": "phaseflip-dephasing-p0.03-d2-seed016-sample389",
+    "seed": 16,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.2222222222222223
+  },
+  {
+    "source_row": 1832,
+    "experiment_id": "phaseflip-dephasing-p0.05-d1-seed016-sample392",
+    "seed": 16,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.2222222222222223
+  },
+  {
+    "source_row": 1833,
+    "experiment_id": "phaseflip-dephasing-p0.05-d2-seed016-sample393",
+    "seed": 16,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.2222222222222223
+  },
+  {
+    "source_row": 1834,
+    "experiment_id": "phaseflip-dephasing-p0.05-d3-seed016-sample394",
+    "seed": 16,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.1111111111111112
+  },
+  {
+    "source_row": 1835,
+    "experiment_id": "phaseflip-dephasing-p0.05-d4-seed016-sample395",
+    "seed": 16,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.1111111111111112
+  },
+  {
+    "source_row": 1836,
+    "experiment_id": "phaseflip-dephasing-p0.10-d1-seed016-sample396",
+    "seed": 16,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.2222222222222223
+  },
+  {
+    "source_row": 1839,
+    "experiment_id": "phaseflip-dephasing-p0.10-d4-seed016-sample399",
+    "seed": 16,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.1111111111111112
+  },
+  {
+    "source_row": 1840,
+    "experiment_id": "phaseflip-dephasing-p0.15-d1-seed016-sample400",
+    "seed": 16,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.2222222222222223
+  },
+  {
+    "source_row": 1841,
+    "experiment_id": "phaseflip-dephasing-p0.15-d2-seed016-sample401",
+    "seed": 16,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.2222222222222223
+  },
+  {
+    "source_row": 1845,
+    "experiment_id": "phaseflip-dephasing-p0.20-d2-seed016-sample405",
+    "seed": 16,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.2222222222222223
+  },
+  {
+    "source_row": 1848,
+    "experiment_id": "phaseflip-mixed_pauli-p0.01-d1-seed016-sample408",
+    "seed": 16,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.2222222222222223
+  },
+  {
+    "source_row": 1856,
+    "experiment_id": "phaseflip-mixed_pauli-p0.05-d1-seed016-sample416",
+    "seed": 16,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.2222222222222223
+  },
+  {
+    "source_row": 1857,
+    "experiment_id": "phaseflip-mixed_pauli-p0.05-d2-seed016-sample417",
+    "seed": 16,
+    "effect": -0.019846310392954147,
+    "raw_uncertainty": 1.1111111111111112
+  },
+  {
+    "source_row": 1860,
+    "experiment_id": "phaseflip-mixed_pauli-p0.10-d1-seed016-sample420",
+    "seed": 16,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.2222222222222223
+  },
+  {
+    "source_row": 1864,
+    "experiment_id": "phaseflip-mixed_pauli-p0.15-d1-seed016-sample424",
+    "seed": 16,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.2222222222222223
+  },
+  {
+    "source_row": 1871,
+    "experiment_id": "phaseflip-mixed_pauli-p0.20-d4-seed016-sample431",
+    "seed": 16,
+    "effect": -0.2898463103929545,
+    "raw_uncertainty": 1.1666666666666667
+  },
+  {
+    "source_row": 1935,
+    "experiment_id": "phaseflip-mixed_pauli-p0.10-d4-seed017-sample495",
+    "seed": 17,
+    "effect": -0.14984631039295437,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 1943,
+    "experiment_id": "phaseflip-mixed_pauli-p0.20-d4-seed017-sample503",
+    "seed": 17,
+    "effect": -0.2898463103929545,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 1947,
+    "experiment_id": "phaseflip-phaseflip-p0.01-d4-seed018-sample507",
+    "seed": 18,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.2222222222222223
+  },
+  {
+    "source_row": 1948,
+    "experiment_id": "phaseflip-phaseflip-p0.03-d1-seed018-sample508",
+    "seed": 18,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.1111111111111112
+  },
+  {
+    "source_row": 1951,
+    "experiment_id": "phaseflip-phaseflip-p0.03-d4-seed018-sample511",
+    "seed": 18,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.2222222222222223
+  },
+  {
+    "source_row": 1952,
+    "experiment_id": "phaseflip-phaseflip-p0.05-d1-seed018-sample512",
+    "seed": 18,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.1111111111111112
+  },
+  {
+    "source_row": 1953,
+    "experiment_id": "phaseflip-phaseflip-p0.05-d2-seed018-sample513",
+    "seed": 18,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.1111111111111112
+  },
+  {
+    "source_row": 1954,
+    "experiment_id": "phaseflip-phaseflip-p0.05-d3-seed018-sample514",
+    "seed": 18,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.2222222222222223
+  },
+  {
+    "source_row": 1964,
+    "experiment_id": "phaseflip-phaseflip-p0.20-d1-seed018-sample524",
+    "seed": 18,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.1111111111111112
+  },
+  {
+    "source_row": 1965,
+    "experiment_id": "phaseflip-phaseflip-p0.20-d2-seed018-sample525",
+    "seed": 18,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.1111111111111112
+  },
+  {
+    "source_row": 1968,
+    "experiment_id": "phaseflip-dephasing-p0.01-d1-seed018-sample528",
+    "seed": 18,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.1111111111111112
+  },
+  {
+    "source_row": 1975,
+    "experiment_id": "phaseflip-dephasing-p0.03-d4-seed018-sample535",
+    "seed": 18,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.2222222222222223
+  },
+  {
+    "source_row": 1976,
+    "experiment_id": "phaseflip-dephasing-p0.05-d1-seed018-sample536",
+    "seed": 18,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.1111111111111112
+  },
+  {
+    "source_row": 1980,
+    "experiment_id": "phaseflip-dephasing-p0.10-d1-seed018-sample540",
+    "seed": 18,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.1111111111111112
+  },
+  {
+    "source_row": 1981,
+    "experiment_id": "phaseflip-dephasing-p0.10-d2-seed018-sample541",
+    "seed": 18,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.1111111111111112
+  },
+  {
+    "source_row": 1992,
+    "experiment_id": "phaseflip-mixed_pauli-p0.01-d1-seed018-sample552",
+    "seed": 18,
+    "effect": 0.020153689607045777,
+    "raw_uncertainty": 1.1111111111111112
+  },
+  {
+    "source_row": 1996,
+    "experiment_id": "phaseflip-mixed_pauli-p0.03-d1-seed018-sample556",
+    "seed": 18,
+    "effect": 0.00015368960704553736,
+    "raw_uncertainty": 1.1111111111111112
+  },
+  {
+    "source_row": 2014,
+    "experiment_id": "phaseflip-mixed_pauli-p0.20-d3-seed018-sample574",
+    "seed": 18,
+    "effect": -0.2898463103929545,
+    "raw_uncertainty": 1.2777777777777777
+  },
+  {
+    "source_row": 2016,
+    "experiment_id": "phaseflip-phaseflip-p0.01-d1-seed019-sample576",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 2017,
+    "experiment_id": "phaseflip-phaseflip-p0.01-d2-seed019-sample577",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 2019,
+    "experiment_id": "phaseflip-phaseflip-p0.01-d4-seed019-sample579",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 2020,
+    "experiment_id": "phaseflip-phaseflip-p0.03-d1-seed019-sample580",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 2021,
+    "experiment_id": "phaseflip-phaseflip-p0.03-d2-seed019-sample581",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 2024,
+    "experiment_id": "phaseflip-phaseflip-p0.05-d1-seed019-sample584",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 2027,
+    "experiment_id": "phaseflip-phaseflip-p0.05-d4-seed019-sample587",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 2029,
+    "experiment_id": "phaseflip-phaseflip-p0.10-d2-seed019-sample589",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 2030,
+    "experiment_id": "phaseflip-phaseflip-p0.10-d3-seed019-sample590",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 2032,
+    "experiment_id": "phaseflip-phaseflip-p0.15-d1-seed019-sample592",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 2033,
+    "experiment_id": "phaseflip-phaseflip-p0.15-d2-seed019-sample593",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 2037,
+    "experiment_id": "phaseflip-phaseflip-p0.20-d2-seed019-sample597",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 2038,
+    "experiment_id": "phaseflip-phaseflip-p0.20-d3-seed019-sample598",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 2040,
+    "experiment_id": "phaseflip-dephasing-p0.01-d1-seed019-sample600",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 2045,
+    "experiment_id": "phaseflip-dephasing-p0.03-d2-seed019-sample605",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 2048,
+    "experiment_id": "phaseflip-dephasing-p0.05-d1-seed019-sample608",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 2049,
+    "experiment_id": "phaseflip-dephasing-p0.05-d2-seed019-sample609",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 2050,
+    "experiment_id": "phaseflip-dephasing-p0.05-d3-seed019-sample610",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 2051,
+    "experiment_id": "phaseflip-dephasing-p0.05-d4-seed019-sample611",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 2052,
+    "experiment_id": "phaseflip-dephasing-p0.10-d1-seed019-sample612",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 2055,
+    "experiment_id": "phaseflip-dephasing-p0.10-d4-seed019-sample615",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 2056,
+    "experiment_id": "phaseflip-dephasing-p0.15-d1-seed019-sample616",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 2057,
+    "experiment_id": "phaseflip-dephasing-p0.15-d2-seed019-sample617",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 2058,
+    "experiment_id": "phaseflip-dephasing-p0.15-d3-seed019-sample618",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 2061,
+    "experiment_id": "phaseflip-dephasing-p0.20-d2-seed019-sample621",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 2062,
+    "experiment_id": "phaseflip-dephasing-p0.20-d3-seed019-sample622",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 2064,
+    "experiment_id": "phaseflip-mixed_pauli-p0.01-d1-seed019-sample624",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 2065,
+    "experiment_id": "phaseflip-mixed_pauli-p0.01-d2-seed019-sample625",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 2071,
+    "experiment_id": "phaseflip-mixed_pauli-p0.03-d4-seed019-sample631",
+    "seed": 19,
+    "effect": 0.0001536896070457594,
+    "raw_uncertainty": 1.1111111111111112
+  },
+  {
+    "source_row": 2072,
+    "experiment_id": "phaseflip-mixed_pauli-p0.05-d1-seed019-sample632",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 2073,
+    "experiment_id": "phaseflip-mixed_pauli-p0.05-d2-seed019-sample633",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 2076,
+    "experiment_id": "phaseflip-mixed_pauli-p0.10-d1-seed019-sample636",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 2077,
+    "experiment_id": "phaseflip-mixed_pauli-p0.10-d2-seed019-sample637",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 2078,
+    "experiment_id": "phaseflip-mixed_pauli-p0.10-d3-seed019-sample638",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0555555555555556
+  },
+  {
+    "source_row": 2080,
+    "experiment_id": "phaseflip-mixed_pauli-p0.15-d1-seed019-sample640",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 2090,
+    "experiment_id": "phaseflip-phaseflip-p0.01-d3-seed020-sample650",
+    "seed": 20,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0555555555555556
+  },
+  {
+    "source_row": 2094,
+    "experiment_id": "phaseflip-phaseflip-p0.03-d3-seed020-sample654",
+    "seed": 20,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0555555555555556
+  },
+  {
+    "source_row": 2102,
+    "experiment_id": "phaseflip-phaseflip-p0.10-d3-seed020-sample662",
+    "seed": 20,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0555555555555556
+  },
+  {
+    "source_row": 2110,
+    "experiment_id": "phaseflip-phaseflip-p0.20-d3-seed020-sample670",
+    "seed": 20,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0555555555555556
+  },
+  {
+    "source_row": 2114,
+    "experiment_id": "phaseflip-dephasing-p0.01-d3-seed020-sample674",
+    "seed": 20,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0555555555555556
+  },
+  {
+    "source_row": 2115,
+    "experiment_id": "phaseflip-dephasing-p0.01-d4-seed020-sample675",
+    "seed": 20,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0555555555555556
+  },
+  {
+    "source_row": 2122,
+    "experiment_id": "phaseflip-dephasing-p0.05-d3-seed020-sample682",
+    "seed": 20,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.0555555555555556
+  },
+  {
+    "source_row": 2139,
+    "experiment_id": "phaseflip-mixed_pauli-p0.01-d4-seed020-sample699",
+    "seed": 20,
+    "effect": 0.010353689607045746,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 2143,
+    "experiment_id": "phaseflip-mixed_pauli-p0.03-d4-seed020-sample703",
+    "seed": 20,
+    "effect": -0.028046310392954465,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 2145,
+    "experiment_id": "phaseflip-mixed_pauli-p0.05-d2-seed020-sample705",
+    "seed": 20,
+    "effect": -0.01984631039295437,
+    "raw_uncertainty": 1.0555555555555556
+  },
+  {
+    "source_row": 2159,
+    "experiment_id": "phaseflip-mixed_pauli-p0.20-d4-seed020-sample719",
+    "seed": 20,
+    "effect": -0.28984631039295455,
+    "raw_uncertainty": 1.0
+  },
+  {
+    "source_row": 2160,
+    "experiment_id": "phaseflip-phaseflip-p0.01-d1-seed011-sample000",
+    "seed": 11,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2164,
+    "experiment_id": "phaseflip-phaseflip-p0.03-d1-seed011-sample004",
+    "seed": 11,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2165,
+    "experiment_id": "phaseflip-phaseflip-p0.03-d2-seed011-sample005",
+    "seed": 11,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2166,
+    "experiment_id": "phaseflip-phaseflip-p0.03-d3-seed011-sample006",
+    "seed": 11,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.4166666666666667
+  },
+  {
+    "source_row": 2172,
+    "experiment_id": "phaseflip-phaseflip-p0.10-d1-seed011-sample012",
+    "seed": 11,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2173,
+    "experiment_id": "phaseflip-phaseflip-p0.10-d2-seed011-sample013",
+    "seed": 11,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2174,
+    "experiment_id": "phaseflip-phaseflip-p0.10-d3-seed011-sample014",
+    "seed": 11,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.4166666666666667
+  },
+  {
+    "source_row": 2176,
+    "experiment_id": "phaseflip-phaseflip-p0.15-d1-seed011-sample016",
+    "seed": 11,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2177,
+    "experiment_id": "phaseflip-phaseflip-p0.15-d2-seed011-sample017",
+    "seed": 11,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2180,
+    "experiment_id": "phaseflip-phaseflip-p0.20-d1-seed011-sample020",
+    "seed": 11,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2181,
+    "experiment_id": "phaseflip-phaseflip-p0.20-d2-seed011-sample021",
+    "seed": 11,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2186,
+    "experiment_id": "phaseflip-dephasing-p0.01-d3-seed011-sample026",
+    "seed": 11,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.4166666666666667
+  },
+  {
+    "source_row": 2194,
+    "experiment_id": "phaseflip-dephasing-p0.05-d3-seed011-sample034",
+    "seed": 11,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.4166666666666667
+  },
+  {
+    "source_row": 2200,
+    "experiment_id": "phaseflip-dephasing-p0.15-d1-seed011-sample040",
+    "seed": 11,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2201,
+    "experiment_id": "phaseflip-dephasing-p0.15-d2-seed011-sample041",
+    "seed": 11,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2205,
+    "experiment_id": "phaseflip-dephasing-p0.20-d2-seed011-sample045",
+    "seed": 11,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2206,
+    "experiment_id": "phaseflip-dephasing-p0.20-d3-seed011-sample046",
+    "seed": 11,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.4166666666666667
+  },
+  {
+    "source_row": 2208,
+    "experiment_id": "phaseflip-mixed_pauli-p0.01-d1-seed011-sample048",
+    "seed": 11,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2209,
+    "experiment_id": "phaseflip-mixed_pauli-p0.01-d2-seed011-sample049",
+    "seed": 11,
+    "effect": 0.020153689607045777,
+    "raw_uncertainty": 1.4166666666666667
+  },
+  {
+    "source_row": 2213,
+    "experiment_id": "phaseflip-mixed_pauli-p0.03-d2-seed011-sample053",
+    "seed": 11,
+    "effect": 0.00015368960704553736,
+    "raw_uncertainty": 1.4166666666666667
+  },
+  {
+    "source_row": 2214,
+    "experiment_id": "phaseflip-mixed_pauli-p0.03-d3-seed011-sample054",
+    "seed": 11,
+    "effect": 0.0001536896070457594,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2217,
+    "experiment_id": "phaseflip-mixed_pauli-p0.05-d2-seed011-sample057",
+    "seed": 11,
+    "effect": -0.01984631039295437,
+    "raw_uncertainty": 1.4166666666666667
+  },
+  {
+    "source_row": 2218,
+    "experiment_id": "phaseflip-mixed_pauli-p0.05-d3-seed011-sample058",
+    "seed": 11,
+    "effect": -0.01984631039295437,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2220,
+    "experiment_id": "phaseflip-mixed_pauli-p0.10-d1-seed011-sample060",
+    "seed": 11,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2223,
+    "experiment_id": "phaseflip-mixed_pauli-p0.10-d4-seed011-sample063",
+    "seed": 11,
+    "effect": -0.14984631039295437,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2224,
+    "experiment_id": "phaseflip-mixed_pauli-p0.15-d1-seed011-sample064",
+    "seed": 11,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2228,
+    "experiment_id": "phaseflip-mixed_pauli-p0.20-d1-seed011-sample068",
+    "seed": 11,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2229,
+    "experiment_id": "phaseflip-mixed_pauli-p0.20-d2-seed011-sample069",
+    "seed": 11,
+    "effect": -0.1698463103929546,
+    "raw_uncertainty": 1.4166666666666667
+  },
+  {
+    "source_row": 2232,
+    "experiment_id": "phaseflip-phaseflip-p0.01-d1-seed012-sample072",
+    "seed": 12,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.3611111111111112
+  },
+  {
+    "source_row": 2234,
+    "experiment_id": "phaseflip-phaseflip-p0.01-d3-seed012-sample074",
+    "seed": 12,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.4166666666666667
+  },
+  {
+    "source_row": 2235,
+    "experiment_id": "phaseflip-phaseflip-p0.01-d4-seed012-sample075",
+    "seed": 12,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.4166666666666667
+  },
+  {
+    "source_row": 2236,
+    "experiment_id": "phaseflip-phaseflip-p0.03-d1-seed012-sample076",
+    "seed": 12,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.3611111111111112
+  },
+  {
+    "source_row": 2238,
+    "experiment_id": "phaseflip-phaseflip-p0.03-d3-seed012-sample078",
+    "seed": 12,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.4166666666666667
+  },
+  {
+    "source_row": 2239,
+    "experiment_id": "phaseflip-phaseflip-p0.03-d4-seed012-sample079",
+    "seed": 12,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.4166666666666667
+  },
+  {
+    "source_row": 2240,
+    "experiment_id": "phaseflip-phaseflip-p0.05-d1-seed012-sample080",
+    "seed": 12,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.3611111111111112
+  },
+  {
+    "source_row": 2241,
+    "experiment_id": "phaseflip-phaseflip-p0.05-d2-seed012-sample081",
+    "seed": 12,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.3611111111111112
+  },
+  {
+    "source_row": 2242,
+    "experiment_id": "phaseflip-phaseflip-p0.05-d3-seed012-sample082",
+    "seed": 12,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.4166666666666667
+  },
+  {
+    "source_row": 2248,
+    "experiment_id": "phaseflip-phaseflip-p0.15-d1-seed012-sample088",
+    "seed": 12,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.3611111111111112
+  },
+  {
+    "source_row": 2249,
+    "experiment_id": "phaseflip-phaseflip-p0.15-d2-seed012-sample089",
+    "seed": 12,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.3611111111111112
+  },
+  {
+    "source_row": 2253,
+    "experiment_id": "phaseflip-phaseflip-p0.20-d2-seed012-sample093",
+    "seed": 12,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.3611111111111112
+  },
+  {
+    "source_row": 2256,
+    "experiment_id": "phaseflip-dephasing-p0.01-d1-seed012-sample096",
+    "seed": 12,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.3611111111111112
+  },
+  {
+    "source_row": 2257,
+    "experiment_id": "phaseflip-dephasing-p0.01-d2-seed012-sample097",
+    "seed": 12,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.3611111111111112
+  },
+  {
+    "source_row": 2263,
+    "experiment_id": "phaseflip-dephasing-p0.03-d4-seed012-sample103",
+    "seed": 12,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.4166666666666667
+  },
+  {
+    "source_row": 2264,
+    "experiment_id": "phaseflip-dephasing-p0.05-d1-seed012-sample104",
+    "seed": 12,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.3611111111111112
+  },
+  {
+    "source_row": 2266,
+    "experiment_id": "phaseflip-dephasing-p0.05-d3-seed012-sample106",
+    "seed": 12,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.4166666666666667
+  },
+  {
+    "source_row": 2268,
+    "experiment_id": "phaseflip-dephasing-p0.10-d1-seed012-sample108",
+    "seed": 12,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.3611111111111112
+  },
+  {
+    "source_row": 2269,
+    "experiment_id": "phaseflip-dephasing-p0.10-d2-seed012-sample109",
+    "seed": 12,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.3611111111111112
+  },
+  {
+    "source_row": 2272,
+    "experiment_id": "phaseflip-dephasing-p0.15-d1-seed012-sample112",
+    "seed": 12,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.3611111111111112
+  },
+  {
+    "source_row": 2282,
+    "experiment_id": "phaseflip-mixed_pauli-p0.01-d3-seed012-sample122",
+    "seed": 12,
+    "effect": 0.020153689607045777,
+    "raw_uncertainty": 1.4722222222222223
+  },
+  {
+    "source_row": 2285,
+    "experiment_id": "phaseflip-mixed_pauli-p0.03-d2-seed012-sample125",
+    "seed": 12,
+    "effect": 0.00015368960704553736,
+    "raw_uncertainty": 1.4166666666666667
+  },
+  {
+    "source_row": 2286,
+    "experiment_id": "phaseflip-mixed_pauli-p0.03-d3-seed012-sample126",
+    "seed": 12,
+    "effect": 0.0001536896070457594,
+    "raw_uncertainty": 1.4722222222222223
+  },
+  {
+    "source_row": 2290,
+    "experiment_id": "phaseflip-mixed_pauli-p0.05-d3-seed012-sample130",
+    "seed": 12,
+    "effect": -0.01984631039295437,
+    "raw_uncertainty": 1.4722222222222223
+  },
+  {
+    "source_row": 2296,
+    "experiment_id": "phaseflip-mixed_pauli-p0.15-d1-seed012-sample136",
+    "seed": 12,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.3611111111111112
+  },
+  {
+    "source_row": 2297,
+    "experiment_id": "phaseflip-mixed_pauli-p0.15-d2-seed012-sample137",
+    "seed": 12,
+    "effect": -0.11984631039295446,
+    "raw_uncertainty": 1.4166666666666667
+  },
+  {
+    "source_row": 2300,
+    "experiment_id": "phaseflip-mixed_pauli-p0.20-d1-seed012-sample140",
+    "seed": 12,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.3611111111111112
+  },
+  {
+    "source_row": 2302,
+    "experiment_id": "phaseflip-mixed_pauli-p0.20-d3-seed012-sample142",
+    "seed": 12,
+    "effect": -0.1698463103929546,
+    "raw_uncertainty": 1.4722222222222223
+  },
+  {
+    "source_row": 2303,
+    "experiment_id": "phaseflip-mixed_pauli-p0.20-d4-seed012-sample143",
+    "seed": 12,
+    "effect": -0.1698463103929546,
+    "raw_uncertainty": 1.3055555555555556
+  },
+  {
+    "source_row": 2304,
+    "experiment_id": "phaseflip-phaseflip-p0.01-d1-seed013-sample144",
+    "seed": 13,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.6944444444444444
+  },
+  {
+    "source_row": 2305,
+    "experiment_id": "phaseflip-phaseflip-p0.01-d2-seed013-sample145",
+    "seed": 13,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.6944444444444444
+  },
+  {
+    "source_row": 2308,
+    "experiment_id": "phaseflip-phaseflip-p0.03-d1-seed013-sample148",
+    "seed": 13,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.6944444444444444
+  },
+  {
+    "source_row": 2312,
+    "experiment_id": "phaseflip-phaseflip-p0.05-d1-seed013-sample152",
+    "seed": 13,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.6944444444444444
+  },
+  {
+    "source_row": 2319,
+    "experiment_id": "phaseflip-phaseflip-p0.10-d4-seed013-sample159",
+    "seed": 13,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2321,
+    "experiment_id": "phaseflip-phaseflip-p0.15-d2-seed013-sample161",
+    "seed": 13,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.6944444444444444
+  },
+  {
+    "source_row": 2324,
+    "experiment_id": "phaseflip-phaseflip-p0.20-d1-seed013-sample164",
+    "seed": 13,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.6944444444444444
+  },
+  {
+    "source_row": 2325,
+    "experiment_id": "phaseflip-phaseflip-p0.20-d2-seed013-sample165",
+    "seed": 13,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.6944444444444444
+  },
+  {
+    "source_row": 2328,
+    "experiment_id": "phaseflip-dephasing-p0.01-d1-seed013-sample168",
+    "seed": 13,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.6944444444444444
+  },
+  {
+    "source_row": 2331,
+    "experiment_id": "phaseflip-dephasing-p0.01-d4-seed013-sample171",
+    "seed": 13,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2336,
+    "experiment_id": "phaseflip-dephasing-p0.05-d1-seed013-sample176",
+    "seed": 13,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.6944444444444444
+  },
+  {
+    "source_row": 2340,
+    "experiment_id": "phaseflip-dephasing-p0.10-d1-seed013-sample180",
+    "seed": 13,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.6944444444444444
+  },
+  {
+    "source_row": 2345,
+    "experiment_id": "phaseflip-dephasing-p0.15-d2-seed013-sample185",
+    "seed": 13,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.6944444444444444
+  },
+  {
+    "source_row": 2351,
+    "experiment_id": "phaseflip-dephasing-p0.20-d4-seed013-sample191",
+    "seed": 13,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2352,
+    "experiment_id": "phaseflip-mixed_pauli-p0.01-d1-seed013-sample192",
+    "seed": 13,
+    "effect": 0.020153689607045777,
+    "raw_uncertainty": 1.6944444444444444
+  },
+  {
+    "source_row": 2356,
+    "experiment_id": "phaseflip-mixed_pauli-p0.03-d1-seed013-sample196",
+    "seed": 13,
+    "effect": 0.00015368960704553736,
+    "raw_uncertainty": 1.6944444444444444
+  },
+  {
+    "source_row": 2357,
+    "experiment_id": "phaseflip-mixed_pauli-p0.03-d2-seed013-sample197",
+    "seed": 13,
+    "effect": -0.028046310392954243,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2374,
+    "experiment_id": "phaseflip-mixed_pauli-p0.20-d3-seed013-sample214",
+    "seed": 13,
+    "effect": -0.2898463103929545,
+    "raw_uncertainty": 1.5833333333333335
+  },
+  {
+    "source_row": 2376,
+    "experiment_id": "phaseflip-phaseflip-p0.01-d1-seed014-sample216",
+    "seed": 14,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2377,
+    "experiment_id": "phaseflip-phaseflip-p0.01-d2-seed014-sample217",
+    "seed": 14,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2378,
+    "experiment_id": "phaseflip-phaseflip-p0.01-d3-seed014-sample218",
+    "seed": 14,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5833333333333335
+  },
+  {
+    "source_row": 2379,
+    "experiment_id": "phaseflip-phaseflip-p0.01-d4-seed014-sample219",
+    "seed": 14,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5833333333333335
+  },
+  {
+    "source_row": 2380,
+    "experiment_id": "phaseflip-phaseflip-p0.03-d1-seed014-sample220",
+    "seed": 14,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2381,
+    "experiment_id": "phaseflip-phaseflip-p0.03-d2-seed014-sample221",
+    "seed": 14,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2382,
+    "experiment_id": "phaseflip-phaseflip-p0.03-d3-seed014-sample222",
+    "seed": 14,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5833333333333335
+  },
+  {
+    "source_row": 2383,
+    "experiment_id": "phaseflip-phaseflip-p0.03-d4-seed014-sample223",
+    "seed": 14,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5833333333333335
+  },
+  {
+    "source_row": 2386,
+    "experiment_id": "phaseflip-phaseflip-p0.05-d3-seed014-sample226",
+    "seed": 14,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5833333333333335
+  },
+  {
+    "source_row": 2388,
+    "experiment_id": "phaseflip-phaseflip-p0.10-d1-seed014-sample228",
+    "seed": 14,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2392,
+    "experiment_id": "phaseflip-phaseflip-p0.15-d1-seed014-sample232",
+    "seed": 14,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2396,
+    "experiment_id": "phaseflip-phaseflip-p0.20-d1-seed014-sample236",
+    "seed": 14,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2397,
+    "experiment_id": "phaseflip-phaseflip-p0.20-d2-seed014-sample237",
+    "seed": 14,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2400,
+    "experiment_id": "phaseflip-dephasing-p0.01-d1-seed014-sample240",
+    "seed": 14,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2401,
+    "experiment_id": "phaseflip-dephasing-p0.01-d2-seed014-sample241",
+    "seed": 14,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2405,
+    "experiment_id": "phaseflip-dephasing-p0.03-d2-seed014-sample245",
+    "seed": 14,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2411,
+    "experiment_id": "phaseflip-dephasing-p0.05-d4-seed014-sample251",
+    "seed": 14,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5833333333333335
+  },
+  {
+    "source_row": 2414,
+    "experiment_id": "phaseflip-dephasing-p0.10-d3-seed014-sample254",
+    "seed": 14,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5833333333333335
+  },
+  {
+    "source_row": 2416,
+    "experiment_id": "phaseflip-dephasing-p0.15-d1-seed014-sample256",
+    "seed": 14,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2420,
+    "experiment_id": "phaseflip-dephasing-p0.20-d1-seed014-sample260",
+    "seed": 14,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2424,
+    "experiment_id": "phaseflip-mixed_pauli-p0.01-d1-seed014-sample264",
+    "seed": 14,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2425,
+    "experiment_id": "phaseflip-mixed_pauli-p0.01-d2-seed014-sample265",
+    "seed": 14,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5833333333333335
+  },
+  {
+    "source_row": 2428,
+    "experiment_id": "phaseflip-mixed_pauli-p0.03-d1-seed014-sample268",
+    "seed": 14,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2429,
+    "experiment_id": "phaseflip-mixed_pauli-p0.03-d2-seed014-sample269",
+    "seed": 14,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5833333333333335
+  },
+  {
+    "source_row": 2432,
+    "experiment_id": "phaseflip-mixed_pauli-p0.05-d1-seed014-sample272",
+    "seed": 14,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2433,
+    "experiment_id": "phaseflip-mixed_pauli-p0.05-d2-seed014-sample273",
+    "seed": 14,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5833333333333335
+  },
+  {
+    "source_row": 2444,
+    "experiment_id": "phaseflip-mixed_pauli-p0.20-d1-seed014-sample284",
+    "seed": 14,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2448,
+    "experiment_id": "phaseflip-phaseflip-p0.01-d1-seed015-sample288",
+    "seed": 15,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.6388888888888888
+  },
+  {
+    "source_row": 2449,
+    "experiment_id": "phaseflip-phaseflip-p0.01-d2-seed015-sample289",
+    "seed": 15,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.6388888888888888
+  },
+  {
+    "source_row": 2452,
+    "experiment_id": "phaseflip-phaseflip-p0.03-d1-seed015-sample292",
+    "seed": 15,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.6388888888888888
+  },
+  {
+    "source_row": 2455,
+    "experiment_id": "phaseflip-phaseflip-p0.03-d4-seed015-sample295",
+    "seed": 15,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2456,
+    "experiment_id": "phaseflip-phaseflip-p0.05-d1-seed015-sample296",
+    "seed": 15,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.6388888888888888
+  },
+  {
+    "source_row": 2463,
+    "experiment_id": "phaseflip-phaseflip-p0.10-d4-seed015-sample303",
+    "seed": 15,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2465,
+    "experiment_id": "phaseflip-phaseflip-p0.15-d2-seed015-sample305",
+    "seed": 15,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.6388888888888888
+  },
+  {
+    "source_row": 2468,
+    "experiment_id": "phaseflip-phaseflip-p0.20-d1-seed015-sample308",
+    "seed": 15,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.6388888888888888
+  },
+  {
+    "source_row": 2469,
+    "experiment_id": "phaseflip-phaseflip-p0.20-d2-seed015-sample309",
+    "seed": 15,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.6388888888888888
+  },
+  {
+    "source_row": 2472,
+    "experiment_id": "phaseflip-dephasing-p0.01-d1-seed015-sample312",
+    "seed": 15,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.6388888888888888
+  },
+  {
+    "source_row": 2473,
+    "experiment_id": "phaseflip-dephasing-p0.01-d2-seed015-sample313",
+    "seed": 15,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.6388888888888888
+  },
+  {
+    "source_row": 2475,
+    "experiment_id": "phaseflip-dephasing-p0.01-d4-seed015-sample315",
+    "seed": 15,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2484,
+    "experiment_id": "phaseflip-dephasing-p0.10-d1-seed015-sample324",
+    "seed": 15,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.6388888888888888
+  },
+  {
+    "source_row": 2495,
+    "experiment_id": "phaseflip-dephasing-p0.20-d4-seed015-sample335",
+    "seed": 15,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2496,
+    "experiment_id": "phaseflip-mixed_pauli-p0.01-d1-seed015-sample336",
+    "seed": 15,
+    "effect": 0.020153689607045777,
+    "raw_uncertainty": 1.6388888888888888
+  },
+  {
+    "source_row": 2498,
+    "experiment_id": "phaseflip-mixed_pauli-p0.01-d3-seed015-sample338",
+    "seed": 15,
+    "effect": 0.010353689607045746,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2500,
+    "experiment_id": "phaseflip-mixed_pauli-p0.03-d1-seed015-sample340",
+    "seed": 15,
+    "effect": 0.00015368960704553736,
+    "raw_uncertainty": 1.6388888888888888
+  },
+  {
+    "source_row": 2501,
+    "experiment_id": "phaseflip-mixed_pauli-p0.03-d2-seed015-sample341",
+    "seed": 15,
+    "effect": -0.028046310392954243,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2502,
+    "experiment_id": "phaseflip-mixed_pauli-p0.03-d3-seed015-sample342",
+    "seed": 15,
+    "effect": -0.028046310392954243,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2510,
+    "experiment_id": "phaseflip-mixed_pauli-p0.10-d3-seed015-sample350",
+    "seed": 15,
+    "effect": -0.14984631039295415,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2511,
+    "experiment_id": "phaseflip-mixed_pauli-p0.10-d4-seed015-sample351",
+    "seed": 15,
+    "effect": -0.14984631039295437,
+    "raw_uncertainty": 1.5833333333333335
+  },
+  {
+    "source_row": 2515,
+    "experiment_id": "phaseflip-mixed_pauli-p0.15-d4-seed015-sample355",
+    "seed": 15,
+    "effect": -0.22484631039295455,
+    "raw_uncertainty": 1.5833333333333335
+  },
+  {
+    "source_row": 2519,
+    "experiment_id": "phaseflip-mixed_pauli-p0.20-d4-seed015-sample359",
+    "seed": 15,
+    "effect": -0.28984631039295455,
+    "raw_uncertainty": 1.5833333333333335
+  },
+  {
+    "source_row": 2520,
+    "experiment_id": "phaseflip-phaseflip-p0.01-d1-seed016-sample360",
+    "seed": 16,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.4722222222222223
+  },
+  {
+    "source_row": 2521,
+    "experiment_id": "phaseflip-phaseflip-p0.01-d2-seed016-sample361",
+    "seed": 16,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.4722222222222223
+  },
+  {
+    "source_row": 2522,
+    "experiment_id": "phaseflip-phaseflip-p0.01-d3-seed016-sample362",
+    "seed": 16,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2523,
+    "experiment_id": "phaseflip-phaseflip-p0.01-d4-seed016-sample363",
+    "seed": 16,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2524,
+    "experiment_id": "phaseflip-phaseflip-p0.03-d1-seed016-sample364",
+    "seed": 16,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.4722222222222223
+  },
+  {
+    "source_row": 2525,
+    "experiment_id": "phaseflip-phaseflip-p0.03-d2-seed016-sample365",
+    "seed": 16,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.4722222222222223
+  },
+  {
+    "source_row": 2526,
+    "experiment_id": "phaseflip-phaseflip-p0.03-d3-seed016-sample366",
+    "seed": 16,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2528,
+    "experiment_id": "phaseflip-phaseflip-p0.05-d1-seed016-sample368",
+    "seed": 16,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.4722222222222223
+  },
+  {
+    "source_row": 2530,
+    "experiment_id": "phaseflip-phaseflip-p0.05-d3-seed016-sample370",
+    "seed": 16,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2531,
+    "experiment_id": "phaseflip-phaseflip-p0.05-d4-seed016-sample371",
+    "seed": 16,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2533,
+    "experiment_id": "phaseflip-phaseflip-p0.10-d2-seed016-sample373",
+    "seed": 16,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.4722222222222223
+  },
+  {
+    "source_row": 2536,
+    "experiment_id": "phaseflip-phaseflip-p0.15-d1-seed016-sample376",
+    "seed": 16,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.4722222222222223
+  },
+  {
+    "source_row": 2537,
+    "experiment_id": "phaseflip-phaseflip-p0.15-d2-seed016-sample377",
+    "seed": 16,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.4722222222222223
+  },
+  {
+    "source_row": 2541,
+    "experiment_id": "phaseflip-phaseflip-p0.20-d2-seed016-sample381",
+    "seed": 16,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.4722222222222223
+  },
+  {
+    "source_row": 2544,
+    "experiment_id": "phaseflip-dephasing-p0.01-d1-seed016-sample384",
+    "seed": 16,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.4722222222222223
+  },
+  {
+    "source_row": 2546,
+    "experiment_id": "phaseflip-dephasing-p0.01-d3-seed016-sample386",
+    "seed": 16,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2549,
+    "experiment_id": "phaseflip-dephasing-p0.03-d2-seed016-sample389",
+    "seed": 16,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.4722222222222223
+  },
+  {
+    "source_row": 2552,
+    "experiment_id": "phaseflip-dephasing-p0.05-d1-seed016-sample392",
+    "seed": 16,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.4722222222222223
+  },
+  {
+    "source_row": 2553,
+    "experiment_id": "phaseflip-dephasing-p0.05-d2-seed016-sample393",
+    "seed": 16,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.4722222222222223
+  },
+  {
+    "source_row": 2554,
+    "experiment_id": "phaseflip-dephasing-p0.05-d3-seed016-sample394",
+    "seed": 16,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2555,
+    "experiment_id": "phaseflip-dephasing-p0.05-d4-seed016-sample395",
+    "seed": 16,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2556,
+    "experiment_id": "phaseflip-dephasing-p0.10-d1-seed016-sample396",
+    "seed": 16,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.4722222222222223
+  },
+  {
+    "source_row": 2558,
+    "experiment_id": "phaseflip-dephasing-p0.10-d3-seed016-sample398",
+    "seed": 16,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2559,
+    "experiment_id": "phaseflip-dephasing-p0.10-d4-seed016-sample399",
+    "seed": 16,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2560,
+    "experiment_id": "phaseflip-dephasing-p0.15-d1-seed016-sample400",
+    "seed": 16,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.4722222222222223
+  },
+  {
+    "source_row": 2561,
+    "experiment_id": "phaseflip-dephasing-p0.15-d2-seed016-sample401",
+    "seed": 16,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.4722222222222223
+  },
+  {
+    "source_row": 2565,
+    "experiment_id": "phaseflip-dephasing-p0.20-d2-seed016-sample405",
+    "seed": 16,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.4722222222222223
+  },
+  {
+    "source_row": 2568,
+    "experiment_id": "phaseflip-mixed_pauli-p0.01-d1-seed016-sample408",
+    "seed": 16,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.4722222222222223
+  },
+  {
+    "source_row": 2569,
+    "experiment_id": "phaseflip-mixed_pauli-p0.01-d2-seed016-sample409",
+    "seed": 16,
+    "effect": 0.020153689607045777,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2576,
+    "experiment_id": "phaseflip-mixed_pauli-p0.05-d1-seed016-sample416",
+    "seed": 16,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.4722222222222223
+  },
+  {
+    "source_row": 2580,
+    "experiment_id": "phaseflip-mixed_pauli-p0.10-d1-seed016-sample420",
+    "seed": 16,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.4722222222222223
+  },
+  {
+    "source_row": 2582,
+    "experiment_id": "phaseflip-mixed_pauli-p0.10-d3-seed016-sample422",
+    "seed": 16,
+    "effect": -0.14984631039295415,
+    "raw_uncertainty": 1.4166666666666667
+  },
+  {
+    "source_row": 2584,
+    "experiment_id": "phaseflip-mixed_pauli-p0.15-d1-seed016-sample424",
+    "seed": 16,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.4722222222222223
+  },
+  {
+    "source_row": 2590,
+    "experiment_id": "phaseflip-mixed_pauli-p0.20-d3-seed016-sample430",
+    "seed": 16,
+    "effect": -0.2898463103929545,
+    "raw_uncertainty": 1.4166666666666667
+  },
+  {
+    "source_row": 2591,
+    "experiment_id": "phaseflip-mixed_pauli-p0.20-d4-seed016-sample431",
+    "seed": 16,
+    "effect": -0.2898463103929545,
+    "raw_uncertainty": 1.4166666666666667
+  },
+  {
+    "source_row": 2592,
+    "experiment_id": "phaseflip-phaseflip-p0.01-d1-seed017-sample432",
+    "seed": 17,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2593,
+    "experiment_id": "phaseflip-phaseflip-p0.01-d2-seed017-sample433",
+    "seed": 17,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2596,
+    "experiment_id": "phaseflip-phaseflip-p0.03-d1-seed017-sample436",
+    "seed": 17,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2598,
+    "experiment_id": "phaseflip-phaseflip-p0.03-d3-seed017-sample438",
+    "seed": 17,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5833333333333335
+  },
+  {
+    "source_row": 2600,
+    "experiment_id": "phaseflip-phaseflip-p0.05-d1-seed017-sample440",
+    "seed": 17,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2602,
+    "experiment_id": "phaseflip-phaseflip-p0.05-d3-seed017-sample442",
+    "seed": 17,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5833333333333335
+  },
+  {
+    "source_row": 2607,
+    "experiment_id": "phaseflip-phaseflip-p0.10-d4-seed017-sample447",
+    "seed": 17,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5833333333333335
+  },
+  {
+    "source_row": 2609,
+    "experiment_id": "phaseflip-phaseflip-p0.15-d2-seed017-sample449",
+    "seed": 17,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2611,
+    "experiment_id": "phaseflip-phaseflip-p0.15-d4-seed017-sample451",
+    "seed": 17,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5833333333333335
+  },
+  {
+    "source_row": 2612,
+    "experiment_id": "phaseflip-phaseflip-p0.20-d1-seed017-sample452",
+    "seed": 17,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2613,
+    "experiment_id": "phaseflip-phaseflip-p0.20-d2-seed017-sample453",
+    "seed": 17,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2616,
+    "experiment_id": "phaseflip-dephasing-p0.01-d1-seed017-sample456",
+    "seed": 17,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2617,
+    "experiment_id": "phaseflip-dephasing-p0.01-d2-seed017-sample457",
+    "seed": 17,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2618,
+    "experiment_id": "phaseflip-dephasing-p0.01-d3-seed017-sample458",
+    "seed": 17,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5833333333333335
+  },
+  {
+    "source_row": 2622,
+    "experiment_id": "phaseflip-dephasing-p0.03-d3-seed017-sample462",
+    "seed": 17,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5833333333333335
+  },
+  {
+    "source_row": 2624,
+    "experiment_id": "phaseflip-dephasing-p0.05-d1-seed017-sample464",
+    "seed": 17,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2626,
+    "experiment_id": "phaseflip-dephasing-p0.05-d3-seed017-sample466",
+    "seed": 17,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5833333333333335
+  },
+  {
+    "source_row": 2627,
+    "experiment_id": "phaseflip-dephasing-p0.05-d4-seed017-sample467",
+    "seed": 17,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5833333333333335
+  },
+  {
+    "source_row": 2628,
+    "experiment_id": "phaseflip-dephasing-p0.10-d1-seed017-sample468",
+    "seed": 17,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2630,
+    "experiment_id": "phaseflip-dephasing-p0.10-d3-seed017-sample470",
+    "seed": 17,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5833333333333335
+  },
+  {
+    "source_row": 2634,
+    "experiment_id": "phaseflip-dephasing-p0.15-d3-seed017-sample474",
+    "seed": 17,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5833333333333335
+  },
+  {
+    "source_row": 2640,
+    "experiment_id": "phaseflip-mixed_pauli-p0.01-d1-seed017-sample480",
+    "seed": 17,
+    "effect": 0.020153689607045777,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2641,
+    "experiment_id": "phaseflip-mixed_pauli-p0.01-d2-seed017-sample481",
+    "seed": 17,
+    "effect": 0.020153689607045777,
+    "raw_uncertainty": 1.5833333333333335
+  },
+  {
+    "source_row": 2644,
+    "experiment_id": "phaseflip-mixed_pauli-p0.03-d1-seed017-sample484",
+    "seed": 17,
+    "effect": 0.00015368960704553736,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2645,
+    "experiment_id": "phaseflip-mixed_pauli-p0.03-d2-seed017-sample485",
+    "seed": 17,
+    "effect": 0.00015368960704553736,
+    "raw_uncertainty": 1.5833333333333335
+  },
+  {
+    "source_row": 2646,
+    "experiment_id": "phaseflip-mixed_pauli-p0.03-d3-seed017-sample486",
+    "seed": 17,
+    "effect": 0.0001536896070457594,
+    "raw_uncertainty": 1.4166666666666667
+  },
+  {
+    "source_row": 2649,
+    "experiment_id": "phaseflip-mixed_pauli-p0.05-d2-seed017-sample489",
+    "seed": 17,
+    "effect": -0.01984631039295437,
+    "raw_uncertainty": 1.5833333333333335
+  },
+  {
+    "source_row": 2655,
+    "experiment_id": "phaseflip-mixed_pauli-p0.10-d4-seed017-sample495",
+    "seed": 17,
+    "effect": -0.14984631039295437,
+    "raw_uncertainty": 1.4722222222222223
+  },
+  {
+    "source_row": 2661,
+    "experiment_id": "phaseflip-mixed_pauli-p0.20-d2-seed017-sample501",
+    "seed": 17,
+    "effect": -0.1698463103929546,
+    "raw_uncertainty": 1.5833333333333335
+  },
+  {
+    "source_row": 2663,
+    "experiment_id": "phaseflip-mixed_pauli-p0.20-d4-seed017-sample503",
+    "seed": 17,
+    "effect": -0.2898463103929545,
+    "raw_uncertainty": 1.4722222222222223
+  },
+  {
+    "source_row": 2664,
+    "experiment_id": "phaseflip-phaseflip-p0.01-d1-seed018-sample504",
+    "seed": 18,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.4722222222222223
+  },
+  {
+    "source_row": 2666,
+    "experiment_id": "phaseflip-phaseflip-p0.01-d3-seed018-sample506",
+    "seed": 18,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2667,
+    "experiment_id": "phaseflip-phaseflip-p0.01-d4-seed018-sample507",
+    "seed": 18,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2668,
+    "experiment_id": "phaseflip-phaseflip-p0.03-d1-seed018-sample508",
+    "seed": 18,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.4722222222222223
+  },
+  {
+    "source_row": 2670,
+    "experiment_id": "phaseflip-phaseflip-p0.03-d3-seed018-sample510",
+    "seed": 18,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2671,
+    "experiment_id": "phaseflip-phaseflip-p0.03-d4-seed018-sample511",
+    "seed": 18,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2672,
+    "experiment_id": "phaseflip-phaseflip-p0.05-d1-seed018-sample512",
+    "seed": 18,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.4722222222222223
+  },
+  {
+    "source_row": 2673,
+    "experiment_id": "phaseflip-phaseflip-p0.05-d2-seed018-sample513",
+    "seed": 18,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.4722222222222223
+  },
+  {
+    "source_row": 2674,
+    "experiment_id": "phaseflip-phaseflip-p0.05-d3-seed018-sample514",
+    "seed": 18,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2684,
+    "experiment_id": "phaseflip-phaseflip-p0.20-d1-seed018-sample524",
+    "seed": 18,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.4722222222222223
+  },
+  {
+    "source_row": 2685,
+    "experiment_id": "phaseflip-phaseflip-p0.20-d2-seed018-sample525",
+    "seed": 18,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.4722222222222223
+  },
+  {
+    "source_row": 2688,
+    "experiment_id": "phaseflip-dephasing-p0.01-d1-seed018-sample528",
+    "seed": 18,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.4722222222222223
+  },
+  {
+    "source_row": 2689,
+    "experiment_id": "phaseflip-dephasing-p0.01-d2-seed018-sample529",
+    "seed": 18,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.4722222222222223
+  },
+  {
+    "source_row": 2695,
+    "experiment_id": "phaseflip-dephasing-p0.03-d4-seed018-sample535",
+    "seed": 18,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2696,
+    "experiment_id": "phaseflip-dephasing-p0.05-d1-seed018-sample536",
+    "seed": 18,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.4722222222222223
+  },
+  {
+    "source_row": 2698,
+    "experiment_id": "phaseflip-dephasing-p0.05-d3-seed018-sample538",
+    "seed": 18,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2700,
+    "experiment_id": "phaseflip-dephasing-p0.10-d1-seed018-sample540",
+    "seed": 18,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.4722222222222223
+  },
+  {
+    "source_row": 2701,
+    "experiment_id": "phaseflip-dephasing-p0.10-d2-seed018-sample541",
+    "seed": 18,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.4722222222222223
+  },
+  {
+    "source_row": 2702,
+    "experiment_id": "phaseflip-dephasing-p0.10-d3-seed018-sample542",
+    "seed": 18,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.5277777777777777
+  },
+  {
+    "source_row": 2712,
+    "experiment_id": "phaseflip-mixed_pauli-p0.01-d1-seed018-sample552",
+    "seed": 18,
+    "effect": 0.020153689607045777,
+    "raw_uncertainty": 1.4722222222222223
+  },
+  {
+    "source_row": 2716,
+    "experiment_id": "phaseflip-mixed_pauli-p0.03-d1-seed018-sample556",
+    "seed": 18,
+    "effect": 0.00015368960704553736,
+    "raw_uncertainty": 1.4722222222222223
+  },
+  {
+    "source_row": 2734,
+    "experiment_id": "phaseflip-mixed_pauli-p0.20-d3-seed018-sample574",
+    "seed": 18,
+    "effect": -0.2898463103929545,
+    "raw_uncertainty": 1.5833333333333335
+  },
+  {
+    "source_row": 2736,
+    "experiment_id": "phaseflip-phaseflip-p0.01-d1-seed019-sample576",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.6388888888888888
+  },
+  {
+    "source_row": 2737,
+    "experiment_id": "phaseflip-phaseflip-p0.01-d2-seed019-sample577",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.6388888888888888
+  },
+  {
+    "source_row": 2739,
+    "experiment_id": "phaseflip-phaseflip-p0.01-d4-seed019-sample579",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.6388888888888888
+  },
+  {
+    "source_row": 2740,
+    "experiment_id": "phaseflip-phaseflip-p0.03-d1-seed019-sample580",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.6388888888888888
+  },
+  {
+    "source_row": 2741,
+    "experiment_id": "phaseflip-phaseflip-p0.03-d2-seed019-sample581",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.6388888888888888
+  },
+  {
+    "source_row": 2744,
+    "experiment_id": "phaseflip-phaseflip-p0.05-d1-seed019-sample584",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.6388888888888888
+  },
+  {
+    "source_row": 2747,
+    "experiment_id": "phaseflip-phaseflip-p0.05-d4-seed019-sample587",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.6388888888888888
+  },
+  {
+    "source_row": 2749,
+    "experiment_id": "phaseflip-phaseflip-p0.10-d2-seed019-sample589",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.6388888888888888
+  },
+  {
+    "source_row": 2750,
+    "experiment_id": "phaseflip-phaseflip-p0.10-d3-seed019-sample590",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.6388888888888888
+  },
+  {
+    "source_row": 2752,
+    "experiment_id": "phaseflip-phaseflip-p0.15-d1-seed019-sample592",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.6388888888888888
+  },
+  {
+    "source_row": 2753,
+    "experiment_id": "phaseflip-phaseflip-p0.15-d2-seed019-sample593",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.6388888888888888
+  },
+  {
+    "source_row": 2757,
+    "experiment_id": "phaseflip-phaseflip-p0.20-d2-seed019-sample597",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.6388888888888888
+  },
+  {
+    "source_row": 2758,
+    "experiment_id": "phaseflip-phaseflip-p0.20-d3-seed019-sample598",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.6388888888888888
+  },
+  {
+    "source_row": 2760,
+    "experiment_id": "phaseflip-dephasing-p0.01-d1-seed019-sample600",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.6388888888888888
+  },
+  {
+    "source_row": 2765,
+    "experiment_id": "phaseflip-dephasing-p0.03-d2-seed019-sample605",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.6388888888888888
+  },
+  {
+    "source_row": 2768,
+    "experiment_id": "phaseflip-dephasing-p0.05-d1-seed019-sample608",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.6388888888888888
+  },
+  {
+    "source_row": 2769,
+    "experiment_id": "phaseflip-dephasing-p0.05-d2-seed019-sample609",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.6388888888888888
+  },
+  {
+    "source_row": 2770,
+    "experiment_id": "phaseflip-dephasing-p0.05-d3-seed019-sample610",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.6388888888888888
+  },
+  {
+    "source_row": 2771,
+    "experiment_id": "phaseflip-dephasing-p0.05-d4-seed019-sample611",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.6388888888888888
+  },
+  {
+    "source_row": 2772,
+    "experiment_id": "phaseflip-dephasing-p0.10-d1-seed019-sample612",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.6388888888888888
+  },
+  {
+    "source_row": 2775,
+    "experiment_id": "phaseflip-dephasing-p0.10-d4-seed019-sample615",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.6388888888888888
+  },
+  {
+    "source_row": 2776,
+    "experiment_id": "phaseflip-dephasing-p0.15-d1-seed019-sample616",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.6388888888888888
+  },
+  {
+    "source_row": 2777,
+    "experiment_id": "phaseflip-dephasing-p0.15-d2-seed019-sample617",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.6388888888888888
+  },
+  {
+    "source_row": 2778,
+    "experiment_id": "phaseflip-dephasing-p0.15-d3-seed019-sample618",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.6388888888888888
+  },
+  {
+    "source_row": 2781,
+    "experiment_id": "phaseflip-dephasing-p0.20-d2-seed019-sample621",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.6388888888888888
+  },
+  {
+    "source_row": 2782,
+    "experiment_id": "phaseflip-dephasing-p0.20-d3-seed019-sample622",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.6388888888888888
+  },
+  {
+    "source_row": 2784,
+    "experiment_id": "phaseflip-mixed_pauli-p0.01-d1-seed019-sample624",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.6388888888888888
+  },
+  {
+    "source_row": 2792,
+    "experiment_id": "phaseflip-mixed_pauli-p0.05-d1-seed019-sample632",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.6388888888888888
+  },
+  {
+    "source_row": 2794,
+    "experiment_id": "phaseflip-mixed_pauli-p0.05-d3-seed019-sample634",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.6944444444444444
+  },
+  {
+    "source_row": 2796,
+    "experiment_id": "phaseflip-mixed_pauli-p0.10-d1-seed019-sample636",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.6388888888888888
+  },
+  {
+    "source_row": 2798,
+    "experiment_id": "phaseflip-mixed_pauli-p0.10-d3-seed019-sample638",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.6944444444444444
+  },
+  {
+    "source_row": 2800,
+    "experiment_id": "phaseflip-mixed_pauli-p0.15-d1-seed019-sample640",
+    "seed": 19,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.6388888888888888
+  },
+  {
+    "source_row": 2807,
+    "experiment_id": "phaseflip-mixed_pauli-p0.20-d4-seed019-sample647",
+    "seed": 19,
+    "effect": -0.1698463103929544,
+    "raw_uncertainty": 1.6388888888888888
+  },
+  {
+    "source_row": 2809,
+    "experiment_id": "phaseflip-phaseflip-p0.01-d2-seed020-sample649",
+    "seed": 20,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.3611111111111112
+  },
+  {
+    "source_row": 2810,
+    "experiment_id": "phaseflip-phaseflip-p0.01-d3-seed020-sample650",
+    "seed": 20,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.4166666666666667
+  },
+  {
+    "source_row": 2812,
+    "experiment_id": "phaseflip-phaseflip-p0.03-d1-seed020-sample652",
+    "seed": 20,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.3611111111111112
+  },
+  {
+    "source_row": 2813,
+    "experiment_id": "phaseflip-phaseflip-p0.03-d2-seed020-sample653",
+    "seed": 20,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.3611111111111112
+  },
+  {
+    "source_row": 2814,
+    "experiment_id": "phaseflip-phaseflip-p0.03-d3-seed020-sample654",
+    "seed": 20,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.4166666666666667
+  },
+  {
+    "source_row": 2816,
+    "experiment_id": "phaseflip-phaseflip-p0.05-d1-seed020-sample656",
+    "seed": 20,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.3611111111111112
+  },
+  {
+    "source_row": 2822,
+    "experiment_id": "phaseflip-phaseflip-p0.10-d3-seed020-sample662",
+    "seed": 20,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.4166666666666667
+  },
+  {
+    "source_row": 2826,
+    "experiment_id": "phaseflip-phaseflip-p0.15-d3-seed020-sample666",
+    "seed": 20,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.4166666666666667
+  },
+  {
+    "source_row": 2828,
+    "experiment_id": "phaseflip-phaseflip-p0.20-d1-seed020-sample668",
+    "seed": 20,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.3611111111111112
+  },
+  {
+    "source_row": 2829,
+    "experiment_id": "phaseflip-phaseflip-p0.20-d2-seed020-sample669",
+    "seed": 20,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.3611111111111112
+  },
+  {
+    "source_row": 2830,
+    "experiment_id": "phaseflip-phaseflip-p0.20-d3-seed020-sample670",
+    "seed": 20,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.4166666666666667
+  },
+  {
+    "source_row": 2832,
+    "experiment_id": "phaseflip-dephasing-p0.01-d1-seed020-sample672",
+    "seed": 20,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.3611111111111112
+  },
+  {
+    "source_row": 2833,
+    "experiment_id": "phaseflip-dephasing-p0.01-d2-seed020-sample673",
+    "seed": 20,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.3611111111111112
+  },
+  {
+    "source_row": 2834,
+    "experiment_id": "phaseflip-dephasing-p0.01-d3-seed020-sample674",
+    "seed": 20,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.4166666666666667
+  },
+  {
+    "source_row": 2837,
+    "experiment_id": "phaseflip-dephasing-p0.03-d2-seed020-sample677",
+    "seed": 20,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.3611111111111112
+  },
+  {
+    "source_row": 2838,
+    "experiment_id": "phaseflip-dephasing-p0.03-d3-seed020-sample678",
+    "seed": 20,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.4166666666666667
+  },
+  {
+    "source_row": 2840,
+    "experiment_id": "phaseflip-dephasing-p0.05-d1-seed020-sample680",
+    "seed": 20,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.3611111111111112
+  },
+  {
+    "source_row": 2842,
+    "experiment_id": "phaseflip-dephasing-p0.05-d3-seed020-sample682",
+    "seed": 20,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.4166666666666667
+  },
+  {
+    "source_row": 2844,
+    "experiment_id": "phaseflip-dephasing-p0.10-d1-seed020-sample684",
+    "seed": 20,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.3611111111111112
+  },
+  {
+    "source_row": 2854,
+    "experiment_id": "phaseflip-dephasing-p0.20-d3-seed020-sample694",
+    "seed": 20,
+    "effect": 0.030153689607045342,
+    "raw_uncertainty": 1.4166666666666667
+  },
+  {
+    "source_row": 2856,
+    "experiment_id": "phaseflip-mixed_pauli-p0.01-d1-seed020-sample696",
+    "seed": 20,
+    "effect": 0.020153689607045777,
+    "raw_uncertainty": 1.3611111111111112
+  },
+  {
+    "source_row": 2858,
+    "experiment_id": "phaseflip-mixed_pauli-p0.01-d3-seed020-sample698",
+    "seed": 20,
+    "effect": 0.010353689607045746,
+    "raw_uncertainty": 1.4722222222222223
+  },
+  {
+    "source_row": 2859,
+    "experiment_id": "phaseflip-mixed_pauli-p0.01-d4-seed020-sample699",
+    "seed": 20,
+    "effect": 0.010353689607045746,
+    "raw_uncertainty": 1.4722222222222223
+  },
+  {
+    "source_row": 2860,
+    "experiment_id": "phaseflip-mixed_pauli-p0.03-d1-seed020-sample700",
+    "seed": 20,
+    "effect": 0.00015368960704553736,
+    "raw_uncertainty": 1.3611111111111112
+  },
+  {
+    "source_row": 2862,
+    "experiment_id": "phaseflip-mixed_pauli-p0.03-d3-seed020-sample702",
+    "seed": 20,
+    "effect": -0.028046310392954243,
+    "raw_uncertainty": 1.4722222222222223
+  },
+  {
+    "source_row": 2863,
+    "experiment_id": "phaseflip-mixed_pauli-p0.03-d4-seed020-sample703",
+    "seed": 20,
+    "effect": -0.028046310392954465,
+    "raw_uncertainty": 1.4722222222222223
+  },
+  {
+    "source_row": 2865,
+    "experiment_id": "phaseflip-mixed_pauli-p0.05-d2-seed020-sample705",
+    "seed": 20,
+    "effect": -0.01984631039295437,
+    "raw_uncertainty": 1.4166666666666667
+  },
+  {
+    "source_row": 2870,
+    "experiment_id": "phaseflip-mixed_pauli-p0.10-d3-seed020-sample710",
+    "seed": 20,
+    "effect": -0.14984631039295415,
+    "raw_uncertainty": 1.4722222222222223
+  },
+  {
+    "source_row": 2877,
+    "experiment_id": "phaseflip-mixed_pauli-p0.20-d2-seed020-sample717",
+    "seed": 20,
+    "effect": -0.1698463103929546,
+    "raw_uncertainty": 1.4166666666666667
+  },
+  {
+    "source_row": 2879,
+    "experiment_id": "phaseflip-mixed_pauli-p0.20-d4-seed020-sample719",
+    "seed": 20,
+    "effect": -0.28984631039295455,
+    "raw_uncertainty": 1.4722222222222223
+  }
+]

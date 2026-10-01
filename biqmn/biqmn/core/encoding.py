@@ -151,14 +151,41 @@ def _embed_data_density(rho_data: np.ndarray) -> np.ndarray:
     return np.kron(_ANC_ZERO_PROJECTOR, np.kron(_ANC_ZERO_PROJECTOR, rho_data))
 
 
-def apply_syndrome_recovery(rho_data: np.ndarray, code: str) -> np.ndarray:
-    """Apply the circuit-level [[3,1,1]] syndrome-recovery channel.
+def syndrome_recovery_kraus(code: str) -> tuple[np.ndarray, ...]:
+    """Exact, full-information recovery operators C_s P_s in numpy ordering.
+
+    Summing K_s rho K_s^dagger averages all ideal syndrome outcomes. This is
+    not a decoder restricted to the subsequently corrupted controller symbols.
+    """
+    key = _validated_code(code)
+    s1, s2 = stabilizer_operators(key)
+    identity = np.eye(8, dtype=complex)
+    error = PAULI_X if key == "bitflip" else PAULI_Z
+    targets = {(0, 0): None, (1, 0): 0, (1, 1): 1, (0, 1): 2}
+    operators = []
+    for (a, b), target in targets.items():
+        projector = ((identity + (-1)**a*s1)/2) @ ((identity + (-1)**b*s2)/2)
+        factors = [error if i == target else PAULI_I for i in range(3)]
+        operators.append(_kron_triple(*factors) @ projector)
+    return tuple(operators)
+
+
+def apply_syndrome_recovery(rho_data: np.ndarray, code: str, *,
+                            method: str = "circuit", shots: int | None = None,
+                            seed_simulator: int | None = None) -> np.ndarray:
+    """Apply ideal full-syndrome recovery with explicit averaging semantics.
 
     Parameters
     ----------
     rho_data : (8, 8) complex ndarray
         3-qubit system density in numpy kron ordering (system qubit 0 leftmost).
     code : {"bitflip", "phaseflip"}
+    method : {"circuit", "exact"}
+        Legacy default ``circuit`` samples measurement outcomes in Aer.
+        ``exact`` sums the four corrected syndrome branches deterministically.
+    shots, seed_simulator : int, optional
+        Circuit-only controls. Omitted values preserve the historical Aer
+        defaults; reproducible finite-shot studies must set both explicitly.
 
     Returns
     -------
@@ -168,6 +195,22 @@ def apply_syndrome_recovery(rho_data: np.ndarray, code: str) -> np.ndarray:
         traced out.
     """
     key = _validated_code(code)
+    if method not in ("circuit", "exact"):
+        raise ValueError("Recovery method must be 'circuit' or 'exact'.")
+    rho = np.asarray(rho_data, dtype=complex)
+    if rho.shape != (8, 8):
+        raise ValueError(f"Expected an 8x8 density matrix, got shape {rho.shape}.")
+    if not np.all(np.isfinite(rho)):
+        raise ValueError("Recovery density matrix must be finite.")
+    if method == "exact":
+        if shots is not None or seed_simulator is not None:
+            raise ValueError("Exact syndrome averaging does not use shots or a simulator seed.")
+        # Do not renormalize or clip eigenvalues: this is a linear CPTP map.
+        return sum(k @ rho @ k.conj().T for k in syndrome_recovery_kraus(key))
+    for name, value, minimum in (("shots", shots, 1), ("seed_simulator", seed_simulator, 0)):
+        if value is not None and (isinstance(value, (bool, np.bool_))
+                or not isinstance(value, (int, np.integer)) or value < minimum):
+            raise ValueError(f"{name} must be an integer >= {minimum}.")
     try:
         from qiskit import ClassicalRegister, QuantumCircuit, QuantumRegister
         from qiskit_aer import AerSimulator
@@ -176,10 +219,6 @@ def apply_syndrome_recovery(rho_data: np.ndarray, code: str) -> np.ndarray:
         raise RuntimeError(
             "qiskit/qiskit-aer unavailable; cannot run circuit-level syndrome recovery."
         ) from exc
-
-    rho = np.asarray(rho_data, dtype=complex)
-    if rho.shape != (8, 8):
-        raise ValueError(f"Expected an 8x8 density matrix, got shape {rho.shape}.")
 
     data = QuantumRegister(3, "data")
     anc = QuantumRegister(2, "anc")
@@ -199,7 +238,12 @@ def apply_syndrome_recovery(rho_data: np.ndarray, code: str) -> np.ndarray:
     qc.save_density_matrix([data[0], data[1], data[2]], label="rho_data")
 
     backend = AerSimulator(method="density_matrix")
-    result = backend.run(qc).result()
+    run_options = {}
+    if shots is not None:
+        run_options["shots"] = int(shots)
+    if seed_simulator is not None:
+        run_options["seed_simulator"] = int(seed_simulator)
+    result = backend.run(qc, **run_options).result()
     raw = result.data(0)["rho_data"]
     rho_out = np.asarray(raw.data if hasattr(raw, "data") else raw, dtype=complex)
     rho_out = 0.5 * (rho_out + rho_out.conj().T)
