@@ -470,12 +470,12 @@
       "sha256": "77bcba1cd99051aa777019617ddece27060c1b2ad2c2ae1323d485b8d9d61ad5"
     },
     "manuscript/ioplatextemplate/iopjournal-template-revised_3.pdf": {
-      "bytes": 632036,
-      "sha256": "0d2d1fd8dea8402de967f369da3afdb9d2a266446d42e8732082d7fa0c46dc6e"
+      "bytes": 1669333,
+      "sha256": "02bf84dcb3da70a0d3568455d7e5cb6ee7ddb12b322e885012f970c760b67f76"
     },
     "manuscript/ioplatextemplate/iopjournal-template-revised_3.tex": {
-      "bytes": 28162,
-      "sha256": "58d2c5fe8d730a8980aa2fc2618f8443d17a702dadfbf1c977ef0d2de1124863"
+      "bytes": 72843,
+      "sha256": "e297c9ef9591aded293f41ac1272def72da6d40ae2d70acaf7415c0aef1c499d"
     },
     "manuscript/ioplatextemplate/iopjournal.cls": {
       "bytes": 5761,
@@ -519,7 +519,7 @@
     },
     "manuscript/revision_r4_results.md": {
       "bytes": 3654,
-      "sha256": "edbb6f357cc2fb2124a1be243be20cb248003a0f1d7f36659ba67606ee3462c3"
+      "sha256": "24585ff8a4a83f7189d942f37090a9942dfb9755dc278a636c214cfb81b4c197"
     },
     "manuscript/revision_r4_sensitivity_protocol.md": {
       "bytes": 2565,
@@ -533,5 +533,6 @@
       "bytes": 58846,
       "sha256": "926323199d3211f85bb6f9772c52538774726166335bd84cf00c3959b0ba7e7e"
     }
-  }
+  },
+  "manuscript_revision_note": "Prior main-text methods, audit results, discussion, and Figures 1-3 restored; R4 figure renumbered to Figure 4; scientific analyses and result bytes unchanged."
 }

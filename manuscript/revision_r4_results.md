@@ -60,6 +60,6 @@ for a physical clock nor graph-spectral performance value is demonstrated.
 - [Follow-up protocol](revision_r4_sensitivity_protocol.md)
 - [Reproducibility and provenance](../REPRODUCIBILITY.md)
 
-Main Figure 1 and SI Tables S17--S21 correspond to these records. Original
+Main Figure 4 and SI Tables S17--S21 correspond to these records. Original
 R3 inputs are preserved byte-for-byte as used by R4; see the release guide
 for the correction of earlier Git newline normalization.
