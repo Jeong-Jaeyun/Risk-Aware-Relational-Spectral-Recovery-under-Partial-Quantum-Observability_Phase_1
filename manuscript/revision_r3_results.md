@@ -1,3 +1,8 @@
+> Historical pre-R4 summary. The nested-veto harmful-rate reduction
+> alone is not evidence of selective rejection. See
+> [R4 results](revision_r4_results.md) for equal-rate comparisons and
+> optimized continuous controls.
+
 # R3 results: corrected held-out residual template-switching test
 
 R3 corrects the R2 validation definition.  Both the continuous candidate A and

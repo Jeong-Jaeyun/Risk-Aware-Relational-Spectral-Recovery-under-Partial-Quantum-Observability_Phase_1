@@ -27,3 +27,12 @@ biqmn/results/launch_logs/
 biqmn/results/revision_experiments/launch_logs/
 *.stdout.log
 *.stderr.log
+
+# Private correspondence, local discussion, and submission-only packaging
+/Review_to_Author.pdf
+/_ Revision-checklist.pdf
+/ChatGPT-*.md
+/revise.md
+/manuscript/archive/
+/manuscript/submission/
+/manuscript/ioplatextemplate/Clean_PDF.pdf

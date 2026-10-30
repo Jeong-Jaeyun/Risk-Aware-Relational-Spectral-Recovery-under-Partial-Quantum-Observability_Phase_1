@@ -1,9 +1,14 @@
 # R3: corrected held-out residual gate and independent replications
 
-Date frozen: 2026-09-30, before any R3 simulation is run.  This is a
-repository-frozen protocol, not an externally registered preregistration.  R2
-is retained unchanged because its output manifest hashes its prior source and
-protocol.
+Experiment frozen: 2026-09-30, before any R3 simulation was run.  This is a
+repository-frozen protocol, not an externally registered preregistration.  An
+editorial clarification on 2026-10-04 specifies the threshold scope below; the
+experimental design and results were not changed.  The R3 manifests hash the
+original version at commit `9354f1fd652cc5b63d2a9ffaa8289f260a8dd7a6`
+(protocol SHA-256
+`90c2941f4f1a7a64a7c8a40fc2c50141d6132aee1b4767d5bb32fefe9f6a1644`).
+R2 is retained unchanged because its output manifest hashes its prior source
+and protocol.
 
 ## Purpose and claim boundary
 
@@ -63,11 +68,13 @@ the validation-label counts.  R3 defines
 
 `h = L_val(B_fit) - L_val(A_fit)`.
 
-Neither candidate is refit on validation labels.  All three thresholds (score,
-uncertainty, and h) are the 75th empirical quantiles calculated once from a
-separate calibration set at the fixed bit-flip, 1,024-copy, physical-noise 0.05,
-readout-flip 0.05 operating point.  The thresholds are then fixed across every
-held-out grid cell and replication.
+Neither candidate is refit on validation labels.  For each replication, the
+three thresholds (score, uncertainty, and h) are calculated once as the 75th
+empirical quantiles of that replication's separate calibration set at the fixed
+bit-flip, 1,024-copy, physical-noise 0.05, readout-flip 0.05 operating point.
+The resulting values may differ between replications, but within each
+replication they are held fixed across all 24 held-out test cells and their
+measurement seeds.  No test target is used to set or retune a threshold.
 
 The hidden target vector is used only after policy decisions to calculate
 fidelity.  An oracle nearest-template fidelity is additionally reported as an
@@ -80,7 +87,8 @@ rate, harmful-switch (false-safe) rate, and paired policy differences.  The
 primary intervals are 95% two-way cluster bootstrap intervals that resample both
 the 32 target pairs and the 12 measurement seeds.  They therefore describe
 finite-target and finite-measurement variation conditional on the fixed model,
-grid, and calibration set; they do not include calibration-threshold uncertainty.
+grid, and that replication's calibration set; they do not include
+calibration-threshold uncertainty.
 
 The principal comparison is H minus C2 false-safe rate.  The combined-gate
 comparison C3R minus U is reported separately.  A lower harmful-switch rate is

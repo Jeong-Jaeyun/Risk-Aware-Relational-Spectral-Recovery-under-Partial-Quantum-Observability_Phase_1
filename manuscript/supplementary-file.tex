@@ -18,9 +18,13 @@
 \renewcommand{\thetable}{S\arabic{table}}
 \numberwithin{equation}{section}
 \renewcommand{\theequation}{\thesection.\arabic{equation}}
+\makeatletter
+\renewcommand*\l@section{\@dottedtocline{1}{0em}{2.8em}}
+\renewcommand*\l@subsection{\@dottedtocline{2}{1.5em}{3.3em}}
+\makeatother
 
 \title{Supplementary Information for\\
-Risk-Aware Relational Spectral Recovery under Partial Quantum Observability}
+Risk-Aware Template-Switching Control under Partial Quantum Observability}
 \author{}
 \date{}
 
@@ -30,8 +34,10 @@ Risk-Aware Relational Spectral Recovery under Partial Quantum Observability}
 
 \section{Global constraint and clock-conditioned dynamics}
 
-This note collects the background relational formulation used only in compressed
-form in the main Methods. The total Hilbert space is written as
+Sections S1--S9 preserve the submitted relational formulation and its historical
+diagnostics for audit.  They are not performance ingredients of R3 or R4,
+whose observation model and decision comparisons are given in Sections S10
+and S11. The historical total Hilbert space is written as
 \begin{equation}
 \mathcal{H}_{\mathrm{tot}}
 =
@@ -1019,18 +1025,23 @@ Ambig.+meas. & $0.00044\ [-0.00097,0.00186]$ & $0.000\ [0.000,0.000]$ \\
 \begin{table}[ht]
 \centering
 \scriptsize
+\setlength{\tabcolsep}{2.5pt}
 \caption{Distribution of row-level historical blocked-switch effects in the
 three submitted regimes with nonzero interventions.  The effect is
-$\Delta F_A-\Delta F_B$, so a positive value is a prevented harmful switch;
-these are descriptive audit summaries, not efficacy evidence.}
+$d=\Delta F_A-\Delta F_B$.  Consistent with
+Table~\ref{tab:supp-intervention-quality}, a blocked proposed switch is harmful
+when $d>\varepsilon_F$, beneficial when $d<-\varepsilon_F$, and a near tie
+otherwise, where $\varepsilon_F=0.01$.  Quantiles use all blocked rows; these
+are descriptive audit summaries, not efficacy evidence.}
 \label{tab:submitted-blocked-distribution}
-\begin{tabular}{@{}lrrrrr@{}}
+\begin{tabular}{@{}lrrrrl@{}}
 \toprule
-Regime & rows & harmful & 5th percentile & median & 95th percentile \\
+Regime & rows & harmful & near tie & beneficial &
+$q_{0.05}/q_{0.50}/q_{0.95}$ \\
 \midrule
-Partial & 476 & 45 & $-0.14985$ & $0.03015$ & $0.03015$ \\
-Partial+noisy & 670 & 62 & $-0.06485$ & $0.03015$ & $0.03015$ \\
-Ambig.+meas. & 357 & 80 & $-0.14985$ & $0.03015$ & $0.03015$ \\
+Partial & 476 & 414 & 17 & 45 & $-0.14985/0.03015/0.03015$ \\
+Partial+noisy & 670 & 589 & 19 & 62 & $-0.06485/0.03015/0.03015$ \\
+Ambig.+meas. & 357 & 277 & 0 & 80 & $-0.14985/0.03015/0.03015$ \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -1070,14 +1081,15 @@ its protocol, code, raw results, and manifest remain released for audit.
 
 \subsection{R3: corrected held-out template-switching risk test}
 
-R3 evaluates whether a gate can reject harmful switches from a continuous
-count-record estimate to a direct nearest-template baseline.  A 32-state template
-bank, 32 calibration targets, and 64 target states arranged in 32 antipodal pairs
-are disjoint.  The controller receives only fitting and validation count records,
-the known Hamiltonian, and the fixed bank; the target density is inaccessible
-until evaluator-only scoring.  The direct observation-space template candidate
-$B_{\mathrm{fit}}$ is the raw nearest-template baseline requested by the review;
-an oracle target-fidelity comparison is used offline only as a diagnostic.
+R3 tests whether a held-out residual can reject harmful switches from a
+continuous count-record estimate to a direct nearest-template baseline.  A
+32-state template bank, 32 calibration targets, and 64 test targets arranged in
+32 antipodal pairs are disjoint within each stream.  The switching policy uses
+only fitting and validation counts, the known Hamiltonian, and the fixed bank;
+the target density is used only for scoring after the decision.  The direct
+observation-space candidate $B_{\mathrm{fit}}$ is the nearest template under the
+same fitting-label loss as $A_{\mathrm{fit}}$.  An oracle target-fidelity
+comparison is used offline only as a diagnostic.
 
 For each target and measurement seed, four of eight labels are fitting labels and
 the complementary four are validation labels.  The continuous candidate
@@ -1090,14 +1102,17 @@ h=L_{\mathrm{val}}(B_{\mathrm{fit}})-L_{\mathrm{val}}(A_{\mathrm{fit}}).
 \end{equation}
 No candidate is refitted on validation labels.  The policies are continuous $A$,
 direct template $B$, score-only $C_2$, uncertainty-only $U$, residual-only $H$,
-and their combined gate $C_3^{\mathrm R}$.  Thresholds are calibrated once at
-the middle operating point on calibration targets and are not retuned on the
-test grid.
+and their combined gate $C_3^{\mathrm R}$.  In each stream, the score,
+uncertainty, and held-out residual thresholds are set once to the 75th empirical
+quantiles of that stream's separate calibration set at the fixed bit-flip,
+1,024-copy, physical-noise 0.05, readout-flip 0.05 operating point.  Their
+values may differ between streams, but they remain fixed across all 24 held-out
+test cells within each stream.  No test target is used to set or retune them.
 
 The grid has two coupled basis-equivalent code conventions, two copy budgets
 (256 and 1,024), three physical-noise probabilities (0.01, 0.05, 0.10), two
 readout-flip probabilities (0, 0.05), 12 measurement seeds, and 32 target pairs:
-24 cells per stream.  R3 was run on four frozen stream families.  Stream r0
+24 cells per stream.  R3 was run on four predefined data streams.  Stream r0
 reuses R2's random streams solely to isolate the corrected gate definition;
 r1--r3 use independent bank, calibration, target, and measurement streams.
 The two code conventions are checks, not independent replications.  Reported
@@ -1127,19 +1142,20 @@ r3 & 24/24 & 6/24 & 6/24 & $-0.000011$ \\
 \end{table}
 
 In every one of the 96 evaluated cell--stream combinations, $H-C_2$ has a
-negative false-safe-rate interval excluding zero.  Thus the corrected held-out
-residual gate consistently filters harmful template proposals relative to the
-score-only gate.  The additional conjunction is more limited: $C_3^{\mathrm R}-U$
+negative false-safe-rate interval excluding zero.  This is an unconditional
+rate comparison between nested acceptance sets; a lower rate does not by itself
+establish selective rejection of worse proposals.  R4 below tests that question
+at equal expected switching rates.  The additional conjunction is more limited:
+$C_3^{\mathrm R}-U$
 is negative in 12/24, 8/24, 12/24, and 6/24 cells in r0--r3, respectively, and
 the mean-fidelity comparison $C_3^{\mathrm R}-A$ has no consistent sign.
 
 At the middle operating point (bit-flip, 1,024 copies, physical noise 0.05,
 readout flip 0.05), Table~\ref{tab:r3-middle} gives the two-way intervals.  The
-result supports a narrowly scoped decision-control claim: a held-out residual
-check can reduce harmful direct-template switches relative to score-only
-switching in this simulator.  It does not establish a uniform advantage over the
-uncertainty-only gate, an average-fidelity improvement over continuous fitting,
-a decoder for unknown states, or a relational-spectral representation advantage.
+result records the reduction of harmful direct-template switches in this
+simulator.  Its interpretation requires the equal-rate and continuous-estimator
+comparisons in R4; the unconditional contrast alone does not establish an
+advantage in decision quality, continuous estimation, or spectral representation.
 
 \begin{table}[ht]
 \centering
@@ -1161,5 +1177,188 @@ r3 & $-5.990\ [-10.417,-2.604]$ & $-1.823\ [-4.427,-0.254]$ & $0.003306\ [-0.002
 \bottomrule
 \end{tabular}
 \end{table}
+
+\FloatBarrier
+\section{Switching-rate and continuous-estimator audit (R4)}
+\label{sec:supp-r4}
+
+R4 is a reviewer-prompted secondary analysis of the four existing R3 streams.
+The analysis rules were fixed on 29 October 2026, after the R3 results had
+been inspected and before the new contrasts were calculated.  This is not a
+new independent replication or an externally registered analysis.
+No new target or measurement realization is introduced.  We reconstructed
+the observations from their archived seeds and verified all 73,728 record
+diagnostics, fidelities, count totals, fitting masks, and gate decisions
+against the saved R3 records.  The maximum discrepancy in the checked
+numerical fields was zero.
+
+\subsection{Physical role of the finite clock}
+
+For the R3 readout, the data likelihood is
+\begin{equation}
+p(k,z\mid\boldsymbol r)=\frac{1}{16}
+\left[1+z(1-2\eta)\boldsymbol d_k^{\mathsf T}\boldsymbol r\right].
+\end{equation}
+Here $k$ is one of eight labels, $z=\pm1$ is the logical-population
+outcome, $\eta$ is the known readout-flip probability, and the known
+design row $\boldsymbol d_k$ includes rotation and code-matched physical
+noise.  Conditioning the energy-matched stationary joint state realizes
+this observation model.  Uniformly choosing eight ordinary population
+measurement settings realizes the same model.  Therefore the clock supplies
+a consistent physical interpretation, but is not required by the switching
+statistic.  No graph-spectral feature enters R3 or R4, and no performance
+effect is assigned to the Page--Wootters formalism itself.
+
+\subsection{Original gates at a common expected switching rate}
+
+Let $S_g$ be the accepted proposals of original fixed-threshold gate $g$
+within one cell and stream.  Since
+$S_{C_3^{\mathrm R}}\subseteq S_U\cap S_H\subseteq S_{C_2}$, set
+$m=|S_{C_3^{\mathrm R}}|$ and thin each $g\in\{C_2,U,H\}$ uniformly
+with probability $m/|S_g|$.  The per-record switching probability is
+\begin{equation}
+\pi_{ig}=\mathbf1\{i\in S_g\}\frac{m}{|S_g|},
+\qquad \sum_i\pi_{ig}=m.
+\end{equation}
+An empty acceptance set has zero switching probability.  We integrate this
+randomization analytically.  The $C_2$ version is a random-retention control,
+denoted R.  This operation preserves the relative selection within each
+original gate; it does not tune a threshold using target fidelity.
+
+Define $b_i=\mathbf1\{F_{Bi}<F_{Ai}-10^{-12}\}$.  The conditional harmful
+fraction is $\sum_i\pi_{ig}b_i/\sum_i\pi_{ig}$, and total mean fidelity
+is $N^{-1}\sum_i[F_{Ai}+\pi_{ig}(F_{Bi}-F_{Ai})]$, with $N=768$.
+When $m=0$, conditional harm is undefined and the cell cannot support a
+selection-quality contrast.  This occurs in all twelve 256-copy cells of
+each stream.  All twelve 1,024-copy cells have positive common coverage.
+Table~\ref{tab:r4-fixed} reports both conditional quality and net fidelity
+at this common expected coverage.
+
+\subsection{Fixed-retention batch rankings}
+
+Within the original $C_2$ proposal set, we compare retention fractions
+$q\in\{0.25,0.50,0.75\}$.  Proposals are ranked by fitting score,
+uncertainty $u$, residual $h$, or the combined statistic
+\begin{equation}
+c=\max\left(\frac{u}{t_u},\frac{h}{t_h}\right),
+\end{equation}
+where $t_u,t_h>0$ are the original stream-specific R3 calibration thresholds.
+Accepting $c\leq a$ rescales the original two thresholds by the same
+factor $a$ and recovers their conjunction at $a=1$.  These ranking
+families are distinct from the original fixed-threshold gates.
+
+Lower scores are accepted first.  Scores are rounded to twelve decimal
+places only for numerical tie handling.  If a cutoff falls inside a tie
+group, all group members receive the same switching probability so that
+exactly $q|S_{C_2}|$ proposals are accepted in expectation.  Random retention
+accepts every proposal with probability $q$.  All five rules therefore
+have identical expected switching rates within each cell, not merely similar
+grid averages.  Cutoffs depend on the observed batch diagnostics without
+target outcomes.  They characterize batch selection and are not
+calibration-only deployment thresholds.  All three prespecified fractions
+are reported in Table~\ref{tab:r4-ranking}; no best fraction is selected
+from the test fidelities.
+
+\subsection{Optimized continuous estimators and statistics}
+
+The original radial projection $A$ is feasible but need not minimize
+weighted least squares over the Bloch ball.  We add global constrained
+minimizers $A^*_{\rm fit}$ and $A^*_{\rm all}$ using fitting labels or
+all labels, respectively.  For Gram matrix $G$ and right-hand side
+$\boldsymbol b$, the solution is
+$\boldsymbol x=(G+\lambda I)^{-1}\boldsymbol b$, with $\lambda=0$
+when the unconstrained solution is inside the ball; otherwise $\lambda>0$
+is chosen so that $\|\boldsymbol x\|=1$.
+A pseudoinverse handles singular unconstrained systems.  The objective is
+convex.  Independent constrained-solver tests, feasibility checks, KKT
+stationarity checks, and comparison with the original $A$ loss verify the
+implementation.  Across all replayed fits, the maximum normalized KKT
+residual was $6.13\times10^{-15}$, the maximum norm was
+$1+5.62\times10^{-14}$, and the maximum numerical loss excess over $A$
+was $3.47\times10^{-17}$.
+
+The full-record control uses the same prepared-copy budget as the residual
+gate, which already reads the validation labels.  Its advantage therefore
+measures a relevant opportunity cost of the switching task.  The bank is
+not assumed to be a necessary output alphabet in an application, and these
+controls minimize the declared count loss rather than oracle target fidelity.
+Table~\ref{tab:r4-continuous} shows why a selection-quality benefit does
+not imply an overall advantage over full-record continuous estimation.
+
+We use 5,000 paired two-way cluster bootstrap samples per stream, resampling
+the twelve measurement seeds and thirty-two target pairs while retaining
+their coupled antipodal signs.  A shared resample across cells preserves
+their common seed/pair axes in stream averages.  Each resample recalculates
+thinning factors and ranking cutoffs.  Intervals are pointwise 95\% intervals,
+conditional on the bank, model, and R3 calibration thresholds; there is no
+family-wise significance claim.  The coupled code conventions are not
+independent replications.  Stream means equally weight the 24 cells;
+conditional-harm means for the original common-coverage comparison use only
+the twelve positive-coverage cells.
+
+Complete cell summaries also report unconditional harmful-switch rate,
+expected switching rate, mean fidelity, and descriptive per-record
+$q_{0.05}$/CVaR$_{0.05}$.  For these tails, each record contributes mass
+$1-\pi_i$ at $F_{Ai}$ and mass $\pi_i$ at $F_{Bi}$; the lower 5\% mass
+is integrated exactly, including a fractional boundary.  This unit differs
+from R3's seed-averaged target-pair tail summaries.  The archived R3 JSON
+field named \texttt{cvar05\_exact\_mass} averages the two lowest of thirty-two
+pair means, representing 6.25\% mass rather than an exact fractional 5\%.
+This archival field is not used in the main-text selection or mean-fidelity
+contrasts; R4 uses the exact 5\% mixture definition above.
+Protocol, analysis source,
+all inputs, replay checks, and complete outputs accompany the revision in
+the reproducibility archive.
+
+\input{generated/r4/r4_supplementary_tables.tex}
+
+\FloatBarrier
+\subsection{Harm-margin sensitivity and direct H--U fidelity comparison}
+\label{subsec:r4-harm-sensitivity}
+
+The primary R4 label uses
+$F_B<F_A-10^{-12}$, where $10^{-12}$ is a numerical tolerance rather
+than a practical loss threshold.  Following further feedback, a separate
+follow-up analysis applies all margins
+$\varepsilon\in\{10^{-12},0.001,0.005,0.01\}$ under
+\begin{equation}
+b_i(\varepsilon)=\mathbf1\{F_{Bi}<F_{Ai}-\varepsilon\}.
+\end{equation}
+The positive margins are in absolute fidelity units.  The value 0.01
+matches the size of the historical audit tolerance, but the historical and
+R3/R4 constructions and target metrics remain distinct.
+No application-specific utility threshold is inferred from this choice.
+
+All candidate states, proposals, calibration thresholds, ranking scores,
+retention levels, tie rules, and matching factors are unchanged.  Only
+the evaluator's harm label changes.  The analysis retains every stream,
+cell, and declared margin, and reuses the original 5,000 paired two-way
+bootstrap draws, recalculating batch cutoffs and thinning factors in each
+draw.  The margin and reporting rules were fixed before computing the
+follow-up outcomes, after the original R4 results were known.  This remains
+an additional secondary analysis, not a new independent replication.
+The original R3 and R4 inputs, protocols, and outputs are preserved.
+The reproduced original estimates and intervals agree to within
+$5.4\times10^{-16}$.
+
+Table~\ref{tab:r4-harm-sensitivity} reports the 50\%-retention
+H--U conditional-harm comparison at every declared margin.  At
+$\varepsilon=0.01$, differences remain negative in all four stream
+averages, with paired pointwise 95\% intervals below zero.
+This shows that the observed contrast is not confined to numerically
+small fidelity losses.
+
+Table~\ref{tab:r4-h-u-fidelity} directly reports H minus U overall
+mean fidelity at each of the three original retention levels.
+The signed-fidelity calculation keeps every gain and loss and does not
+discard differences inside the harm margin.  The comparison is paired
+at the same expected switching rate, with each stream equally averaging
+all 24 cells.  These results concern batch rankings that use observed
+diagnostics without target outcomes; they do not establish a calibrated
+deployment policy or remove the full-record continuous-estimator limit.
+The accompanying reproducibility archive contains the separate follow-up
+protocol, source, and all-cell sensitivity summaries.
+
+\input{generated/r4/r4_sensitivity_tables.tex}
 
 \end{document}

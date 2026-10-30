@@ -1,87 +1,66 @@
 # Risk-Aware Template-Switching Control under Partial Quantum Observability
 
-This repository contains the manuscript, supplementary information, reference notes,
-and the `biqmn` Python code used for the submitted-grid audit and the revised
-finite-data template-switching experiments.
+This repository releases the manuscript, simulation inputs, and analyses for
+a finite-copy template-switching decision study. The current evidence is R4
+and its harm-margin follow-up, using the four existing R3 streams.
 
-The revised positive result is R3: a corrected held-out residual gate that fits
-both a continuous candidate and a direct nearest-template candidate on fitting
-records, then scores the unchanged candidates on complementary validation
-records. It is a finite-copy safety-filter experiment, not evidence for a
-spectral-representation advantage or a QEC decoder. The submitted C3R grid is
-retained as an auditable historical artifact and is not final efficacy evidence.
+At equal expected switching rates, a held-out residual contains information
+about harmful template proposals beyond random thinning and uncertainty
+ranking in this testbed. The result persists at an absolute fidelity-loss
+margin of 0.01. Full-record optimized continuous estimation nevertheless has
+higher grid-mean fidelity than the tested switching rankings. These are
+secondary batch-selection analyses, not new independent replications or
+calibration-only deployment policies. They establish no clock-specific,
+graph-spectral, or QEC-decoder advantage.
 
-## Repository Layout
+## Evidence and files
 
-```text
-biqmn/                  Python package, configs, tests, and result files
-legacy/                 recoverable superseded workspace snapshots
-design/                 theory notes and earlier design drafts
-manuscript/             main text, SI, frozen protocols, response, and tables
-reference/              curated papers and citation/reference notes
-LetsDoThis.md           working notes for manuscript revisions
-```
+| Record | Role |
+|---|---|
+| R1 | Physical consistency and observability qualification |
+| R2 | Superseded preliminary gate; archival only |
+| R3 | Four finite-shot streams and nested fixed-gate comparisons |
+| R4 | Equal-coverage comparisons and optimized continuous controls |
+| R4 harm sensitivity | Fixed decisions at margins 1e-12, 0.001, 0.005, 0.01; direct paired H-minus-U fidelity |
 
-## Code Quick Start
+- [Results and limits](manuscript/revision_r4_results.md)
+- [Reproduction and provenance](REPRODUCIBILITY.md)
+- [R4 protocol](manuscript/revision_r4_protocol.md) and
+  [follow-up protocol](manuscript/revision_r4_sensitivity_protocol.md)
+- [Complete result directories](biqmn/results/revision_experiments/)
+- [Main source](manuscript/ioplatextemplate/iopjournal-template-revised_3.tex),
+  [main PDF](manuscript/ioplatextemplate/iopjournal-template-revised_3.pdf),
+  [SI source](manuscript/supplementary-file.tex), and
+  [SI PDF](manuscript/supplementary-file.pdf)
+- [Byte-level release inventory](RELEASE_MANIFEST.json)
 
-The maintained revision environment is the `quantum` conda environment.
+Private reviews, response letters, submission bundles, scratch files, IDE
+state, and LaTeX intermediates are not part of this public release. The
+submitted-grid audit remains historical material; it is not the evidence
+for R4's selection-quality findings.
 
-```powershell
-cd biqmn
-conda activate quantum
-python -m pip install -e ".[dev]"
-python -m pytest
-```
+## Reproduce
 
-The historical submitted-grid C3R reproduction script is:
+The maintained environment is Python 3.12 in the quantum conda environment.
+Dependencies are declared in biqmn/pyproject.toml; authoritative run manifests
+record the versions used. From biqmn/:
 
-```powershell
-.\scripts\run_c3r_seed10.ps1
-```
+~~~powershell
+conda run -n quantum --no-capture-output python -m pytest -q
+conda run -n quantum --no-capture-output python -m biqmn.experiments.revision_r4_rate_matched --workers 4 --output results/revision_experiments/R4_reproduction
+conda run -n quantum --no-capture-output python -m biqmn.experiments.revision_r4_harm_sensitivity --workers 4 --output results/revision_experiments/R4_sensitivity_reproduction
+~~~
 
-It runs the five historical C3R regime experiments with the default ten-seed set
-`11,12,13,14,15,16,17,18,19,20` and writes outputs under `biqmn/results/`.
+Use fresh output directories: runners refuse to overwrite existing runs.
+The four R3 datasets and thresholds are included, so R4 requires no new count
+realizations. See the reproducibility guide for rebuilding R3 itself.
 
-To rebuild derived C3R tables from the existing raw JSON rows without rerunning
-the simulations:
+Verify the frozen files from the repository root:
 
-```powershell
-.\scripts\rebuild_c3r_results.ps1
-```
+~~~powershell
+python biqmn/scripts/verify_release.py
+~~~
 
-See [biqmn/README.md](biqmn/README.md) for the full code and result
-reproducibility guide. The frozen R3 protocol is
-[manuscript/revision_r3_protocol.md](manuscript/revision_r3_protocol.md), and
-its concise result summary is
-[manuscript/revision_r3_results.md](manuscript/revision_r3_results.md).
-The release scope and exact artifact roles are stated in
-[REPRODUCIBILITY.md](REPRODUCIBILITY.md).
-
-## R3 reproduction
-
-R3 never overwrites an existing output directory. From `biqmn/`, a fresh
-replication-0 rerun is:
-
-```powershell
-conda run -n quantum --no-capture-output python -m biqmn.experiments.revision_r3_holdout_recovery `
-  --replication 0 --workers 6 `
-  --output results/revision_experiments/R3_reproduction_r0
-```
-
-Use `--replication 1`, `2`, and `3` with distinct output directories for the
-independent stream families. The four authoritative runs are
-`R3_corrected_r0`, `R3_independent_r1`, `R3_independent_r2`, and
-`R3_independent_r3` under `biqmn/results/revision_experiments/`; each includes
-the frozen dataset, thresholds, raw records, two-way bootstrap summary, report,
-and source/protocol manifest.
-
-## Manuscript Build
-
-The active main manuscript source is:
-
-```text
-manuscript/ioplatextemplate/iopjournal-template-revised_3.tex
-```
-
-The active SI source is `manuscript/supplementary-file.tex`. A LaTeX engine is
-required to build the final PDFs; it is not bundled with this repository.
+Compile the main LaTeX source from manuscript/ioplatextemplate/ and the SI
+from manuscript/, using latexmk -pdf. Required figures, the ORCID icon,
+and the local bibliography style are included.

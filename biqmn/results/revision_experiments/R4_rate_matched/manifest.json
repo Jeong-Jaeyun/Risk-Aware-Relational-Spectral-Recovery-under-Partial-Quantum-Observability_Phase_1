@@ -1,0 +1,10 @@
+{
+  "created_utc": "2026-10-29T20:50:18.460534+00:00",
+  "draws": 5000,
+  "workers": 4,
+  "protocol_sha256": "2c92bfe9d2916d012634c1e76ca76e4cef4232b7619a8d3698cc6f9b152d92c1",
+  "source_sha256": "5e9169c8fc70b1acc40f5164a1e2b81a555e3ba7688760ace59f811746b4e87b",
+  "numpy": "2.5.0",
+  "analysis_type": "reviewer_prompted_secondary_analysis",
+  "new_count_realizations": 0
+}

@@ -1,0 +1,54 @@
+\begin{table}[ht]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\caption{Harm-margin sensitivity at 50\% retention of the original $C_2$ proposals. A switch is harmful when $F_B<F_A-\varepsilon$. H and U are the unchanged batch-ranking rules, with the same expected switching rate in each cell. Harm columns are percentages among accepted switches, equally averaged over all 24 cells; the last column is H minus U in percentage points with a paired pointwise 95\% interval. The positive margins are sensitivity choices in absolute fidelity units, not validated utility thresholds.}
+\label{tab:r4-harm-sensitivity}
+\begin{tabular}{@{}llrrl@{}}
+\toprule
+Stream & $\varepsilon$ & H harm (\%) & U harm (\%) & $H-U$: harm [95\% CI] \\
+\midrule
+r0 & $10^{-12}$ & 45.61 & 66.38 & $-20.78\ [-24.88,-16.24]$ \\
+r0 & 0.001 & 43.41 & 64.98 & $-21.57\ [-26.22,-16.56]$ \\
+r0 & 0.005 & 34.84 & 59.17 & $-24.33\ [-29.25,-18.79]$ \\
+r0 & 0.01 & 25.43 & 52.03 & $-26.60\ [-30.53,-21.41]$ \\
+r1 & $10^{-12}$ & 36.67 & 58.43 & $-21.76\ [-25.48,-17.00]$ \\
+r1 & 0.001 & 33.40 & 55.98 & $-22.58\ [-26.48,-17.51]$ \\
+r1 & 0.005 & 25.12 & 49.61 & $-24.49\ [-28.14,-19.34]$ \\
+r1 & 0.01 & 16.89 & 40.96 & $-24.08\ [-27.20,-19.45]$ \\
+r2 & $10^{-12}$ & 27.86 & 51.54 & $-23.68\ [-26.55,-19.41]$ \\
+r2 & 0.001 & 23.55 & 48.32 & $-24.77\ [-27.48,-20.34]$ \\
+r2 & 0.005 & 13.89 & 39.61 & $-25.72\ [-28.32,-20.98]$ \\
+r2 & 0.01 & 8.69 & 32.49 & $-23.80\ [-26.98,-18.55]$ \\
+r3 & $10^{-12}$ & 30.75 & 54.25 & $-23.50\ [-26.59,-19.14]$ \\
+r3 & 0.001 & 26.94 & 51.25 & $-24.31\ [-27.34,-19.70]$ \\
+r3 & 0.005 & 12.80 & 39.13 & $-26.33\ [-29.58,-20.63]$ \\
+r3 & 0.01 & 7.47 & 32.71 & $-25.24\ [-29.71,-17.97]$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+\begin{table}[ht]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\caption{Direct paired H-minus-U overall mean-fidelity comparison at equal expected switching rates. Retention $q$ is relative to the original $C_2$ proposal set. Each stream equally averages all 24 cells. These are batch rankings using observed diagnostics without target outcomes, not calibration-only deployment policies. Signed fidelity differences retain every gain and loss and are unaffected by the harm margin. Brackets are paired pointwise two-way 95\% intervals.}
+\label{tab:r4-h-u-fidelity}
+\begin{tabular}{@{}lrrrl@{}}
+\toprule
+Stream & $q$ (\%) & $F_H$ & $F_U$ & $H-U$: $\Delta F$ [95\% CI] \\
+\midrule
+r0 & 25 & 0.969504 & 0.960704 & $+0.00880\ [+0.00728,+0.01027]$ \\
+r0 & 50 & 0.969628 & 0.958786 & $+0.01084\ [+0.00898,+0.01275]$ \\
+r0 & 75 & 0.965918 & 0.956227 & $+0.00969\ [+0.00791,+0.01129]$ \\
+r1 & 25 & 0.971629 & 0.962688 & $+0.00894\ [+0.00717,+0.01039]$ \\
+r1 & 50 & 0.972885 & 0.963116 & $+0.00977\ [+0.00811,+0.01141]$ \\
+r1 & 75 & 0.971967 & 0.963307 & $+0.00866\ [+0.00733,+0.00981]$ \\
+r2 & 25 & 0.970597 & 0.964283 & $+0.00631\ [+0.00492,+0.00770]$ \\
+r2 & 50 & 0.972381 & 0.964903 & $+0.00748\ [+0.00605,+0.00879]$ \\
+r2 & 75 & 0.972108 & 0.965642 & $+0.00647\ [+0.00517,+0.00758]$ \\
+r3 & 25 & 0.969498 & 0.961470 & $+0.00803\ [+0.00635,+0.00966]$ \\
+r3 & 50 & 0.971692 & 0.961545 & $+0.01015\ [+0.00815,+0.01197]$ \\
+r3 & 75 & 0.971051 & 0.961273 & $+0.00978\ [+0.00791,+0.01139]$ \\
+\bottomrule
+\end{tabular}
+\end{table}

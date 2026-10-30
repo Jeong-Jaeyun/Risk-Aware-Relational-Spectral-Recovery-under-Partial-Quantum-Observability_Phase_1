@@ -1,0 +1,59 @@
+\begin{table}[ht]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\caption{Original fixed gates after analytic random thinning to the common expected switching rate of $C_3^{\mathrm R}$. Conditional-harm differences are percentage points and are equally averaged over the 12 positive-coverage cells (all 1,024-copy cells). Mean-fidelity differences average all 24 cells, including zero interventions at 256 copies. Brackets are pointwise paired two-way 95\% intervals.}
+\label{tab:r4-fixed}
+\begin{tabular}{@{}lrlll@{}}
+\toprule
+Stream & Active & $H-R$: harm & $C_3^{\mathrm R}-U$: harm & $C_3^{\mathrm R}-U$: $\Delta F$ \\
+\midrule
+r0 & 12/24 & $-7.62\ [-10.26,-5.42]$ & $-5.23\ [-7.56,-3.32]$ & $+0.00178\ [+0.00134,+0.00214]$ \\
+r1 & 12/24 & $-3.00\ [-4.36,-1.81]$ & $-1.46\ [-2.39,-0.69]$ & $+0.00065\ [+0.00037,+0.00094]$ \\
+r2 & 12/24 & $-6.19\ [-9.48,-3.88]$ & $-4.37\ [-7.05,-2.45]$ & $+0.00111\ [+0.00076,+0.00140]$ \\
+r3 & 12/24 & $-4.48\ [-7.04,-2.61]$ & $-1.93\ [-3.26,-0.98]$ & $+0.00085\ [+0.00047,+0.00119]$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+\begin{table}[ht]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\caption{Equal-retention batch rankings. Retention $q$ is the percentage of original $C_2$ proposals accepted in expectation. R denotes uniform random retention. Harm is the percentage of accepted switches with $F_B<F_A-10^{-12}$, equally averaged across all 24 cells per stream. All rankings have the same expected switching rate in each cell and bootstrap sample; cutoffs use observed diagnostics without target outcomes. The last column is a paired pointwise 95\% interval in percentage points.}
+\label{tab:r4-ranking}
+\begin{tabular}{@{}lrrrrrl@{}}
+\toprule
+Stream & $q$ & R harm & U harm & H harm & Combined harm & $H-U$: harm \\
+\midrule
+r0 & 25 & 65.55 & 66.00 & 28.20 & 62.18 & $-37.80\ [-42.81,-30.29]$ \\
+r0 & 50 & 65.55 & 66.38 & 45.61 & 63.10 & $-20.78\ [-24.88,-16.24]$ \\
+r0 & 75 & 65.55 & 66.37 & 56.45 & 63.36 & $-9.93\ [-11.99,-7.72]$ \\
+r1 & 25 & 56.88 & 59.18 & 20.26 & 58.17 & $-38.92\ [-42.77,-32.01]$ \\
+r1 & 50 & 56.88 & 58.43 & 36.67 & 57.55 & $-21.76\ [-25.48,-17.00]$ \\
+r1 & 75 & 56.88 & 57.76 & 47.61 & 56.62 & $-10.16\ [-12.04,-7.94]$ \\
+r2 & 25 & 51.75 & 51.73 & 15.00 & 48.50 & $-36.73\ [-41.18,-31.50]$ \\
+r2 & 50 & 51.75 & 51.54 & 27.86 & 48.13 & $-23.68\ [-26.55,-19.41]$ \\
+r2 & 75 & 51.75 & 51.02 & 40.26 & 47.20 & $-10.76\ [-12.77,-8.21]$ \\
+r3 & 25 & 53.97 & 55.18 & 18.05 & 53.85 & $-37.13\ [-41.69,-30.94]$ \\
+r3 & 50 & 53.97 & 54.25 & 30.75 & 53.05 & $-23.50\ [-26.59,-19.14]$ \\
+r3 & 75 & 53.97 & 53.60 & 42.13 & 52.14 & $-11.47\ [-13.46,-8.89]$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+\begin{table}[ht]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\caption{Continuous controls and the 50\%-retention H ranking, averaged equally across the 24 cells. $A$ is the original radial projection; $A^*_{\rm fit}$ globally minimizes the fitting-label weighted loss over the Bloch ball; $A^*_{\rm all}$ uses the entire prepared-copy budget. The two right columns are paired H-minus-control mean-fidelity differences with pointwise 95\% intervals. The optimized-loss estimators are not oracle fidelity optimizers.}
+\label{tab:r4-continuous}
+\begin{tabular}{@{}lrrrll@{}}
+\toprule
+Stream & $F_A$ & $F_{A^*_{\rm fit}}$ & $F_{A^*_{\rm all}}$ & H minus $A^*_{\rm fit}$ & H minus $A^*_{\rm all}$ \\
+\midrule
+r0 & 0.962411 & 0.964404 & 0.981577 & $+0.00522\ [+0.00114,+0.00872]$ & $-0.01195\ [-0.01600,-0.00846]$ \\
+r1 & 0.962731 & 0.964732 & 0.981855 & $+0.00815\ [+0.00468,+0.01145]$ & $-0.00897\ [-0.01245,-0.00580]$ \\
+r2 & 0.963577 & 0.965622 & 0.982381 & $+0.00676\ [+0.00360,+0.00971]$ & $-0.01000\ [-0.01336,-0.00707]$ \\
+r3 & 0.961308 & 0.963219 & 0.981184 & $+0.00847\ [+0.00478,+0.01161]$ & $-0.00949\ [-0.01350,-0.00611]$ \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,25 @@
+{
+  "created_utc": "2026-10-29T23:21:23.603261+00:00",
+  "draws": 5000,
+  "workers": 4,
+  "margins": [
+    1e-12,
+    0.001,
+    0.005,
+    0.01
+  ],
+  "source_sha256": "6bac8890a68a57effdd7b4fc19ebd66585c0742d4e0f4743b748f7be93967d97",
+  "protocol_sha256": "7e73556977b192bbd181284dfd09e54bacda6090f12482930bada646471724eb",
+  "original_r4_manifest": {
+    "created_utc": "2026-10-29T20:50:18.460534+00:00",
+    "draws": 5000,
+    "workers": 4,
+    "protocol_sha256": "2c92bfe9d2916d012634c1e76ca76e4cef4232b7619a8d3698cc6f9b152d92c1",
+    "source_sha256": "5e9169c8fc70b1acc40f5164a1e2b81a555e3ba7688760ace59f811746b4e87b",
+    "numpy": "2.5.0",
+    "analysis_type": "reviewer_prompted_secondary_analysis",
+    "new_count_realizations": 0
+  },
+  "analysis_type": "secondary_harm_margin_sensitivity",
+  "new_count_realizations": 0
+}
